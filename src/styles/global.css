@@ -1,0 +1,24 @@
+/* src/styles/global.css */
+
+:root {
+  --cor-verde-claro: #EAF2D8;
+  --cor-verde-medio: #A2B578;
+  --cor-cinza-claro: #A7A9A5;
+  --cor-cinza-escuro: #4D504E;
+  --cor-preto: #333333;
+
+  --fonte-principal: 'Questrial', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte-principal);
+}
+
+body {
+  background-color: white;
+  color: var(--cor-preto);
+  line-height: 1.6;
+}
