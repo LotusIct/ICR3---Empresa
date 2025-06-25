@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css';
 import logo from '../assets/Logo.jpeg';
+import marcas from '../data/marcas.json';
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const [active, setActive] = useState('home');
+  const location = useLocation();
 
-  const handleSetActive = (section) => {
-    setActive(section);
-    setDropdownOpen(false);
-  };
+  const getActive = (path) => (location.pathname === path ? 'active' : '');
 
   return (
     <header className="navbar">
@@ -21,60 +20,43 @@ const Navbar = () => {
         <nav>
           <ul className="nav-links">
             <li>
-              <a
-                href="#home"
-                onClick={() => handleSetActive('home')}
-                className={active === 'home' ? 'active' : ''}
-              >
-                Home
-              </a>
+              <Link to="/" className={getActive('/')}>Home</Link>
             </li>
             <li>
-              <a
-                href="#sobre"
-                onClick={() => handleSetActive('sobre')}
-                className={active === 'sobre' ? 'active' : ''}
-              >
-                Sobre Nós
-              </a>
+              <Link to="/sobre" className={getActive('/sobre')}>Sobre Nós</Link>
             </li>
             <li>
-              <a
-                href="#servicos"
-                onClick={() => handleSetActive('servicos')}
-                className={active === 'servicos' ? 'active' : ''}
-              >
-                Serviços
-              </a>
+              <Link to="/serviços" className={getActive('/serviços')}>Serviços</Link>
             </li>
+
+            {/* Dropdown de Marcas por Categoria */}
             <li
-              className="dropdown"
-              onMouseEnter={() => setDropdownOpen(true)}
-              onMouseLeave={() => setDropdownOpen(false)}
-            >
-              <a
-                href="#marcas"
-                onClick={() => handleSetActive('marcas')}
-                className={active === 'marcas' ? 'active' : ''}
-              >
-                Marcas
-              </a>
-              {isDropdownOpen && (
-    <ul className="dropdown-menu" onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
-      <li><a href="#marca1">Marca 1</a></li>
-      <li><a href="#marca2">Marca 2</a></li>
-      <li><a href="#marca3">Marca 3</a></li>
-    </ul>
+  className="dropdown"
+  onMouseEnter={() => setDropdownOpen(true)}
+  onMouseLeave={() => setDropdownOpen(false)}
+>
+  <span className={`nav-link ${getActive('/marcas')}`}>Marcas</span>
+  {isDropdownOpen && (
+    <div className="megamenu">
+      {marcas.map((categoria, idx) => (
+        <div className="megamenu-column" key={idx}>
+          <h4>{categoria.categoria}</h4>
+          <ul>
+            {categoria.marcas.map((marca) => (
+              <li key={marca.id}>
+                <Link to={`/marcas/${marca.id}`}>{marca.nome}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
   )}
-            </li>
+</li>
+
+
             <li>
-              <a
-                href="#contato"
-                onClick={() => handleSetActive('contato')}
-                className={active === 'contato' ? 'active' : ''}
-              >
-                Fale Conosco
-              </a>
+              <Link to="/fale-conosco" className={getActive('/fale-conosco')}>Fale Conosco</Link>
             </li>
           </ul>
         </nav>

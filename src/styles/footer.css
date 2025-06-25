@@ -68,6 +68,8 @@ footer {
 .footer-itens{
     margin-top: 60px;
 }
+
+
 @media (min-width: 768px) {
   .footer-columns {
     flex-direction: row;

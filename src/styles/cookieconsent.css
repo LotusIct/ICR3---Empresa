@@ -1,0 +1,85 @@
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: var(--verde-claro, #EAF2D8);
+  color: var(--verde-escuro, #4D504E);
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cookie-buttons button {
+  background-color: var(--verde-medio, #A2B578);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cookie-buttons button:hover {
+  background-color: #8aa563;
+}
+.cookie-banner a {
+  color: var(--verde-escuro, #4D504E);
+  text-decoration: none; /* opcional, pode tirar se quiser */
+  transition: color 0.3s ease;
+}
+
+.cookie-banner a:hover {
+  color: var(--verde-medio, #A2B578);
+  text-decoration: none; /* opcional */
+}
+
+.cookie-reset {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 998;
+}
+
+.cookie-reset button {
+  background: transparent;
+  color: #666;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.preferences-panel {
+  flex-basis: 100%;
+  margin-top: 10px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+  max-width: 450px;
+}
+
+.preferences-panel h2 {
+  margin-top: 0;
+}
+
+.preferences-panel form label {
+  display: block;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.preferences-panel form input[type="checkbox"] {
+  margin-right: 10px;
+}

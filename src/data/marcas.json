@@ -1,0 +1,212 @@
+[
+  {
+    "categoria": "MRC - Material de Referência Certificado",
+    "marcas": [
+      {
+        "id": "aro",
+        "nome": "ARO Scientific",
+        "produtos": [
+          {
+            "nome": "Manômetro Digital",
+            "imagem": "/produtos/aro/Mrc-aro.png"
+          },
+          {
+            "nome": "Calibrador de Pressão",
+            "imagem": "/produtos/aro/Mrc-aro3.png"
+          },
+          {
+            "nome": "Controlador de Vazão",
+            "imagem": "/produtos/aro/Mrc-aro-prata.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoria": "Equipamentos",
+    "marcas": [
+     
+      {
+        "id": "jofra",
+        "nome": "JOFRA Calibration",
+        "produtos": [
+           {
+            "nome": "",
+            "imagem": "/produtos/Jofra/Calibrador bloco seco jofra.jpeg",
+            "descrição": "Banho Termostático e Criostático"
+          },
+           {
+            "nome": "",
+            "imagem": "/produtos/Jofra/Calibrador de pressão jofra.jpeg",
+            "descrição": "Banho Termostático e Criostático"
+          },
+          {
+            "nome": "",
+            "imagem": "/produtos/Jofra/Calibrador de pressão jofra .jpeg",
+            "descrição": "Banho Termostático e Criostático"
+          },
+          {
+            "nome": "",
+            "imagem": "/produtos/Jofra/Calibrador de sinal jofra .png",
+            "descrição": "Banho Termostático e Criostático"
+          },
+           {
+            "nome": "",
+            "imagem": "/produtos/Jofra/Dti 100 - jofra .png",
+            "descrição": "Banho Termostático e Criostático"
+          },
+            {
+            "nome": "",
+            "imagem": "/produtos/Jofra/Sensor de temperatura jofra .jpg",
+            "descrição": "Banho Termostático e Criostático"
+          }
+        ]
+      },
+      {
+        "id": "forza",
+        "nome": "FORZA International",
+        "produtos": []
+      },
+      {
+        "id": "br",
+        "nome": "B/R Instrument Corporation",
+        "produtos": [
+           {
+            "nome": "",
+            "imagem": "/produtos/Bri/Bri .png",
+            "descrição": "Banho Termostático e Criostático"
+          },
+           {
+            "nome": "",
+            "imagem": "/produtos/Bri/Bri (1).png",
+            "descrição": "Banho Termostático e Criostático"
+          },
+          {
+            "nome": "",
+            "imagem": "/produtos/Bri/Bri.png",
+            "descrição": "Banho Termostático e Criostático"
+          },
+          {
+            "nome": "",
+            "imagem": "/produtos/Bri/Bri(1).png",
+            "descrição": "Banho Termostático e Criostático"
+          }
+        ]
+      },
+      {
+        "id": "zahm",
+        "nome": "ZAHM & NAGEL Company Incorporated",
+        "produtos": [
+           {
+            "nome": "",
+            "imagem": "/produtos/zahm/Zahm  (1).png",
+            "descrição": "Banho Termostático e Criostático"
+          },
+           {
+            "nome": "",
+            "imagem": "/produtos/zahm/Zahm  (2).png",
+            "descrição": "Banho Termostático e Criostático"
+          },
+          {
+            "nome": "",
+            "imagem": "/produtos/zahm/Zahm .png",
+            "descrição": "Banho Termostático e Criostático"
+          },
+          {
+            "nome": "",
+            "imagem": "/produtos/zahm/Zahm.png",
+            "descrição": "Banho Termostático e Criostático"
+          }
+        ]
+      },
+      {
+        "id": "kem",
+        "nome": "KEM Kyoto Electronics Manufacturing Co. Ltd.",
+        "produtos": []
+      },
+      {
+        "id": "cannon",
+        "nome": "Cannon Instrument Company",
+        "produtos": []
+      },
+      {
+        "id": "yateks",
+        "nome": "YATEKS",
+        "produtos": [
+           {
+            "nome": "",
+            "imagem": "/produtos/Bri/Bri .png",
+            "descrição": "Banho Termostático e Criostático"
+          },
+           {
+            "nome": "",
+            "imagem": "/produtos/Bri/Bri (1).png",
+            "descrição": "Banho Termostático e Criostático"
+          },
+          {
+            "nome": "",
+            "imagem": "/produtos/Bri/Bri.png",
+            "descrição": "Banho Termostático e Criostático"
+          },
+          {
+            "nome": "",
+            "imagem": "/produtos/Bri/Bri(1).png",
+            "descrição": "Banho Termostático e Criostático"
+          }
+        ]
+      },
+      {
+        "id": "iqt",
+        "nome": "IQT",
+        "produtos": [
+           {
+            "nome": "",
+            "imagem": "/produtos/Bri/Bri .png",
+            "descrição": "Banho Termostático e Criostático"
+          },
+           {
+            "nome": "",
+            "imagem": "/produtos/Bri/Bri (1).png",
+            "descrição": "Banho Termostático e Criostático"
+          },
+          {
+            "nome": "",
+            "imagem": "/produtos/Bri/Bri.png",
+            "descrição": "Banho Termostático e Criostático"
+          },
+          {
+            "nome": "",
+            "imagem": "/produtos/Bri/Bri(1).png",
+            "descrição": "Banho Termostático e Criostático"
+          }
+        ]
+      },
+      {
+        "id": "huazheng",
+        "nome": "HUAZHENG",
+        "produtos": []
+      },
+      {
+        "id": "tanaka",
+        "nome": "TANAKA",
+        "produtos": []
+      }
+    ]
+  },
+   {
+    "categoria": "Fabricação Própria",
+    "marcas": [
+      {
+        "id": "icr3",
+        "nome": "ICR3",
+        "produtos": [
+          {
+            "nome": "ICR BC1",
+            "imagem": "/produtos/icr3/Banho icr3 - icr-bc1 .png",
+            "descrição": "Banho Termostático e Criostático"
+          }
+        ]
+      }
+    ]
+  }
+]

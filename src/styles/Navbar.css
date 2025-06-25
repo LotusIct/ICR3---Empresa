@@ -142,3 +142,90 @@ body {
 .social-bar a:hover {
   color: var(--verde-medio);
 }
+.categorias-menu {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  list-style: none;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu > span {
+  font-weight: bold;
+  padding: 5px 10px;
+  display: block;
+  cursor: default;
+}
+
+.sub-dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  display: none;
+  min-width: 200px;
+  border: 1px solid #ccc;
+}
+
+.submenu:hover .sub-dropdown-menu {
+  display: block;
+}
+
+.sub-dropdown-menu li {
+  padding: 5px 0;
+}
+.megamenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  gap: 40px;
+  background-color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  padding: 30px 40px;
+  z-index: 1000;
+  border-radius: 8px;
+  min-width: 600px;
+}
+
+.megamenu-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.megamenu-column h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--verde-escuro);
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--verde-medio);
+  padding-bottom: 6px;
+}
+
+.megamenu-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.megamenu-column li {
+  margin: 6px 0;
+}
+
+.megamenu-column a {
+  color: var(--verde-escuro);
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.megamenu-column a:hover {
+  color: var(--verde-medio);
+  padding-left: 4px;
+}
