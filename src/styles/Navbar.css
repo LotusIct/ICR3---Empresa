@@ -229,3 +229,99 @@ body {
   color: var(--verde-medio);
   padding-left: 4px;
 }
+/* Default Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Estilo do Menu no Mobile */
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu.open {
+  display: block;  /* Exibe o menu quando o hambúrguer é clicado */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger {
+  display: none;  /* Esconde o hambúrguer no desktop */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--verde-escuro);
+  border-radius: 5px;
+}
+
+/* Estilo Responsivo para Dispositivos Móveis */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;  /* Esconde o menu original em dispositivos móveis */
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 100;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;  /* Exibe o hambúrguer no mobile */
+  }
+
+  .nav-menu.open .nav-links {
+    display: flex;  /* Exibe o menu quando o hambúrguer for clicado */
+  }
+}
+
+/* Estilo dos Links no Mobile */
+.nav-links a {
+  text-decoration: none;
+  color: var(--verde-escuro);
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.social-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.social-bar a {
+  color: var(--verde-escuro);
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+.social-bar a:hover {
+  color: var(--verde-medio);
+}

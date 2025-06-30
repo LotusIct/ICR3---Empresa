@@ -7,6 +7,7 @@ import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);  // Estado para abrir/fechar o menu no mobile
   const location = useLocation();
 
   const getActive = (path) => (location.pathname === path ? 'active' : '');
@@ -17,7 +18,7 @@ const Navbar = () => {
         <div className="logo">
           <img src={logo} alt="Logo ICR3 Científica" />
         </div>
-        <nav>
+        <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
           <ul className="nav-links">
             <li>
               <Link to="/" className={getActive('/')}>Home</Link>
@@ -31,29 +32,28 @@ const Navbar = () => {
 
             {/* Dropdown de Marcas por Categoria */}
             <li
-  className="dropdown"
-  onMouseEnter={() => setDropdownOpen(true)}
-  onMouseLeave={() => setDropdownOpen(false)}
->
-  <span className={`nav-link ${getActive('/marcas')}`}>Marcas</span>
-  {isDropdownOpen && (
-    <div className="megamenu">
-      {marcas.map((categoria, idx) => (
-        <div className="megamenu-column" key={idx}>
-          <h4>{categoria.categoria}</h4>
-          <ul>
-            {categoria.marcas.map((marca) => (
-              <li key={marca.id}>
-                <Link to={`/marcas/${marca.id}`}>{marca.nome}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
-  )}
-</li>
-
+              className="dropdown"
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
+            >
+              <span className={`nav-link ${getActive('/marcas')}`}>Marcas</span>
+              {isDropdownOpen && (
+                <div className="megamenu">
+                  {marcas.map((categoria, idx) => (
+                    <div className="megamenu-column" key={idx}>
+                      <h4>{categoria.categoria}</h4>
+                      <ul>
+                        {categoria.marcas.map((marca) => (
+                          <li key={marca.id}>
+                            <Link to={`/marcas/${marca.id}`}>{marca.nome}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </li>
 
             <li>
               <Link to="/fale-conosco" className={getActive('/fale-conosco')}>Fale Conosco</Link>
@@ -69,6 +69,13 @@ const Navbar = () => {
         <a href="https://www.linkedin.com/company/sua_empresa" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
+      </div>
+
+      {/* Botão de Menu Hamburguer */}
+      <div className="hamburger" onClick={() => setMenuOpen(!isMenuOpen)}>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
       </div>
     </header>
   );
