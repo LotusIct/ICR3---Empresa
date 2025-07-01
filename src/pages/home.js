@@ -78,7 +78,7 @@ const handleSaibaMaisClick = () => {
         <div className="overlay"></div>
         <div className="hero-content">
           <h1>Bem-vindo à ICR3 Científica</h1>
-          <p>Especialistas em calibração e metrologia.</p>
+          <p>Tecnologia e precisão a serviço da ciência.</p>
           <button className="btn-primary" onClick={handleSaibaMaisClick}>Saiba Mais</button>
         </div>
       </section>
@@ -89,14 +89,20 @@ const handleSaibaMaisClick = () => {
          {/* <img src={about} alt="Sobre nós" className='logo-about'/> */}
           <div className="about-text">
             <h2>Sobre a ICR3</h2>
-            <p>Acreditamos que o sucesso de uma empresa não depende, exclusivamente, da qualidade de seus produtos e serviços para ser considerada bem sucedida. Por isso conduzimos nossos negócios com integridade e respeitando as leis e normas que regulamentam nossas alividades, fendo isso como base da nossa atuação.</p>
+            <p>A ICR3 Científica é uma empresa especializada em soluções para laboratórios e indústrias que exigem qualidade, precisão e confiabilidade em seus processos analíticos e metrológicos.
+
+Com mais de 30 anos de experiência no mercado, atuamos na venda de equipamentos científicos, metrológicos e materiais de referência certificados (MRC), além de oferecer suporte técnico qualificado, e treinamentos especializados.
+
+Representamos marcas reconhecidas mundialmente, prezando sempre pela excelência e inovação em cada produto e serviço disponibilizado aos nossos clientes.
+
+Nosso compromisso é entregar resultados que fortalecem a confiança em cada análise realizada, contribuindo para a segurança, desenvolvimento tecnológico e avanço científico no Brasil.</p>
             <button className="btn-primary" onClick={handleSaibaMaisClick}>Nossa História</button>
           </div>
         </div>
       </section>
 
       {/* Serviços */}
-      <section className="services-section">
+     {/*  <section className="services-section">
         <div className="section-header">
           <h2>Nossos Serviços</h2>
           <p>Oferecemos soluções especializadas para o seu negócio.</p>
@@ -110,7 +116,7 @@ const handleSaibaMaisClick = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
      {/* Parceiros */}
      <section className="partners-section">

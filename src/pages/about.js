@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import '../styles/about.css';
 
-import teamImage from '../assets/equipe.jpeg';
 import buildingImage from '../assets/sede.jpeg';
 import teamImage1 from '../assets/equipe2.jpeg';
 import buildingImage1 from '../assets/sede2.jpeg';
 import buildingImage2 from '../assets/sede3.jpeg';
+import videoHome from '../assets/videohome.mp4';
 
 export default function AboutPage() {
 
-  const teamImages = [teamImage, teamImage1];
+  const teamImages = [ teamImage1];
   const buildingImages = [buildingImage, buildingImage1, buildingImage2 ];
 
   const [teamIndex, setTeamIndex] = useState(0);
@@ -77,9 +77,7 @@ export default function AboutPage() {
             </p>
           </div>
          <div className="image-slider">
-  <button className="arrow left" onClick={handlePrevTeam}>❮</button>
   <img src={teamImages[teamIndex]} alt="Equipe ICR3" />
-  <button className="arrow right" onClick={handleNextTeam}>❯</button>
 </div>
 
 
@@ -87,29 +85,31 @@ export default function AboutPage() {
       </section>
 
       {/* Apresentação da Sede */}
-      <section className="about-section-about">
-        <div className="about-container-about">
-          <div className="about-text-about">
-            <h2>Sede da ICR3 Científica</h2>
-            <p>
-              A sede da ICR3 reflete nosso compromisso com a qualidade, a organização e a excelência no atendimento. Localizada em um ponto estratégico, nossa estrutura foi planejada para oferecer um ambiente moderno, funcional e preparado para atender com eficiência as demandas dos nossos clientes e parceiros.
-            </p>
-            <p>
-              Contamos com laboratórios equipados para serviços de calibração, áreas técnicas dedicadas à manutenção de equipamentos, sala de treinamento para a constante capacitação da equipe, além de espaços administrativos que garantem uma operação ágil e integrada.
-            </p>
-            <p>
-              Nossa infraestrutura nos permite prestar suporte técnico especializado com rapidez e segurança, além de manter um alto padrão de qualidade em todos os serviços oferecidos. A sede também é um espaço de acolhimento, onde clientes são sempre bem-vindos e podem contar com uma equipe pronta para oferecer soluções personalizadas e eficazes.
-            </p>
+     <section className="about-section-about">
+  <div className="about-container-about">
+    <div className="about-text-about">
+      <h2>Sede da ICR3 Científica</h2>
+      <p>
+        A sede da ICR3 reflete nosso compromisso com a qualidade, a organização e a excelência no atendimento. Localizada em um ponto estratégico, nossa estrutura foi planejada para oferecer um ambiente moderno, funcional e preparado para atender com eficiência as demandas dos nossos clientes e parceiros.
+      </p>
+      <p>
+        Contamos com laboratórios equipados para serviços de calibração, áreas técnicas dedicadas à manutenção de equipamentos, sala de treinamento para a constante capacitação da equipe, além de espaços administrativos que garantem uma operação ágil e integrada.
+      </p>
+      <p>
+        Nossa infraestrutura nos permite prestar suporte técnico especializado com rapidez e segurança, além de manter um alto padrão de qualidade em todos os serviços oferecidos. A sede também é um espaço de acolhimento, onde clientes são sempre bem-vindos e podem contar com uma equipe pronta para oferecer soluções personalizadas e eficazes.
+      </p>
+    </div>
+
+    {/* Substituindo o slider por um vídeo */}
+   <div className="video-container">
+            <video controls width="100%">
+              <source src={videoHome} type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
           </div>
-          <div className="image-slider">
-  <button className="arrow left" onClick={handlePrevBuilding}>❮</button>
-  <img src={buildingImages[buildingIndex]} alt="Sede da ICR3" />
-  <button className="arrow right" onClick={handleNextBuilding}>❯</button>
-</div>
+  </div>
+</section>
 
-
-        </div>
-      </section>
 
     </div>
   );

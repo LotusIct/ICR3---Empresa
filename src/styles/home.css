@@ -74,6 +74,7 @@
 .about-text p {
   color: #4b5563;
   margin-bottom: 1.5rem;
+  text-align: justify;
 }
 
 /* Services Section */
@@ -209,4 +210,22 @@
 .btn-secondary:hover {
   background-color: var(--cor-cinza-escuro);
   color: white;
+}
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+  .about-text p{
+    width: 100%;
+    text-align: center;
+  }
+  .btn-primary {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
