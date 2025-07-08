@@ -76,3 +76,9 @@ footer {
     justify-content: space-between;
   }
 }
+
+@media (max-width: 768px) {
+.footer-itens{
+    margin-top: -10px;
+}
+}

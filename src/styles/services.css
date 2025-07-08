@@ -81,8 +81,8 @@
 /* Ajustando o vídeo */
 .about-container-services video {
   width: 100%;
-  height: 600px;
-  max-width: 400px; /* Tamanho máximo do vídeo */
+  height: 500px;
+  max-width: 280px; /* Tamanho máximo do vídeo */
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }

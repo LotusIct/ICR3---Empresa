@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css';
 import logo from '../assets/Logo.jpeg';
 import marcas from '../data/marcas.json';
-import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -33,31 +33,32 @@ const Navbar = () => {
     <li>
       <Link to="/serviços" className={getActive('/serviços')} onClick={handleLinkClick}>Serviços</Link>
     </li>
-    <li
-      className="dropdown"
-      onMouseEnter={() => setDropdownOpen(true)}
-      onMouseLeave={() => setDropdownOpen(false)}
-    >
-      <span className={`nav-link ${getActive('/marcas')}`}>Marcas</span>
-      {isDropdownOpen && (
-        <div className="megamenu">
-          {marcas.map((categoria, idx) => (
-            <div className="megamenu-column" key={idx}>
-              <h4>{categoria.categoria}</h4>
-              <ul>
-                {categoria.marcas.map((marca) => (
-                  <li key={marca.id}>
-                    <Link to={`/marcas/${marca.id}`} onClick={handleLinkClick}>
-                      {marca.nome}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      )}
-    </li>
+ <li className="mobile-dropdown">
+  <span onClick={() => setDropdownOpen(!isDropdownOpen)} className="nav-link">
+    Marcas
+  </span>
+  {isDropdownOpen && (
+    <ul className="mobile-category-list">
+      {marcas.map((categoria, index) => (
+        <li key={index}>
+          <details>
+            <summary>{categoria.categoria}</summary>
+            <ul>
+              {categoria.marcas.map((marca) => (
+                <li key={marca.id}>
+                  <Link to={`/marcas/${marca.id}`} onClick={handleLinkClick}>
+                    {marca.nome}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </details>
+        </li>
+      ))}
+    </ul>
+  )}
+</li>
+
     <li>
       <Link to="/fale-conosco" className={getActive('/fale-conosco')} onClick={handleLinkClick}>Fale Conosco</Link>
     </li>
@@ -66,6 +67,9 @@ const Navbar = () => {
       </div>
 
       <div className="social-bar">
+        <a href="https://wa.me/5521998297321" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+              <FaWhatsapp size={24}  />
+              </a>
         <a href="https://www.instagram.com/sua_empresa" target="_blank" rel="noopener noreferrer">
           <FaInstagram />
         </a>
