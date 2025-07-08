@@ -102,7 +102,7 @@ export default function AboutPage() {
 
     {/* Substituindo o slider por um vídeo */}
    <div className="video-container">
-            <video controls width="100%">
+            <video controls width="100%" height="auto" autoPlay muted loop playsInline>
               <source src={videoHome} type="video/mp4" />
               Seu navegador não suporta o elemento de vídeo.
             </video>

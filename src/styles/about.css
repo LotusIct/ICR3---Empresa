@@ -25,6 +25,7 @@
 
 .hero-content-about p {
   font-size: 1.3rem;
+  padding: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Aumentando a sombra para melhorar o contraste */
 }
 

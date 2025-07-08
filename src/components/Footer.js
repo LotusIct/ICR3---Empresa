@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/footer.css';
-import { FaInstagram, FaLinkedin, FaYoutube,FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaYoutube,FaPhoneAlt, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import logo from '../assets/Logo-removebg-preview.png';
 
 
@@ -64,12 +64,16 @@ export function Footer() {
 <div className="footer-section footer-itens">
   <h4>Siga a ICR3</h4>
   <div className="social-icons">
+    <a href="https://wa.me/5521998297321" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+      <FaWhatsapp size={24}  />
+      </a>
     <a href="https://www.instagram.com/icr3cientifica/" target="_blank" rel="noreferrer">
       <FaInstagram size={24} />
     </a>
     <a href="https://www.linkedin.com/company/icr3-cientifica" target="_blank" rel="noreferrer">
       <FaLinkedin size={24} />
     </a>
+     
   </div>
 </div>
 

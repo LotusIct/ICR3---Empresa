@@ -1,0 +1,95 @@
+[
+  {
+    "id": "aro",
+    "nome": "ARO Scientific",
+    "produtos": [
+      "Manômetro Digital",
+      "Calibrador de Pressão",
+      "Controlador de Vazão"
+    ]
+  },
+  {
+    "id": "jofra",
+    "nome": "JOFRA Calibration",
+    "produtos": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "forza",
+    "nome": "FORZA International",
+    "produtos": []
+  },
+  {
+    "id": "br",
+    "nome": "B/R Instrument Corporation",
+    "produtos": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "zahm",
+    "nome": "ZAHM & NAGEL Company Incorporated",
+    "produtos": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "kem",
+    "nome": "KEM Kyoto Electronics Manufacturing Co. Ltd.",
+    "produtos": []
+  },
+  {
+    "id": "cannon",
+    "nome": "Cannon Instrument Company",
+    "produtos": []
+  },
+  {
+    "id": "yateks",
+    "nome": "YATEKS",
+    "produtos": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "iqt",
+    "nome": "IQT",
+    "produtos": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "huazheng",
+    "nome": "HUAZHENG",
+    "produtos": []
+  },
+  {
+    "id": "tanaka",
+    "nome": "TANAKA",
+    "produtos": []
+  },
+  {
+    "id": "icr3",
+    "nome": "ICR3",
+    "produtos": [
+      "ICR BC1"
+    ]
+  }
+]

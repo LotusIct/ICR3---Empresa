@@ -49,7 +49,7 @@ const handleSaibaMaisClick = () => {
 
   // Slide automático a cada 3 segundos
   useEffect(() => {
-    const intervalId = setInterval(goToNextSlide, 5000);
+    const intervalId = setInterval(goToNextSlide, 2000);
     return () => clearInterval(intervalId); // Limpa o intervalo quando o componente desmonta
   }, []);
 

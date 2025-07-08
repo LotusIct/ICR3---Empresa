@@ -17,7 +17,7 @@ export default function AboutPage() {
   <div className="overlay"></div>
   <div className="hero-content-services">
     <h1>Serviços</h1>
-    <p>Oferecemos soluções completas e personalizadas em tecnologia, consultoria e inovação científica para impulsionar o seu negócio.</p>
+    <p>Oferecemos soluções completas e personalizadas em tecnologia e inovação científica para impulsionar o seu negócio.</p>
   </div>
 </section>
 
@@ -39,7 +39,7 @@ Nossa política da qualidade foca integralmente o bem estar no ambiente de traba
 ABNT NBR ISO/IEC 17025, promovendo a melhoria contínua dentro da organização e de suas atividades contando sempre com um corpo técnico capacitado e qualificado compartilham de informações e melhoria dos processos a fim de obter a eficácia nos resultados.
             </p>
           </div>
-          <video width="100%" height="auto" controls autoPlay muted loop>
+          <video width="100%" height="auto"  autoPlay muted loop playsInline>
             <source src={qualityVideo} type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
           </video>
@@ -83,7 +83,7 @@ ABNT NBR ISO/IEC 17025, promovendo a melhoria contínua dentro da organização 
               Na ICR3, investir em conhecimento é parte essencial do nosso compromisso com a qualidade.
             </p>
           </div>
-           <video width="100%" height="auto" controls autoPlay muted loop>
+           <video width="100%" height="auto"  autoPlay muted loop playsInline>
             <source src={treinamentoVideo} type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
           </video>
