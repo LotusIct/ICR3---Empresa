@@ -6,10 +6,11 @@ import marcas from '../data/marcas.json';
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
-  const [isDropdownOpen, setDropdownOpen] = useState(false); // Mobile marcas dropdown
-  const [isMenuOpen, setMenuOpen] = useState(false); // Mobile menu geral
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  const [isDesktopDropdownOpen, setDesktopDropdownOpen] = useState(false); // Desktop megamenu marcas
+  const [isDesktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
+  const ordemPrioridade = ['tanaka', 'cannon', 'crf', 'kem'];
 
   const location = useLocation();
 
@@ -22,15 +23,24 @@ const Navbar = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Fecha menu mobile e dropdown mobile
   const handleLinkClick = () => {
-  setMenuOpen(false);
-  setDropdownOpen(false);
-  setDesktopDropdownOpen(false);
-};
+    setMenuOpen(false);
+    setDropdownOpen(false);
+    setDesktopDropdownOpen(false);
+  };
 
+  const ordenarMarcas = (marcas) => {
+    return [...marcas].sort((a, b) => {
+      const indexA = ordemPrioridade.indexOf(a.id.toLowerCase());
+      const indexB = ordemPrioridade.indexOf(b.id.toLowerCase());
 
-  // Fecha megamenu desktop clicando fora
+      if (indexA === -1 && indexB === -1) return 0;
+      if (indexA === -1) return 1;
+      if (indexB === -1) return -1;
+      return indexA - indexB;
+    });
+  };
+
   useEffect(() => {
     function handleClickOutside(event) {
       const dropdown = document.getElementById('desktop-dropdown-menu');
@@ -87,31 +97,48 @@ const Navbar = () => {
               </Link>
             </li>
 
-            {isMobile ? (
-              <li className="mobile-dropdown">
-                <span onClick={() => setDropdownOpen(!isDropdownOpen)} className="nav-link">
-                  Marcas
-                </span>
-                {isDropdownOpen && (
-                  <div className="mobile-category-scroll">
-                    {marcas.map((categoria, index) => (
-                      <details key={index} className="mobile-category-item">
-                        <summary>{categoria.categoria}</summary>
-                        <ul>
-                          {categoria.marcas.map((marca) => (
-                            <li key={marca.id}>
-                              <Link to={`/marcas/${marca.id}`} onClick={handleLinkClick}>
-                                {marca.nome}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </details>
-                    ))}
-                  </div>
+           {isMobile ? (
+  <>
+    {/* REMOVA esse bloco aqui:
+    <li>
+      <Link to="/marcas" className={getActive('/marcas')} onClick={handleLinkClick}>
+        Todas as Marcas
+      </Link>
+    </li>
+    */}
+
+    <li className="mobile-dropdown">
+      <span onClick={() => setDropdownOpen(!isDropdownOpen)} className="nav-link">
+        Marcas
+      </span>
+      {isDropdownOpen && (
+        <div className="mobile-category-scroll">
+          {marcas.map((categoria, index) => (
+            <details key={index} className="mobile-category-item">
+              <summary>{categoria.categoria}</summary>
+              <ul>
+                {ordenarMarcas(categoria.marcas).map((marca) => (
+                  <li key={marca.id}>
+                    <Link  className="categoria-produto-link" to={`/marcas/${marca.id}`} onClick={handleLinkClick}>
+                      {marca.nome.toUpperCase()}
+                    </Link>
+                  </li>
+                ))}
+                {categoria.categoria.toLowerCase().includes('fabricação') && (
+                  <li>
+                    <Link to="/marcas" onClick={handleLinkClick} className="todas-as-marcas-link">
+                      Todas as Marcas
+                    </Link>
+                  </li>
                 )}
-              </li>
-            ) : (
+              </ul>
+            </details>
+          ))}
+        </div>
+      )}
+    </li>
+  </>
+) : (
               <li
                 className="dropdown"
                 onMouseEnter={() => setDesktopDropdownOpen(true)}
@@ -124,28 +151,41 @@ const Navbar = () => {
                   Marcas
                 </span>
                 {isDesktopDropdownOpen && (
-                  <div id="desktop-dropdown-menu" className="megamenu">
-                    {marcas.map((categoria, index) => (
-                      <div key={index} className="megamenu-column">
-                        <h4>{categoria.categoria}</h4>
-                        <ul>
-                          {categoria.marcas.map((marca) => (
-                            <li key={marca.id}>
-                              <Link to={`/marcas/${marca.id}`} onClick={handleLinkClick}>
-                                {marca.nome}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
+                 <div id="desktop-dropdown-menu" className="megamenu">
+  {marcas.map((categoria, index) => (
+    <div key={index} className="megamenu-column">
+      <h4>{categoria.categoria}</h4>
+      <ul>
+        {ordenarMarcas(categoria.marcas).map((marca) => (
+          <li key={marca.id}>
+            <Link to={`/marcas/${marca.id}`} onClick={handleLinkClick}>
+              {marca.nome.toUpperCase()}
+            </Link>
+          </li>
+        ))}
+        {/* Se a categoria for 'Fabricação Própria', insere o link extra */}
+        {categoria.categoria.toLowerCase().includes('fabricação') && (
+          <li>
+            <Link to="/marcas" onClick={handleLinkClick} className="todas-as-marcas-link">
+              Todas as Marcas
+            </Link>
+          </li>
+        )}
+      </ul>
+    </div>
+  ))}
+</div>
+
                 )}
               </li>
             )}
 
             <li>
-              <Link to="/fale-conosco" className={getActive('/fale-conosco')} onClick={handleLinkClick}>
+              <Link
+                to="/fale-conosco"
+                className={getActive('/fale-conosco')}
+                onClick={handleLinkClick}
+              >
                 Fale Conosco
               </Link>
             </li>
