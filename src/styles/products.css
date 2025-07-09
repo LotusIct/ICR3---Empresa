@@ -25,6 +25,23 @@
   gap: 30px;
   justify-content: flex-start;
 }
+.produto-nome {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--verde-escuro);
+  margin: 8px 0 4px 0;
+  line-height: 1.2;
+}
+
+.produto-descricao {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--verde-medio);
+  font-style: italic;
+  margin: 0 0 10px 0;
+  min-height: 40px; /* ajuda a manter altura uniforme */
+  line-height: 1.4;
+}
 
 .produto-card {
   width: 220px;

@@ -183,7 +183,6 @@ export default function ContactForm() {
                 </option>
               ))}
             </select>
-            <label htmlFor="marca">Marca</label>
           </div>
 
           <div className="input-group">
@@ -203,7 +202,6 @@ export default function ContactForm() {
                 </option>
               ))}
             </select>
-            <label htmlFor="produto">Produto</label>
           </div>
 
           <div className="input-group textarea-group">
