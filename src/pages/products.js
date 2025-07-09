@@ -39,7 +39,9 @@ const MarcaDetalhes = () => {
                 alt={produto.nome}
                 className="produto-imagem"
               />
-              <p>{produto.nome}</p>
+             <p className="produto-nome">{produto.nome}</p>
+             <p className="produto-descricao">{produto.descricao}</p> 
+
             </div>
           ))
         ) : (

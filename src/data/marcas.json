@@ -7,8 +7,9 @@
         "nome": "ARO Scientific",
         "produtos": [
           {
-            "nome": "Manômetro Digital",
-            "imagem": "/produtos/aro/Mrc-aro.png"
+            "nome": "Matriz de Óleo Mineral",
+            "imagem": "/produtos/aro/Mrc-aro.png",
+            "descricao": "Tipo 2.1 (134200), Tipo 5.0 (134210), Tipo 8.0 (134220) - 500ml"
           },
           {
             "nome": "Calibrador de Pressão",
@@ -31,34 +32,34 @@
         "nome": "JOFRA Calibration",
         "produtos": [
            {
-            "nome": "",
+            "nome": "Calibradores de Temperatura Blocos Secos",
             "imagem": "/produtos/Jofra/Calibrador bloco seco jofra.jpeg",
-            "descrição": "Banho Termostático e Criostático"
+            "descricao": ""
           },
            {
-            "nome": "",
+            "nome": "Calibradores de Pressão",
             "imagem": "/produtos/Jofra/Calibrador de pressão jofra.jpeg",
-            "descrição": "Banho Termostático e Criostático"
+            "descricao": ""
           },
           {
-            "nome": "",
+            "nome": "Calibradores de Pressão",
             "imagem": "/produtos/Jofra/Calibrador de pressão jofra .jpeg",
-            "descrição": "Banho Termostático e Criostático"
+            "descricao": ""
           },
           {
-            "nome": "",
+            "nome": "Calibradores de Sinal",
             "imagem": "/produtos/Jofra/Calibrador de sinal jofra .png",
-            "descrição": "Banho Termostático e Criostático"
+            "descricao": ""
           },
            {
-            "nome": "",
+            "nome": "Medidores de Temperatura",
             "imagem": "/produtos/Jofra/Dti 100 - jofra .png",
-            "descrição": "Banho Termostático e Criostático"
+            "descricao": "Modelo: DTI-1000"
           },
             {
-            "nome": "",
+            "nome": "Sensor de Temperatura",
             "imagem": "/produtos/Jofra/Sensor de temperatura jofra .jpg",
-            "descrição": "Banho Termostático e Criostático"
+            "descricao": ""
           }
         ]
       },
@@ -72,24 +73,24 @@
         "nome": "B/R Instrument Corporation",
         "produtos": [
            {
-            "nome": "",
+            "nome": "Destilação Fracionada",
             "imagem": "/produtos/Bri/Bri .png",
-            "descrição": "Banho Termostático e Criostático"
+            "descricao": "Escala de Piloto /Escala de Laboratório / Mini-destilação / Micro-destilação"
           },
            {
-            "nome": "",
+            "nome": "Recuperação de Solvente",
             "imagem": "/produtos/Bri/Bri (1).png",
-            "descrição": "Banho Termostático e Criostático"
+            "descricao": "Histologia / GPC / HPLC / Solvente de Alta Pureza"
           },
           {
-            "nome": "",
+            "nome": "Destilação à Vácuo D1160",
             "imagem": "/produtos/Bri/Bri.png",
-            "descrição": "Banho Termostático e Criostático"
+            "descricao": "Automática / Semiautomática / Manual ASTM D1160"
           },
           {
-            "nome": "",
+            "nome": "Destilação de Petróleo Bruto",
             "imagem": "/produtos/Bri/Bri(1).png",
-            "descrição": "Banho Termostático e Criostático"
+            "descricao": "Automático (Automaxx 9100) / Semiautomático / Mini-destilação / Micro-destilação ASTM D2892; ASTM D5236"
           }
         ]
       },
@@ -98,24 +99,24 @@
         "nome": "ZAHM & NAGEL Company Incorporated",
         "produtos": [
            {
-            "nome": "",
+            "nome": "Zahm SS-60",
             "imagem": "/produtos/zahm/Zahm  (1).png",
-            "descrição": "Banho Termostático e Criostático"
+            "descricao": "Desenvolvido para determinar o nível médio de gás CO2 no tamque de armazenamento de bebidas"
           },
            {
-            "nome": "",
+            "nome": "Perfuração Computadorizada",
             "imagem": "/produtos/zahm/Zahm  (2).png",
-            "descrição": "Banho Termostático e Criostático"
+            "descricao": "Instrumento recém desenvolvido para testar volumes de gás CO2 em garrafas e latas."
           },
           {
-            "nome": "",
+            "nome": "Zahn Series 10000",
             "imagem": "/produtos/zahm/Zahm .png",
-            "descrição": "Banho Termostático e Criostático"
+            "descricao": "Reservatório para solução cáustica e uma bureta calibrada de absorção fixada numa estrutura de PVC polida para determinação de pureza em CO2."
           },
           {
-            "nome": "",
+            "nome": "Zahm Modelo DT Penetrante",
             "imagem": "/produtos/zahm/Zahm.png",
-            "descrição": "Banho Termostático e Criostático"
+            "descricao": "Usado para testar o volume de gás CO2 de bebidas carbonatas em garrafas de vidro/PET e latas."
           }
         ]
       },
@@ -124,61 +125,39 @@
         "nome": "KEM Kyoto Electronics Manufacturing Co. Ltd.",
         "produtos": []
       },
-      {
-        "id": "cannon",
-        "nome": "Cannon Instrument Company",
-        "produtos": []
-      },
+ {
+  "id": "cannon",
+  "nome": "Cannon Instrument Company",
+  "produtos": [
+    { "nome": "Cannon cav 4.2", "imagem": "/produtos/cannon/Cannon cav 4.2.png", "descricao": "" },
+    { "nome": "Cannon cav4.1", "imagem": "/produtos/cannon/Cannon cav4.1.png", "descricao": "" },
+    { "nome": "Cannon ccs2100", "imagem": "/produtos/cannon/Cannon ccs2100 .png", "descricao": "" },
+    { "nome": "Cannon ccs2100 Lt", "imagem": "/produtos/cannon/Cannon ccs2100 Lt .png", "descricao": "" },
+    { "nome": "Cannon cmrv 4500", "imagem": "/produtos/cannon/Cannon cmrv 4500.png", "descricao": "" },
+    { "nome": "Cannon cmrv5000", "imagem": "/produtos/cannon/Cannon cmrv5000 .png", "descricao": "" },
+    { "nome": "Cannon hths", "imagem": "/produtos/cannon/Cannon hths .png", "descricao": "" },
+    { "nome": "Cannon mini avlt", "imagem": "/produtos/cannon/Cannon mini avlt.png", "descricao": "" },
+    { "nome": "Cannon miniav", "imagem": "/produtos/cannon/Cannon miniav .png", "descricao": "" },
+    { "nome": "Cannon Miniav hit", "imagem": "/produtos/cannon/Cannon Miniav hit.png", "descricao": "" },
+    { "nome": "Cannon miniav x", "imagem": "/produtos/cannon/Cannon miniav x .png", "descricao": "" },
+    { "nome": "Cannon minipv", "imagem": "/produtos/cannon/Cannon minipv .png", "descricao": "" },
+    { "nome": "Cannon minipvh", "imagem": "/produtos/cannon/Cannon minipvh .png", "descricao": "" },
+    { "nome": "Cannon minipvhx", "imagem": "/produtos/cannon/Cannon minipvhx.png", "descricao": "" },
+    { "nome": "Cannon minipvx", "imagem": "/produtos/cannon/Cannon minipvx .png", "descricao": "" },
+    { "nome": "Cannon miniqv", "imagem": "/produtos/cannon/Cannon miniqv .png", "descricao": "" },
+    { "nome": "Cannon simplevis +", "imagem": "/produtos/cannon/Cannon simplevis + .png", "descricao": "" },
+    { "nome": "Cannon simplevis", "imagem": "/produtos/cannon/Cannon simplevis.png", "descricao": "" },
+    { "nome": "Cannon tesc", "imagem": "/produtos/cannon/Cannon tesc.png", "descricao": "" },
+    { "nome": "Cannon ultravis_", "imagem": "/produtos/cannon/Cannon ultravis_.png", "descricao": "" }
+  ]
+},
+
+
       {
         "id": "yateks",
         "nome": "YATEKS",
         "produtos": [
-           {
-            "nome": "",
-            "imagem": "/produtos/Bri/Bri .png",
-            "descrição": "Banho Termostático e Criostático"
-          },
-           {
-            "nome": "",
-            "imagem": "/produtos/Bri/Bri (1).png",
-            "descrição": "Banho Termostático e Criostático"
-          },
-          {
-            "nome": "",
-            "imagem": "/produtos/Bri/Bri.png",
-            "descrição": "Banho Termostático e Criostático"
-          },
-          {
-            "nome": "",
-            "imagem": "/produtos/Bri/Bri(1).png",
-            "descrição": "Banho Termostático e Criostático"
-          }
-        ]
-      },
-      {
-        "id": "iqt",
-        "nome": "IQT",
-        "produtos": [
-           {
-            "nome": "",
-            "imagem": "/produtos/Bri/Bri .png",
-            "descrição": "Banho Termostático e Criostático"
-          },
-           {
-            "nome": "",
-            "imagem": "/produtos/Bri/Bri (1).png",
-            "descrição": "Banho Termostático e Criostático"
-          },
-          {
-            "nome": "",
-            "imagem": "/produtos/Bri/Bri.png",
-            "descrição": "Banho Termostático e Criostático"
-          },
-          {
-            "nome": "",
-            "imagem": "/produtos/Bri/Bri(1).png",
-            "descrição": "Banho Termostático e Criostático"
-          }
+          
         ]
       },
       {
@@ -187,10 +166,46 @@
         "produtos": []
       },
       {
-        "id": "tanaka",
-        "nome": "TANAKA",
-        "produtos": []
-      }
+  "id": "tanaka",
+  "nome": "Tanaka",
+  "produtos": [
+    {
+      "nome": "Ponto de Anilina",
+      "imagem": "/produtos/tanaka/Aap 6 Tanaka .jpeg",
+      "descricao": "Modelo AAP-6 - ASTM D611"
+    },
+    {
+      "nome": "Colorímetro Automático para Produtos de Petróleo",
+      "imagem": "/produtos/tanaka/Acl3 Tanaka .jpeg",
+      "descricao": "Modelo ACL-3"
+    },
+    {
+      "nome": "Ponto de Fulgor Cleveland",
+      "imagem": "/produtos/tanaka/Aco100 Tanaka .png",
+      "descricao": "ACO-100 ASTM D92"
+    },
+    {
+      "nome": "Ponto de Fulgor Pensky-Martens",
+      "imagem": "/produtos/tanaka/Apm100 Tanaka .jpeg",
+      "descricao": "Modelo APM-100 - ASTM D93"
+    },
+    {
+      "nome": "Ponto de Fulgor TAF",
+      "imagem": "/produtos/tanaka/Atg8 Tanaka .jpeg",
+      "descricao": " Modelo TAG-8 - ASTM D56"
+    },
+    {
+      "nome": "Destilador Atmosférico",
+      "imagem": "/produtos/tanaka/Foto ad7 Tanaka .webp",
+      "descricao": "Modelo AD-7 - ASTM D86"
+    },
+    {
+      "nome": "Analisador de Enxofre edxrf (12 posições)",
+      "imagem": "/produtos/tanaka/Rx630 Tanaka .jpeg",
+      "descricao": "Modelo RX-630SA - ASTM D4294 - ASTM D2622"
+    }
+  ]
+}
     ]
   },
    {
@@ -203,7 +218,7 @@
           {
             "nome": "ICR BC1",
             "imagem": "/produtos/icr3/Banho icr3 - icr-bc1 .png",
-            "descrição": "Banho Termostático e Criostático"
+            "descricao": "Banho Termostático e Criostático"
           }
         ]
       }
