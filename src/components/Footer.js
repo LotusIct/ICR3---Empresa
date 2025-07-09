@@ -54,7 +54,7 @@ export function Footer() {
             <a href="/home">Home</a>
             <a href="/sobre">Sobre Nós</a>
             <a href="/serviços">Serviços</a>
-            <a href="/marcas/:id">Marcas</a>
+            <a href="/marcas">Marcas</a>
             <a href="/fale-conosco">Fale Conosco</a>
           </div>
 

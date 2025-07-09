@@ -1,0 +1,45 @@
+.marcas-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.titulo-principal {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #A0B773;
+}
+
+.grid-marcas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.marca-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.marca-card:hover {
+  transform: translateY(-5px);
+}
+
+.marca-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  object-fit: contain;
+}
+
+.marca-nome {
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-align: center;
+}

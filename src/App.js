@@ -11,6 +11,7 @@ import CookieConsent from './components/Cookieconsent';
 import './styles/global.css';
 import PoliticaPrivacidade from './pages/privacidade';
 import TermosUso from './pages/termos';
+import Marcas from './pages/marcas';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/serviços" element={<Serviços />} />
           <Route path="/fale-conosco" element={<ContactForm />} />
           <Route path="/marcas/:id" element={<MarcaDetalhes />} />
+          <Route path="/marcas" element={<Marcas />} />
           <Route path="/privacidade" element={<PoliticaPrivacidade />} />
           <Route path="/termos" element={<TermosUso />} />
 

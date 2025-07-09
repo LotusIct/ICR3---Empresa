@@ -9,7 +9,10 @@ body {
   margin: 0;
   font-family: var(--fonte);
 }
-
+.mobile-category-scroll a,
+.megamenu-column ul li a {
+  font-size: 14px;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -20,6 +23,11 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+.megamenu .todas-as-marcas-link {
+  font-weight: bold;
+  color: var(--verde-escuro);
+  display: inline-block;
 }
 
 .navbar-left {
@@ -213,7 +221,12 @@ body {
   padding: 0;
   margin: 0;
 }
-
+.categoria-produto-link {
+  font-size: 12px !important; /* Força o tamanho menor */
+  text-transform: none !important; /* Remove o uppercase, se quiser */
+  font-weight: 400;
+  color: #333;
+}
 .megamenu-column li {
   margin: 6px 0;
 }
@@ -221,7 +234,6 @@ body {
 .megamenu-column a {
   color: var(--verde-escuro);
   text-decoration: none;
-  font-size: 15px;
   transition: all 0.3s;
 }
 
@@ -287,7 +299,6 @@ body {
 
 .mobile-category-item {
   border-radius: 8px;
-  margin-bottom: 12px;
   padding: 10px;
   margin-left: 25px;
   transition: all 0.3s ease;
@@ -367,7 +378,7 @@ body {
     
     flex-direction: column;
     gap: 2.5rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-align: left;
     margin-top: 60px;
   }

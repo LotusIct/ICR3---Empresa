@@ -5,6 +5,7 @@
       {
         "id": "aro",
         "nome": "ARO Scientific",
+        "logo":"/logos/Logo aro .png",
         "produtos": [
           {
             "nome": "Matriz de Óleo Mineral",
@@ -69,6 +70,22 @@
         "produtos": []
       },
       {
+        "id": "crf",
+        "nome": "CRF",
+        "produtos": [
+          {
+            "nome": "Analisador de Número de Cetano - IQT",
+            "imagem": "/produtos/crf/Foto IQT  (1).jpeg",
+            "descricao": "Modelo: IQT-XLM"
+          },
+            {
+            "nome": "Analisador de Número de Cetano - IQT",
+            "imagem": "/produtos/crf/Foto IQT  (1).png",
+            "descricao": "Modelo: IQT-XLM"
+          }
+        ]
+      },
+      {
         "id": "br",
         "nome": "B/R Instrument Corporation",
         "produtos": [
@@ -120,35 +137,77 @@
           }
         ]
       },
-      {
-        "id": "kem",
-        "nome": "KEM Kyoto Electronics Manufacturing Co. Ltd.",
-        "produtos": []
-      },
+     {
+  "id": "kem",
+  "nome": "KEM Kyoto Electronics Manufacturing Co. Ltd.",
+  "produtos": [
+    {
+      "nome": "Titulador Potenciométrico",
+      "imagem": "/produtos/kem/Kem Kyoto at710 png (1).png",
+      "descricao": "Modelo AT - 710M/ 710B/ 710S"
+    },
+    {
+      "nome": "Densímetro Portátil Digital",
+      "imagem": "/produtos/kem/Kem kyoto da 130  (1).jpeg",
+      "descricao": "Modelo DA-130N"
+    },
+    {
+      "nome": "Denímetro Digital",
+      "imagem": "/produtos/kem/Kem kyoto da 650  (1).png",
+      "descricao": "Modelo DA-650/ 645/ 640"
+    },
+    {
+      "nome": "Denímetro Digital de Bancada",
+      "imagem": "/produtos/kem/Kem Kyoto da 860  (1).png",
+      "descricao": "Modelo DA-860/ 850/ 840"
+    },
+    {
+      "nome": "Karl Fisher Columétrico",
+      "imagem": "/produtos/kem/Kem Kyoto mkc 710 (1).png",
+      "descricao": "Modeo MKC-710B / 710M/ 710D/ 710S"
+    },
+    {
+      "nome": "Karl Fisher Volumétrico e Columétrico",
+      "imagem": "/produtos/kem/Kem Kyoto mkh710 (1).png",
+      "descricao": "Modelo MKH-710M"
+    },
+    {
+      "nome": "Karl Fisher Volumétrico",
+      "imagem": "/produtos/kem/Kem Kyoto mkv 710png (1).png",
+      "descricao": "Modelo MKV-710B / 710D; 710M/ 710S"
+    },
+    {
+      "nome": "Refratômetro Digital",
+      "imagem": "/produtos/kem/Kem Kyoto ra620  (2).png",
+      "descricao": "Modelo RA620/ RA600"
+    }
+  ]
+},
+
  {
   "id": "cannon",
   "nome": "Cannon Instrument Company",
   "produtos": [
-    { "nome": "Cannon cav 4.2", "imagem": "/produtos/cannon/Cannon cav 4.2.png", "descricao": "" },
-    { "nome": "Cannon cav4.1", "imagem": "/produtos/cannon/Cannon cav4.1.png", "descricao": "" },
-    { "nome": "Cannon ccs2100", "imagem": "/produtos/cannon/Cannon ccs2100 .png", "descricao": "" },
-    { "nome": "Cannon ccs2100 Lt", "imagem": "/produtos/cannon/Cannon ccs2100 Lt .png", "descricao": "" },
-    { "nome": "Cannon cmrv 4500", "imagem": "/produtos/cannon/Cannon cmrv 4500.png", "descricao": "" },
-    { "nome": "Cannon cmrv5000", "imagem": "/produtos/cannon/Cannon cmrv5000 .png", "descricao": "" },
-    { "nome": "Cannon hths", "imagem": "/produtos/cannon/Cannon hths .png", "descricao": "" },
-    { "nome": "Cannon mini avlt", "imagem": "/produtos/cannon/Cannon mini avlt.png", "descricao": "" },
-    { "nome": "Cannon miniav", "imagem": "/produtos/cannon/Cannon miniav .png", "descricao": "" },
-    { "nome": "Cannon Miniav hit", "imagem": "/produtos/cannon/Cannon Miniav hit.png", "descricao": "" },
-    { "nome": "Cannon miniav x", "imagem": "/produtos/cannon/Cannon miniav x .png", "descricao": "" },
-    { "nome": "Cannon minipv", "imagem": "/produtos/cannon/Cannon minipv .png", "descricao": "" },
-    { "nome": "Cannon minipvh", "imagem": "/produtos/cannon/Cannon minipvh .png", "descricao": "" },
-    { "nome": "Cannon minipvhx", "imagem": "/produtos/cannon/Cannon minipvhx.png", "descricao": "" },
-    { "nome": "Cannon minipvx", "imagem": "/produtos/cannon/Cannon minipvx .png", "descricao": "" },
-    { "nome": "Cannon miniqv", "imagem": "/produtos/cannon/Cannon miniqv .png", "descricao": "" },
-    { "nome": "Cannon simplevis +", "imagem": "/produtos/cannon/Cannon simplevis + .png", "descricao": "" },
-    { "nome": "Cannon simplevis", "imagem": "/produtos/cannon/Cannon simplevis.png", "descricao": "" },
-    { "nome": "Cannon tesc", "imagem": "/produtos/cannon/Cannon tesc.png", "descricao": "" },
-    { "nome": "Cannon ultravis_", "imagem": "/produtos/cannon/Cannon ultravis_.png", "descricao": "" }
+    { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon cav 4.2.png", "descricao": "Modelo CAV 4.2" },
+    { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon cav4.1.png", "descricao": "Modelo CAV 4.1" },
+    { "nome": "Cold Cranking Simulator", "imagem": "/produtos/cannon/Cannon ccs2100 .png", "descricao": "Modelo CSS 2100" },
+    { "nome": "Cold Cranking Simulator", "imagem": "/produtos/cannon/Cannon ccs2100 Lt .png", "descricao": "Modelo CSS 2100LT" },
+    { "nome": "Viscosímetro Mini Rotativo Semiautomático", "imagem": "/produtos/cannon/Cannon cmrv 4500.png", "descricao": "Modelo CMRV-4500" },
+    { "nome": "Mini Rotary", "imagem": "/produtos/cannon/Cannon cmrv5000 .png", "descricao": "Modelo CMRV-5000" },
+    { "nome": "Viscosímetro Capilar Multicélula", "imagem": "/produtos/cannon/Cannon hths .png", "descricao": "Modelo HTHS Série II" },
+    { "nome": "Viscosímetro Cinemático", "imagem": "/produtos/cannon/Cannon mini avlt.png", "descricao": "Modelo MiniAV-LT" },
+    { "nome": "Viscosímetro Cinemático", "imagem": "/produtos/cannon/Cannon miniav .png", "descricao": " Modelo MiniAV" },
+    { "nome": "Viscosímetro Cinemático", "imagem": "/produtos/cannon/Cannon Miniav hit.png", "descricao": "Modelo MiniAV-HT" },
+    { "nome": "Viscosímetro Cinemático", "imagem": "/produtos/cannon/Cannon miniav x .png", "descricao": " Modelo MiniAV-X" },
+    { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipv .png", "descricao": "Modelo miniPV" },
+    { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipvh .png", "descricao": "Modelo miniPV-H" },
+    { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipvhx.png", "descricao": "Modelo miniPV-HX" },
+    { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipvx .png", "descricao": "Modelo miniPV-X" },
+    { "nome": "Viscosímetro - óleo usado", "imagem": "/produtos/cannon/Cannon miniqv .png", "descricao": "MiniQVX" },
+    { "nome": "Viscosímetro Cinemático Automatizado Portátil com Resfriamento Ativo", "imagem": "/produtos/cannon/Cannon simplevis + .png", "descricao": "Modelo SimplesVIS+" },
+    { "nome": "Viscosímetro Cinemático Automatizado Portátil", "imagem": "/produtos/cannon/Cannon simplevis.png", "descricao": "Modelo SimplesVIS" },
+    { "nome": "Viscosímetro Rotacional", "imagem": "/produtos/cannon/Cannon tesc.png", "descricao": "Modelo TESC 2983 / TESC 5133" },
+    { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon ultravis_.png", "descricao": "Modelo UltraVis 192" }
   ]
 },
 
@@ -157,13 +216,28 @@
         "id": "yateks",
         "nome": "YATEKS",
         "produtos": [
-          
+            {
+      "nome": "Analizador Multi-Parâmetro de ÔLEO",
+      "imagem": "/produtos/yatecks/Ypf 15 yateks  .png",
+      "descricao": "Modelo YPF15"
+    }, 
+      {
+      "nome": "Contador Portátil de Partículas de Óleo",
+      "imagem": "/produtos/yatecks/Yjs 150 yateks (1).jpeg",
+      "descricao": "Modelo YJS-150"
+    }
         ]
       },
       {
         "id": "huazheng",
         "nome": "HUAZHENG",
-        "produtos": []
+        "produtos": [
+          {
+      "nome": "Rigidez Dielétrica",
+      "imagem": "/produtos/huazheng/HZJQ-X1 (1).jpeg",
+      "descricao": "Modelo HZJQ-X1"
+    }
+        ]
       },
       {
   "id": "tanaka",
@@ -203,6 +277,16 @@
       "nome": "Analisador de Enxofre edxrf (12 posições)",
       "imagem": "/produtos/tanaka/Rx630 Tanaka .jpeg",
       "descricao": "Modelo RX-630SA - ASTM D4294 - ASTM D2622"
+    },
+     {
+      "nome": "Ponto de Entupimento",
+      "imagem": "/produtos/tanaka/AFP 300 (1).jpeg",
+      "descricao": "Modelo AFP-300"
+    },
+     {
+      "nome": "Ponto de névoa e Fluidez",
+      "imagem": "/produtos/tanaka/Mpc 6 (1).jpeg",
+      "descricao": "Modelo MPC-6"
     }
   ]
 }
