@@ -29,6 +29,17 @@ const MarcaDetalhes = () => {
     <div className="marca-detalhes">
       <h2>{marcaEncontrada.nome}</h2>
       <p className="categoria-titulo">Categoria: {marcaEncontrada.categoria}</p>
+      {marcaEncontrada.catalogo && (
+      <a
+        href={marcaEncontrada.catalogo}
+        download
+        className="catalogo"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+      Baixar Catálogo
+      </a>
+    )}
 
       <div className="produtos-container">
         {marcaEncontrada.produtos.length > 0 ? (

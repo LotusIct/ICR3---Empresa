@@ -1,18 +1,19 @@
 .marcas-section {
-  padding: 2rem;
+  padding: 3rem 3rem 5rem 3rem;
   text-align: center;
+  background-color:#f4f5f1;
 }
 
 .titulo-principal {
   font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #A0B773;
+  margin-bottom: 3rem;
+  color: #4D504E;
 }
 
 .grid-marcas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 2rem;
+  gap: 4rem;
   justify-items: center;
 }
 
@@ -21,25 +22,92 @@
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  padding: 1rem;
-  border-radius: 12px;
-  transition: transform 0.2s ease;
+  padding: 1.5rem;
+  width: 200px;
+  height: 100%;
+  border-radius: 16px;
+  background: rgba(255, 255, 255);
+  border: 1px solid rgba(160, 183, 115, 0.3); /* verde com transparência */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .marca-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
 .marca-logo {
-  width: 100px;
-  height: auto;
-  margin-bottom: 0.5rem;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 0.75rem;
   object-fit: contain;
 }
 
 .marca-nome {
   color: #333;
-  font-weight: 500;
-  font-size: 0.95rem;
+  font-weight: 600;
+  font-size: 1rem;
   text-align: center;
+  text-decoration: none !important;
+}
+.link-marca {
+  text-decoration: none;
+  color: inherit;
+}
+.marca-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem; 
+}
+.botao-catalogo {
+    margin-top: auto;
+  font-size: 0.7rem;
+  color: #4d504e;
+  text-decoration: none !important;
+  border: 1px solid #a0b773;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  background-color: #ffffffb3;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.botao-catalogo:hover {
+  background-color: #a0b773;
+  color: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .marcas-section {
+    padding: 1rem;
+  }
+
+  .titulo-principal {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .grid-marcas {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 2rem;
+  }
+
+  .marca-card {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .marca-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0.5rem;
+  }
+
+  .marca-nome {
+    font-size: 0.9rem;
+  }
 }

@@ -97,48 +97,48 @@ const Navbar = () => {
               </Link>
             </li>
 
-           {isMobile ? (
-  <>
-    {/* REMOVA esse bloco aqui:
-    <li>
-      <Link to="/marcas" className={getActive('/marcas')} onClick={handleLinkClick}>
-        Todas as Marcas
-      </Link>
-    </li>
-    */}
-
-    <li className="mobile-dropdown">
-      <span onClick={() => setDropdownOpen(!isDropdownOpen)} className="nav-link">
-        Marcas
-      </span>
-      {isDropdownOpen && (
-        <div className="mobile-category-scroll">
-          {marcas.map((categoria, index) => (
-            <details key={index} className="mobile-category-item">
-              <summary>{categoria.categoria}</summary>
-              <ul>
-                {ordenarMarcas(categoria.marcas).map((marca) => (
-                  <li key={marca.id}>
-                    <Link  className="categoria-produto-link" to={`/marcas/${marca.id}`} onClick={handleLinkClick}>
-                      {marca.nome.toUpperCase()}
-                    </Link>
-                  </li>
-                ))}
-                {categoria.categoria.toLowerCase().includes('fabricação') && (
-                  <li>
-                    <Link to="/marcas" onClick={handleLinkClick} className="todas-as-marcas-link">
-                      Todas as Marcas
-                    </Link>
-                  </li>
-                )}
-              </ul>
-            </details>
-          ))}
-        </div>
-      )}
-    </li>
-  </>
-) : (
+            {isMobile ? (
+              <>
+                <li className="mobile-dropdown">
+                  <span onClick={() => setDropdownOpen(!isDropdownOpen)} className="nav-link">
+                    Marcas
+                  </span>
+                  {isDropdownOpen && (
+                    <div className="mobile-category-scroll">
+                      {marcas.map((categoria, index) => (
+                        <details key={index} className="mobile-category-item">
+                          <summary>{categoria.categoria}</summary>
+                          <ul>
+                            {ordenarMarcas(categoria.marcas).map((marca) => (
+                              <li key={marca.id}>
+                                <Link
+                                  className="categoria-produto-link"
+                                  to={`/marcas/${marca.id}`}
+                                  onClick={handleLinkClick}
+                                >
+                                  {marca.nome.toUpperCase()}
+                                </Link>
+                              </li>
+                            ))}
+                            {categoria.categoria.toLowerCase().includes('fabricação') && (
+                              <li>
+                                <Link
+                                  to="/marcas"
+                                  onClick={handleLinkClick}
+                                  className="todas-as-marcas-link"
+                                >
+                                  Todas as Marcas
+                                </Link>
+                              </li>
+                            )}
+                          </ul>
+                        </details>
+                      ))}
+                    </div>
+                  )}
+                </li>
+              </>
+            ) : (
               <li
                 className="dropdown"
                 onMouseEnter={() => setDesktopDropdownOpen(true)}
@@ -151,31 +151,33 @@ const Navbar = () => {
                   Marcas
                 </span>
                 {isDesktopDropdownOpen && (
-                 <div id="desktop-dropdown-menu" className="megamenu">
-  {marcas.map((categoria, index) => (
-    <div key={index} className="megamenu-column">
-      <h4>{categoria.categoria}</h4>
-      <ul>
-        {ordenarMarcas(categoria.marcas).map((marca) => (
-          <li key={marca.id}>
-            <Link to={`/marcas/${marca.id}`} onClick={handleLinkClick}>
-              {marca.nome.toUpperCase()}
-            </Link>
-          </li>
-        ))}
-        {/* Se a categoria for 'Fabricação Própria', insere o link extra */}
-        {categoria.categoria.toLowerCase().includes('fabricação') && (
-          <li>
-            <Link to="/marcas" onClick={handleLinkClick} className="todas-as-marcas-link">
-              Todas as Marcas
-            </Link>
-          </li>
-        )}
-      </ul>
-    </div>
-  ))}
-</div>
-
+                  <div id="desktop-dropdown-menu" className="megamenu">
+                    {marcas.map((categoria, index) => (
+                      <div key={index} className="megamenu-column">
+                        <h4>{categoria.categoria}</h4>
+                        <ul>
+                          {ordenarMarcas(categoria.marcas).map((marca) => (
+                            <li key={marca.id}>
+                              <Link to={`/marcas/${marca.id}`} onClick={handleLinkClick}>
+                                {marca.nome.toUpperCase()}
+                              </Link>
+                            </li>
+                          ))}
+                          {categoria.categoria.toLowerCase().includes('fabricação') && (
+                            <li>
+                              <Link
+                                to="/marcas"
+                                onClick={handleLinkClick}
+                                className="todas-as-marcas-link"
+                              >
+                                Todas as Marcas
+                              </Link>
+                            </li>
+                          )}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
                 )}
               </li>
             )}
@@ -190,20 +192,54 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+
+          {/* Redes sociais somente no menu mobile */}
+          {isMobile && (
+            <div className="mobile-social-bar">
+              <a href="https://wa.me/5521998297321" target="_blank" rel="noreferrer">
+                <FaWhatsapp size={24} />
+              </a>
+              <a
+                href="https://www.instagram.com/sua_empresa"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram size={24} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/sua_empresa"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin size={24} />
+              </a>
+            </div>
+          )}
         </nav>
       </div>
 
-      <div className="social-bar">
-        <a href="https://wa.me/5521998297321" target="_blank" rel="noreferrer">
-          <FaWhatsapp size={24} />
-        </a>
-        <a href="https://www.instagram.com/sua_empresa" target="_blank" rel="noopener noreferrer">
-          <FaInstagram />
-        </a>
-        <a href="https://www.linkedin.com/company/sua_empresa" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin />
-        </a>
-      </div>
+      {/* Ícones fixos no topo (desktop apenas) */}
+      {!isMobile && (
+        <div className="social-bar">
+          <a href="https://wa.me/5521998297321" target="_blank" rel="noreferrer">
+            <FaWhatsapp size={24} />
+          </a>
+          <a
+            href="https://www.instagram.com/sua_empresa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/sua_empresa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
+      )}
 
       {isMobile && !isMenuOpen && (
         <div className="hamburger" onClick={() => setMenuOpen(true)}>

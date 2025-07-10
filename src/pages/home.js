@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { FaBalanceScale, FaThermometerHalf, FaVial, FaOilCan } from 'react-icons/fa';
 import '../styles/home.css';
-import videoHome from '../assets/videohome.mp4'; 
+import videoHome from '../assets/videohomeicr3.mp4'; 
 import { useNavigate } from 'react-router-dom';
-// import about from '../assets/'
-// Importando as imagens dos logos
+
 import logo1 from '../assets/logos/Logo aro .png';
 import logo2 from '../assets/logos/Logo Bri .jpeg';
 import logo3 from '../assets/logos/Logo cannon.png';
@@ -29,31 +27,21 @@ const logos = [
   logo10,
 ];
 
-const services = [
-  { icon: <FaBalanceScale size={40} />, title: 'Balanças', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-  { icon: <FaThermometerHalf size={40} />, title: 'Temperatura', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-  { icon: <FaVial size={40} />, title: 'Massa Específica', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-  { icon: <FaOilCan size={40} />, title: 'Viscosidade Cinemática', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-];
-
 export default function HomePage() {
  const [currentIndex, setCurrentIndex] = useState(0);
 
 const handleSaibaMaisClick = () => {
   navigate("/sobre");
 };
-  // Função para avançar para o próximo logo
   const goToNextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % logos.length); // Vai para o próximo logo, e reinicia quando chega no final
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % logos.length); 
   };
 
-  // Slide automático a cada 3 segundos
   useEffect(() => {
     const intervalId = setInterval(goToNextSlide, 2000);
-    return () => clearInterval(intervalId); // Limpa o intervalo quando o componente desmonta
+    return () => clearInterval(intervalId); 
   }, []);
 
-  // Cria a lista de logos que serão exibidos (5 logos por vez)
   const displayedLogos = [
     logos[(currentIndex + 0) % logos.length],
     logos[(currentIndex + 1) % logos.length],
