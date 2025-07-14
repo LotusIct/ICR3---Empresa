@@ -2,8 +2,8 @@ import React from 'react';
 import '../styles/services.css';
 
 // Importe das imagens
-import qualityVideo from '../assets/qualidade.mp4';
-import treinamentoVideo from '../assets/treinamento.mp4';
+import qualityVideo from '../assets/qualidadeicr3.mp4';
+import treinamentoVideo from '../assets/treinamentoicr3.mp4';
 import metrologyImage from '../assets/meterologia.jpeg';
 import teamImage from '../assets/equipe.jpeg';
 import buildingImage from '../assets/sede.jpeg';

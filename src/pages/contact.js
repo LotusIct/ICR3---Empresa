@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/contact.css';
+import emailjs from 'emailjs-com';
+
 
 const categorias = [
   {
