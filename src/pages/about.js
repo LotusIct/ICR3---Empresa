@@ -5,7 +5,7 @@ import buildingImage from '../assets/sede.jpeg';
 import teamImage1 from '../assets/equipe2.jpeg';
 import buildingImage1 from '../assets/sede2.jpeg';
 import buildingImage2 from '../assets/sede3.jpeg';
-import videoHome from '../assets/videohome.mp4';
+import videoHome from '../assets/homeicr3.mp4';
 
 export default function AboutPage() {
 
