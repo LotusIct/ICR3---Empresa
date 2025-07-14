@@ -5,7 +5,7 @@ import buildingImage from '../assets/sede.jpeg';
 import teamImage1 from '../assets/equipe2.jpeg';
 import buildingImage1 from '../assets/sede2.jpeg';
 import buildingImage2 from '../assets/sede3.jpeg';
-import videoHome from '../assets/homeicr3.mp4';
+import videoHome from '../assets/home-horizontal.mp4';
 
 export default function AboutPage() {
 
@@ -102,7 +102,7 @@ export default function AboutPage() {
 
     {/* Substituindo o slider por um vídeo */}
    <div className="video-container">
-            <video controls width="100%" height="auto" autoPlay muted loop playsInline>
+            <video controls width="100%" height="300px" autoPlay muted loop playsInline>
               <source src={videoHome} type="video/mp4" />
               Seu navegador não suporta o elemento de vídeo.
             </video>

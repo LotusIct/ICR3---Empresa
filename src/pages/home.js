@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/home.css';
-import videoHome from '../assets/homeicr3.mp4'; 
+import videoHome from '../assets/home-horizontal.mp4'; 
 import { useNavigate } from 'react-router-dom';
 
 import logo1 from '../assets/logos/Logo aro .png';
