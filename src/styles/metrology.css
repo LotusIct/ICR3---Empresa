@@ -1,0 +1,169 @@
+/* src/styles/metrology.css */
+
+.metrology-page {
+  font-family: var(--fonte-principal);
+  background-color: #f4f4f4; /* Fundo neutro para contrastar com as seções */
+}
+
+/* Hero Section */
+.hero-section-metrology {
+  background: var(--cor-verde-claro);
+  color: var(--cor-preto);
+  padding: 80px 20px;
+  position: relative;
+  text-align: center;
+  border-bottom: 2px solid #d1d1d1;
+}
+
+.hero-section-metrology .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Menos escuro para um efeito mais suave */
+}
+
+.hero-content-metrology {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.hero-content-metrology h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-content-metrology p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Metrology Section */
+.metrology-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 60px 20px;
+  background: #ffffff; /* Fundo branco para dar mais destaque aos elementos */
+}
+
+.metrology-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  flex-basis: 45%;
+  background-color: #f9f9f9; /* Cor suave para as caixas */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.metrology-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.metrology-text {
+  background-color: #ffffff; /* Fundo claro */
+  color: #333; /* Texto mais escuro para melhor leitura */
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: 20px;
+  flex: 1;
+}
+
+.metrology-text h2 {
+  font-size: 1.8rem;
+  color: #4b4b4b; /* Cor do título mais sóbria */
+  margin-bottom: 10px;
+}
+
+.metrology-text p {
+  font-size: 1rem;
+  color: #555; /* Cor do texto mais suave */
+  line-height: 1.6;
+}
+
+.metrology-container img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .metrology-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .metrology-container.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .metrology-text {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .hero-section-metrology h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-section-metrology p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Container dos ícones */
+.metrology-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-verde-claro);
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px; /* Mais espaço entre ícone e texto */
+}
+
+/* Definindo o estilo do botão */
+.btn-primary {
+  background-color: #4caf50; /* Cor mais suave de verde */
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #45a049; /* Tom mais forte de verde para hover */
+}
+
+.btn-secondary {
+  background-color: #ff7043; /* Cor complementar em laranja suave */
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #e64a19; /* Tom mais forte de laranja para hover */
+}

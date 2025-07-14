@@ -66,7 +66,7 @@ const handleSaibaMaisClick = () => {
         <div className="overlay"></div>
         <div className="hero-content">
           <h1>Bem-vindo à ICR3 Científica</h1>
-          <p>Tecnologia e precisão a serviço da ciência.</p>
+          <p>Tecnologia e precisão ao serviço da ciência.</p>
           <button className="btn-primary" onClick={handleSaibaMaisClick}>Saiba Mais</button>
         </div>
       </section>

@@ -6,6 +6,7 @@ import ContactForm from './pages/contact';
 import HomePage from './pages/home';
 import SobreNos from './pages/about';
 import Serviços from './pages/services';
+import Metrologia from './pages/metrologia';
 import MarcaDetalhes from './pages/products';
 import CookieConsent from './components/Cookieconsent'; 
 import './styles/global.css';
@@ -27,6 +28,7 @@ function App() {
           <Route path="/marcas" element={<Marcas />} />
           <Route path="/privacidade" element={<PoliticaPrivacidade />} />
           <Route path="/termos" element={<TermosUso />} />
+          <Route path="/metrologia" element={<Metrologia />} />
 
         </Routes>
       </main>

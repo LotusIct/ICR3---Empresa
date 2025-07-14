@@ -8,14 +8,14 @@ import { FaInstagram, FaLinkedin, FaWhatsapp, FaBars, FaTimes } from 'react-icon
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 868);
   const [isDesktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
   const ordemPrioridade = ['tanaka', 'cannon', 'crf', 'kem'];
 
   const location = useLocation();
 
   const handleResize = () => {
-    setIsMobile(window.innerWidth <= 768);
+    setIsMobile(window.innerWidth <= 868);
   };
 
   useEffect(() => {
@@ -181,7 +181,15 @@ const Navbar = () => {
                 )}
               </li>
             )}
-
+ <li>
+              <Link
+                to="/metrologia"
+                className={getActive('/metrologia')}
+                onClick={handleLinkClick}
+              >
+                Metrologia
+              </Link>
+            </li>
             <li>
               <Link
                 to="/fale-conosco"

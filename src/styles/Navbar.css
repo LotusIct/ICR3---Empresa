@@ -360,7 +360,7 @@ body {
 
 
 /* Estilo Responsivo para Dispositivos Móveis */
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .nav-menu {
     position: fixed;
     top: 0;
