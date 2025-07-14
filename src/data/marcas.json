@@ -241,7 +241,7 @@
     { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipvhx.png", "descricao": "Modelo miniPV-HX - ASTMD445/D446; ASTM D789; ASTM D1243; ASTM D1795; ASTM D2857; ASTM D3591; ASTM D4243; ASTM D4603; ASTM D526" },
     { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipvx .png", "descricao": "Modelo miniPV-X - ASTM D445/D446, ASTM D1243; ASTM D1795; ASTM D2857, ASTM D3591; ASTM D4243; ASTM D5226" },
     { "nome": "Viscosímetro - óleo usado", "imagem": "/produtos/cannon/Cannon miniqv .png", "descricao": "MiniQVX - Segue a maioria dos principios ASTM D445" },
-    { "nome": "Viscosímetro Cinemático Automatizado Portátil com Resfriamento Ativo", "imagem": "/produtos/cannon/Cannon simplevis + .png", "descricao": "Modelo SimplesVIS+ - ASTM D7279" },
+    { "nome": "Viscosímetro Cinemático Automatizado Portátil com Resfriamento Ativo", "imagem": "/produtos/cannon/Cannon simplevisplus.png", "descricao": "Modelo SimplesVIS+ - ASTM D7279" },
     { "nome": "Viscosímetro Cinemático Automatizado Portátil", "imagem": "/produtos/cannon/Cannon simplevis.png", "descricao": "Modelo SimplesVIS - ASTM D7279" },
     { "nome": "Viscosímetro Rotacional", "imagem": "/produtos/cannon/Cannon tesc.png", "descricao": "Modelo TESC 2983 / TESC 5133 / TESC 2983-ASTM D 2983; ASTM D8210 / TESC 5133-ASTM D5133" },
     { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon ultravis_.png", "descricao": "Modelo UltraVis 192 - Segua a maioria dos princípios ASTM D445" }
@@ -275,7 +275,7 @@
         "produtos": [
           {
       "nome": "Rigidez Dielétrica",
-      "imagem": "/produtos/huazheng/HZJQ-X1 (1).jpeg",
+      "imagem": "/produtos/huazheng/HZJQ-X1.jpeg",
       "descricao": "Modelo HZJQ-X1; ASTM D1816; ASTM D877; NORMAS IEC 60156"
     }
         ]
