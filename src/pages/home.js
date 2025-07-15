@@ -105,28 +105,28 @@ Nosso compromisso é entregar resultados que fortalecem a confiança em cada an�
           ))}
         </div>
       </section> */}
+{/* Parceiros */}
+<section className="partners-section">
+  <div className="section-header">
+    <h2>Nossos Parceiros Comerciais</h2>
+    <p>Empresas que confiam na ICR3.</p>
+  </div>
 
-     {/* Parceiros */}
-     <section className="partners-section">
-        <div className="section-header">
-          <h2>Nossos Parceiros Comerciais</h2>
-          <p>Empresas que confiam na ICR3.</p>
-        </div>
+  <div className="marquee-container">
+    <div className="marquee-track">
+      {[...logos, ...logos].map((logo, idx) => (
+        <img
+          key={idx}
+          src={logo}
+          alt={`Parceiro ${idx + 1}`}
+          className="partner-logo"
+        />
+      ))}
+    </div>
+  </div>
+</section>
 
-        <div className="partners-carousel">
-          <div className="carousel-container">
-            {/* Exibe 5 logos por vez */}
-            {displayedLogos.map((logo, idx) => (
-              <img
-                key={idx}
-                src={logo}
-                alt={`Parceiro ${idx + 1}`}
-                className="partner-logo"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Contato */}
       <section className="contact-section">

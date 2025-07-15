@@ -9,17 +9,40 @@
          "catalogo": "/catalogos/forza-catalogo.pdf",
         "produtos": [
           {
-            "nome": "Matriz de Óleo Mineral",
-            "imagem": "/produtos/aro/Mrc-aro.png",
-            "descricao": "Tipo 2.1 (134200), Tipo 5.0 (134210), Tipo 8.0 (134220) - 500ml"
+            "nome": "MRC - Material de Referência Certificado de densidade - ASTM D4052 - Certificado ISO/IEC 17025 e ISO 17034",
+            "imagem": "/produtos/aro/aro 3 first.png",
+            "descricao": "\n\nCRM-DEGO01 - Matriz diesel, faixa de densidade 0,8280g/mL\nCRM-DEKR01 - Jet A1, faixa de densidade 0,8014g/mL\nCRM-DELU01 - Lubrificante, faixa de densidade 0,8650g/mL\nCRM-DEGA01 - Gasolina, faixa de densidade 0,7495g/mL"
           },
           {
-            "nome": "Calibrador de Pressão",
-            "imagem": "/produtos/aro/Mrc-aro3.png"
+            "nome": "MRC - Material de Referência Certificado com Ponto de Fulgor, Cleveland Open Cup (COC) - ASTM D92 - Certificado ISO/IEC 17025 e ISO 17034",
+            "imagem": "/produtos/aro/aro 3 second.png",
+            "descricao": "\n\nCRM-COC10 - Faixa de temperatura 85°C / 3 x 80 ml;\nCRM-COC20 - Faixa de temperatura 125°C / 3 x 80 ml;\nCRM-COC30 - Faixa de temperatura 160°C / 3 x 80 ml;\nCRM-COC40 - Faixa de temperatura 250°C / 3 x 80 ml;\nCRM-FCLU01 - Material de Referência certificado com ponto de fulgor, lubrificante, Cleveland Open Cup (COC), faixa de temperatura 260°C / 250 ml."
           },
           {
-            "nome": "Controlador de Vazão",
-            "imagem": "/produtos/aro/Mrc-aro-prata.png"
+            "nome": "MRC-Material de Referência Certificado para Destilação, ASTM D86, Certificado ISO 17034",
+            "imagem": "/produtos/aro/aro prata 1.png",
+            "descricao": "\n\nCRM-DIGO01 - Diesel, faixa de temperatura 166 °C a 365 °C / 250ml;\n\nCRM-DIKROJ - Jet Al, faixa de temperatura 148 °C a 259 °C / 250ml;\n\nCRM-DIGA01 - Gasolina, faixa de temperatura 34 °C a 159 °C / 250ml."
+          },
+           {
+            "nome": "MRC - Material de Referência Certificado, ASTM D97/D2500, Certificado ISO 17034",
+            "imagem": "/produtos/aro/aro prata 2.png",
+            "descricao": "\n\nCRM-CPG001 - Material de referência certificado para ponto de névoa, diesel, faixa de temperatura -5°C / 250ml;\n\nCRM-PPGO01 - Material de referência certificado para ponto de fluidez, diesel, faixa de temperatura -12°C / 250ml;\n\nCRM-PPLU01 - Material de referência certificado para ponto de fluidez, lubrificante, faixa de temperatura -15°C / 250ml."
+          },
+           {
+            "nome": "MRC-Material de Referência Certificado, ASTM D1544/D6166 - Certificado ISO/IEC 17025 e ISO 17034",
+            "imagem": "/produtos/aro/aro unico.png",
+            "descricao": "\n\nPADRÕES DE CORES, GARDNER COLOR\n\n134200 - Matriz Óleo Mineral 21, 500 ml;\n\n134210 - Matriz Óleo Mineral 5.0, 500 ml;\n\n134220 - Matriz Óleo Mineral 8.0, 500 ml."
+          },
+           {
+            "nome": "MRC-Material de Referência Certificado, ASTM D6045/D1500, Certificado ISO/IEC 17025 e ISO 17034",
+            "imagem": "/produtos/aro/aro unico.png",
+            "descricao": "\n\nPADRÕES DE CORES, COR ASTM:\n\n134290 - Padrão de referência de cor ASTM < 0,5, 500 ml;\n\n134000 - Padrão de referência de cor ASTM 1, 500 ml;\n\n134010 - Padrão de referência de cor ASTM 3, 500 ml;\n\n134020 - Padrão de referência de cor ASTM 5, 500 ml;\n\n134030 - Padrão de referência de cor ASTM 7, 500 ml."
+          },
+           {
+            "nome": "MRC - Material de Referência Certificado, ASTM D6045/D156, Certificado ISO/IEC 17025 e ISO 17034",
+            "imagem": "/produtos/aro/aro unico.png",
+            "descricao": "\n\nPADRÕES DE CORES, COR SAYBOLT:\n\n134040 - Cor Saybolt -10, 500 ml;\n\n134050 - Cor Saybolt 0, 500 ml;\n\n134060 - Cor Saybolt +12, 500 ml;\n\n134070 - Cor Saybolt +25, 500 ml."
+
           }
         ]
       }
@@ -104,14 +127,10 @@
         "produtos": [
           {
             "nome": "Analisador de Número de Cetano - IQT",
-            "imagem": "/produtos/crf/Foto IQT  (1).jpeg",
-            "descricao": "Nova geração do IQT, o IQT-XLM, Modelo de pacote de bancada. IQT ASTM D6890; EN 15195 IP498. ASTM D975; ASTM D6751, ASTM D7467 CARB; EN 590) EN 15940 CAN/CGSB-3.517; CAN/CGSB-3.520; CAN/CGSB-3.522, CAN/CGSB-3.524."
-          },
-            {
-            "nome": "Analisador de Número de Cetano - IQT",
-            "imagem": "/produtos/crf/Foto IQT  (1).png",
-            "descricao": "Nova geração do IQT, o IQT-XLM, Modelo de carrinho com rodas mais compacto. IQT ASTM D6890; EN 15195 IP498. ASTM D975; ASTM D6751, ASTM D7467 CARB; EN 590) EN 15940 CAN/CGSB-3.517; CAN/CGSB-3.520; CAN/CGSB-3.522, CAN/CGSB-3.524."
+            "imagem": "/produtos/crf/iqt.png",
+            "descricao": "Nova geração do IQT, o IQT-XLM - IQT ASTM D6890; EN 15195 IP498. ASTM D975; ASTM D6751, ASTM D7467 CARB; EN 590) EN 15940 CAN/CGSB-3.517; CAN/CGSB-3.520; CAN/CGSB-3.522, CAN/CGSB-3.524."
           }
+                    
         ]
       },
       {
