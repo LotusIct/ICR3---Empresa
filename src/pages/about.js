@@ -101,7 +101,7 @@ export default function AboutPage() {
     </div>
 
     {/* Substituindo o slider por um vídeo */}
-   <div className="video-container">
+   <div className="image-slider">
            <img src={imagemHome} alt="Imagem ilustrativa" style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
 
           </div>

@@ -53,13 +53,12 @@
 }
 
 .about-text-about h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--cor-cinza-escuro); /* Usando cor do CSS global */
   margin-bottom: 20px;
 }
 
 .about-text-about p {
-  font-size: 1.1rem;
   line-height: 1.8;
   color: var(--cor-cinza-claro); /* Cor de texto */
 }
