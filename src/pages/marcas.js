@@ -24,7 +24,7 @@ const Marcas = () => {
         alt={`Logo da ${marca.nome.toUpperCase()}`}
         className="marca-logo"
       />
-      <span className="marca-nome">{marca.nome}</span>
+      
     </Link>
   </div>
 
