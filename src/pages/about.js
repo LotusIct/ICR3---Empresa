@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import '../styles/about.css';
 
 import buildingImage from '../assets/sede.jpeg';
-import teamImage1 from '../assets/equipe2.jpeg';
+import teamImage1 from '../assets/equipes (2).jpg';
 import buildingImage1 from '../assets/sede2.jpeg';
 import buildingImage2 from '../assets/sede3.jpeg';
-import videoHome from '../assets/home-horizontal.mp4';
+import imagemHome from '../assets/sede.jpeg';
 
 export default function AboutPage() {
 
@@ -102,10 +102,8 @@ export default function AboutPage() {
 
     {/* Substituindo o slider por um vídeo */}
    <div className="video-container">
-            <video controls width="100%" height="300px" autoPlay muted loop playsInline>
-              <source src={videoHome} type="video/mp4" />
-              Seu navegador não suporta o elemento de vídeo.
-            </video>
+           <img src={imagemHome} alt="Imagem ilustrativa" style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
+
           </div>
   </div>
 </section>

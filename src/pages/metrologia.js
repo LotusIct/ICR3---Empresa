@@ -1,8 +1,7 @@
 import React from 'react';
 import '../styles/metrology.css';
-
-// Importando os ícones
-import { FaBalanceScale, FaThermometerHalf, FaTint, FaBoxOpen, FaWeightHanging } from 'react-icons/fa';
+// Ícones Material Design, mais modernos
+import { MdScale, MdThermostat, MdOpacity, MdOutlineInventory2, MdFitnessCenter } from 'react-icons/md';
 
 export default function MetrologyPage() {
   return (
@@ -13,87 +12,50 @@ export default function MetrologyPage() {
         <div className="overlay"></div>
         <div className="hero-content-metrology">
           <h1>Metrologia</h1>
-          <p>
-            Nossos laboratórios acreditados oferecem precisão e confiabilidade em medições das principais grandezas físicas.
-          </p>
+          <p>Nossos laboratórios acreditados oferecem precisão e confiabilidade em medições das principais grandezas físicas, de acordo com os escopos do Inmetro.</p>
         </div>
       </section>
 
       {/* Massa / Temperatura */}
       <section className="metrology-section">
         <div className="metrology-container">
-          <div className="metrology-icon">
-            <FaBalanceScale size={60} color="#4D504E" />
-          </div>
+          <div className="metrology-icon"><MdScale size={60} color="#4D504E" /></div>
           <div className="metrology-text">
             <h2>Massa</h2>
-            <p>
-              Realizamos calibrações precisas em balanças e sistemas de medição de massa, garantindo conformidade com as normas internacionais.
-            </p>
+            <p>Calibração conforme ISO/IEC 17025, utilizando blocos rastreáveis ao Inmetro com incertezas certificadas.</p>
+            <p className="rtac">RTAC: Padrões rastreáveis a massa primária, com certificados contendo incerteza e validade.</p>
           </div>
         </div>
         <div className="metrology-container reverse">
-          <div className="metrology-icon">
-            <FaThermometerHalf size={60} color="#4D504E" />
-          </div>
+          <div className="metrology-icon"><MdThermostat size={60} color="#4D504E" /></div>
           <div className="metrology-text">
-            <h2>Temperatura</h2>
-            <p>
-              Nossa calibração de termômetros e outros dispositivos de medição de temperatura assegura a máxima precisão nas condições controladas.
-            </p>
+            <h2>Temperatura e Umidade</h2>
+            <p>Calibração de termômetros e RTDs, em câmara controlada, com monitoramento de temperatura, umidade e pressão.</p>
+            <p className="rtac">RTAC: Ensaios rastreáveis, com relatório documentando ambiente e incerteza. Através de métodos padronizados com incerteza específica, conforme acreditação CGCRE.</p>
           </div>
         </div>
       </section>
 
-      {/* Umidade / Viscosidade */}
       <section className="metrology-section">
-        <div className="metrology-container">
-          <div className="metrology-icon">
-            <FaTint size={60} color="#4D504E" />
-          </div>
-          <div className="metrology-text">
-            <h2>Umidade</h2>
-            <p>
-              Medições de umidade em ambientes controlados e sistemas específicos são realizadas com equipamentos de alta precisão.
-            </p>
-          </div>
-        </div>
         <div className="metrology-container reverse">
-          <div className="metrology-icon">
-            <FaTint size={60} color="#4D504E" /> {/* Substituímos FaDroplet por FaTint */}
-          </div>
+           <div className="metrology-icon"><MdOpacity size={60} color="#4D504E" /></div>
           <div className="metrology-text">
             <h2>Viscosidade</h2>
             <p>
-              Oferecemos calibração de viscosímetros, garantindo medições precisas para diversos tipos de líquidos.
+              Calibração de viscosímetro capilar (0,003 a 30 mm²/s, incerteza 0,3–0,7 %) e tipo copo (20–100 s), rastreado pelo Inmetro.
             </p>
+            <p className="rtac">RTAC: Escopo RBC inclui métodos comparativos com fluido padrão certificado.</p>
           </div>
+         
         </div>
-      </section>
-
-      {/* Volume / Massa Específica */}
-      <section className="metrology-section">
         <div className="metrology-container">
-          <div className="metrology-icon">
-            <FaBoxOpen size={60} color="#4D504E" />
-          </div>
+           <div className="metrology-icon"><MdOutlineInventory2 size={60} color="#4D504E" /></div>
           <div className="metrology-text">
-            <h2>Volume</h2>
-            <p>
-              Calibramos equipamentos volumétricos com precisão, garantindo resultados confiáveis em medições de líquidos e sólidos.
-            </p>
+            <h2>Volume e Massa Específica</h2>
+            <p>Calibração de vidrarias (pipetas, buretas, provetas) por comparação com padrões rastreáveis ao Inmetro.</p>
+            <p className="rtac">RTAC: Certificado com valores medidos, incerteza e ambiente de calibração.</p>
           </div>
-        </div>
-        <div className="metrology-container reverse">
-          <div className="metrology-icon">
-            <FaWeightHanging size={60} color="#4D504E" />
-          </div>
-          <div className="metrology-text">
-            <h2>Massa Específica</h2>
-            <p>
-              A calibração de equipamentos para medição de massa específica assegura a qualidade e confiabilidade dos seus resultados.
-            </p>
-          </div>
+          
         </div>
       </section>
 

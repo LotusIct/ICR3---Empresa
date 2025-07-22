@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/home.css';
-import videoHome from '../assets/home-horizontal.mp4'; 
+import imagemHome from '../assets/imagem home.jpg'; 
 import { useNavigate } from 'react-router-dom';
 
 import logo1 from '../assets/logos/Logo aro .png';
@@ -59,10 +59,8 @@ const handleSaibaMaisClick = () => {
 
       {/* Hero Section */}
       <section className="hero-section">
-        <video autoPlay loop muted playsInline className="background-video">
-          <source src={videoHome} type="video/mp4" /> {/* Usando a importação do vídeo */}
-          Seu navegador não suporta vídeos HTML5.
-        </video>
+       <img src={imagemHome} alt="Imagem de fundo" className="background-image" />
+
         <div className="overlay"></div>
         <div className="hero-content">
           <h1>Bem-vindo à ICR3 Científica</h1>

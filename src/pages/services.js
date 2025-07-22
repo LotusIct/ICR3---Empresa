@@ -2,9 +2,9 @@ import React from 'react';
 import '../styles/services.css';
 
 // Importe das imagens
-import qualityVideo from '../assets/qualidadeicr3.mp4';
-import treinamentoVideo from '../assets/treinamentoicr3.mp4';
-import metrologyImage from '../assets/meterologia.jpeg';
+import qualityImg from '../assets/qualidade.jpg';
+import treinamentoVImagem from '../assets/treinamento.jpg';
+import metrologyImage from '../assets/metrologia.jpg';
 import teamImage from '../assets/equipe.jpeg';
 import buildingImage from '../assets/sede.jpeg';
 
@@ -39,10 +39,7 @@ Nossa política da qualidade foca integralmente o bem estar no ambiente de traba
 ABNT NBR ISO/IEC 17025, promovendo a melhoria contínua dentro da organização e de suas atividades contando sempre com um corpo técnico capacitado e qualificado compartilham de informações e melhoria dos processos a fim de obter a eficácia nos resultados.
             </p>
           </div>
-          <video width="100%" height="auto"  autoPlay muted loop playsInline>
-            <source src={qualityVideo} type="video/mp4" />
-            Seu navegador não suporta a tag de vídeo.
-          </video>
+          <img src={qualityImg} alt="Metrologia" />
         </div>
       </section>
 
@@ -83,10 +80,7 @@ ABNT NBR ISO/IEC 17025, promovendo a melhoria contínua dentro da organização 
               Na ICR3, investir em conhecimento é parte essencial do nosso compromisso com a qualidade.
             </p>
           </div>
-           <video width="100%" height="auto"  autoPlay muted loop playsInline>
-            <source src={treinamentoVideo} type="video/mp4" />
-            Seu navegador não suporta a tag de vídeo.
-          </video>
+             <img src={treinamentoVImagem} alt="Metrologia" />
         </div>
       </section>
 
