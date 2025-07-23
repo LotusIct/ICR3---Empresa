@@ -28,6 +28,7 @@ const logos = [
 ];
 
 export default function HomePage() {
+   const navigate = useNavigate();
  const [currentIndex, setCurrentIndex] = useState(0);
 
 const handleSaibaMaisClick = () => {
@@ -49,7 +50,7 @@ const handleSaibaMaisClick = () => {
     logos[(currentIndex + 3) % logos.length],
     logos[(currentIndex + 4) % logos.length],
   ];
- const navigate = useNavigate();
+
 
   const handleContatoClick = () => {
     navigate('/contato');

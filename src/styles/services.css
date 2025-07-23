@@ -25,11 +25,12 @@
 
 .hero-content-services p {
   font-size: 1.3rem;
+  padding: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Aumentando a sombra para melhorar o contraste */
 }
 
 .about-section-services {
-  padding: 70px 30px;
+  padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,12 +49,12 @@
 
 .about-text-services {
   flex: 1;
-  margin-right: 30px;
-  margin-left: 30px;
+margin: 20px 30px 20px 30px;
+  
 }
 
 .about-text-services h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--cor-cinza-escuro); /* Usando cor do CSS global */
   margin-bottom: 20px;
 }
@@ -91,7 +92,9 @@
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
-
+.metrologia{
+  margin-top: 20px;
+}
 /* Responsividade */
 @media (max-width: 768px) {
   .about-container-services {
@@ -109,7 +112,7 @@
   }
 
   .about-text-services {
-    margin: 0;
+    
     text-align: center;
   }
 
@@ -120,4 +123,7 @@
   .hero-content-services p {
     font-size: 1rem;
   }
+ .reverse {
+  flex-direction: column-reverse;
+}
 }

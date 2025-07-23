@@ -12,8 +12,13 @@ const Marcas = () => {
   );
 
   return (
-    <section className="marcas-section">
-      <h1 className="titulo-principal">Nossas Marcas</h1>
+    <div className="marcas-section">
+       <section className="hero-section-marcas">
+        <div className="overlay"></div>
+        <div className="hero-content-marcas">
+          <h1>Nossas Marcas</h1>
+        </div>
+      </section>
       <div className="grid-marcas">
         {todasMarcas.map((marca) => (
           <div key={marca.id} className="marca-card">
@@ -42,7 +47,7 @@ const Marcas = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

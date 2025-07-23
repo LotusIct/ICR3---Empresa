@@ -86,7 +86,12 @@ export default function AboutPage() {
 
       {/* Apresentação da Sede */}
      <section className="about-section-about">
-  <div className="about-container-about">
+  <div className="about-container-about reverse">
+       {/* Substituindo o slider por um vídeo */}
+   <div className="image-slider">
+           <img src={imagemHome} alt="Imagem ilustrativa" style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
+
+          </div>
     <div className="about-text-about">
       <h2>Sede da ICR3 Científica</h2>
       <p>
@@ -100,11 +105,7 @@ export default function AboutPage() {
       </p>
     </div>
 
-    {/* Substituindo o slider por um vídeo */}
-   <div className="image-slider">
-           <img src={imagemHome} alt="Imagem ilustrativa" style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
-
-          </div>
+ 
   </div>
 </section>
 

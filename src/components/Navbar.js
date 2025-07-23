@@ -142,6 +142,7 @@ const Navbar = () => {
               <li
                 className="dropdown"
                 onMouseEnter={() => setDesktopDropdownOpen(true)}
+                  onMouseLeave={() => setDesktopDropdownOpen(false)}
               >
                 <span
                   className="nav-link"

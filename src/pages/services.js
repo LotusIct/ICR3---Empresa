@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/services.css';
-
+import { useNavigate } from 'react-router-dom';
 // Importe das imagens
 import qualityImg from '../assets/qualidade.jpg';
 import treinamentoVImagem from '../assets/treinamento.jpg';
@@ -9,6 +9,13 @@ import teamImage from '../assets/equipe.jpeg';
 import buildingImage from '../assets/sede.jpeg';
 
 export default function AboutPage() {
+  const navigate = useNavigate();
+  const handleSaibaMaisClick = () => {
+  navigate("/metrologia");
+};
+
+
+
   return (
     <div className="aboutpage">
 
@@ -44,26 +51,30 @@ ABNT NBR ISO/IEC 17025, promovendo a melhoria contínua dentro da organização 
       </section>
 
       {/* Metrologia */}
-      <section className="about-section-services">
-        <div className="about-container-services reverse">
-          <img src={metrologyImage} alt="Metrologia" />
-          <div className="about-text-services">
-            <h2>Metrologia</h2>
-            <p>
-              A ICR3 Científica possui laboratórios acreditados pela CGCRE/INMETRO, de acordo com os requisitos da norma ABNT NBR ISO/IEC 17025:2017. 
-              Estamos inscritos sob o número de acreditação 537 e trabalhamos com as seguintes grandezas: temperatura, massa, massa específica e viscosidade.
-            </p>
-            <p>
-              Nossos laboratórios são equipados com tecnologia avançada, garantindo precisão e confiança nos resultados dos serviços de calibração que prestamos aos nossos clientes.
-            </p>
-          </div>
-        </div>
-      </section>
+     <section className="about-section-services">
+  <div className="about-container-services reverse">
+    <img src={metrologyImage} alt="Metrologia" style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
+    <div className="about-text-services">
+      <h2>Metrologia</h2>
+      <p>
+        A ICR3 Científica possui laboratórios acreditados pela CGCRE/INMETRO, de acordo com os requisitos da norma ABNT NBR ISO/IEC 17025:2017. 
+        Estamos inscritos sob o número de acreditação 537 e trabalhamos com as seguintes grandezas: temperatura, massa, massa específica e viscosidade.
+      </p>
+      <p>
+        Nossos laboratórios são equipados com tecnologia avançada, garantindo precisão e confiança nos resultados dos serviços de calibração que prestamos aos nossos clientes.
+      </p>
+
+      <button className="btn-primary metrologia" onClick={handleSaibaMaisClick}>Saiba mais</button>
+    </div>
+    
+  </div>
+</section>
+
 
      
       {/* Treinamentos */}
       <section className="about-section-services">
-        <div className="about-container-services reverse">
+        <div className="about-container-services ">
         
           <div className="about-text-services">
             <h2>Treinamentos Técnicos</h2>

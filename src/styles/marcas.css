@@ -1,20 +1,31 @@
 .marcas-section {
-  padding: 3rem 3rem 5rem 3rem;
   text-align: center;
   background-color:#f4f5f1;
 }
 
-.titulo-principal {
-  font-size: 2rem;
-  margin-bottom: 3rem;
-  color: #4D504E;
-}
+
 
 .grid-marcas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 4rem;
+  padding: 20px 80px 50px 80px;
   justify-items: center;
+}
+.hero-section-marcas{
+  position: relative;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  padding-top: 60px;
+  background: linear-gradient(135deg, #A2B578,  #a9b889,  #EAF2D8);
+margin-bottom: 40px;
+
+}
+.hero-content-marcas h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Aumentando a sombra para melhorar o contraste */
 }
 
 .marca-card {
@@ -81,33 +92,30 @@
 }
 
 @media (max-width: 700px) {
-  .marcas-section {
-    padding: 1rem;
-  }
-
-  .titulo-principal {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
+ 
+.hero-content-marcas h1 {
+  font-size: 2.5rem;
+}
   .grid-marcas {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 2rem;
+    
+  padding: 20px 20px 40px 20px ;
   }
-
   .marca-card {
     width: 100%;
-    padding: 1rem;
     border-radius: 12px;
   }
 
   .marca-logo {
     width: 100px;
     height: 100px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
   }
+  .hero-section-marcas{
+  
+margin-bottom: 20px;
 
-  .marca-nome {
-    font-size: 0.9rem;
-  }
+}
+
 }
