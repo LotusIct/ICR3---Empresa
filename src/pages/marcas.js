@@ -13,25 +13,42 @@ const Marcas = () => {
 
   return (
     <div className="marcas-section">
-       <section className="hero-section-marcas">
+      <section className="hero-section-marcas">
         <div className="overlay"></div>
         <div className="hero-content-marcas">
           <h1>Nossas Marcas</h1>
         </div>
       </section>
+
+
+
+      {/* Grid com todas as marcas */}
       <div className="grid-marcas">
+             {/* Sessão de Catálogo Geral */}
+      <div className="marca-card">
+         <h2>Catálogo Geral</h2>
+        <p>Baixe o catálogo completo com todas as nossas marcas e produtos.</p>
+        <a
+          href="/catalogos/catalogo-geral.pdf"
+          download
+          className="botao-catalogo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+         Baixar Catálogo Geral
+        </a>
+      </div>
         {todasMarcas.map((marca) => (
           <div key={marca.id} className="marca-card">
             <div className="marca-conteudo">
-    <Link to={`/marcas/${marca.id}`} className="link-marca">
-      <img
-        src={marca.logo || `/logos/${marca.id}-logo.png`}
-        alt={`Logo da ${marca.nome.toUpperCase()}`}
-        className="marca-logo"
-      />
-      
-    </Link>
-  </div>
+              <Link to={`/marcas/${marca.id}`} className="link-marca">
+                <img
+                  src={marca.logo || `/logos/${marca.id}-logo.png`}
+                  alt={`Logo da ${marca.nome.toUpperCase()}`}
+                  className="marca-logo"
+                />
+              </Link>
+            </div>
 
             {marca.catalogo && (
               <a
@@ -46,6 +63,7 @@ const Marcas = () => {
             )}
           </div>
         ))}
+        
       </div>
     </div>
   );

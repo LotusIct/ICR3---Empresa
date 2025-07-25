@@ -12,7 +12,13 @@ const destacarDescricao = (texto) => {
     .replace(/PADRÕES DE CORES,.*?:/gi, (match) => {
       return `<span class="marcado-verde">${match}</span>`;
     })
-    .replace(/PADRÕES DE CORES, GARDNER COLOR/gi, (match) => {
+    .replace(/PADRÕES DE CORES, GARDNER COLOR:/gi, (match) => {
+      return `<span class="marcado-verde">${match}</span>`;
+    })
+    .replace(/PADRÕES DE PONTO DE FULGOR - PMCC, ASTM D93:/gi, (match) => {
+      return `<span class="marcado-verde">${match}</span>`;
+    })
+      .replace(/PADRÃO DE PONTO DE FULGOR - TAG, ASTM D56:/gi, (match) => {
       return `<span class="marcado-verde">${match}</span>`;
     })
     .replace(/\n/g, '<br/>'); // Mantém quebra de linha

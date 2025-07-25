@@ -11,9 +11,13 @@ const categorias = [
         id: "aro",
         nome: "ARO Scientific",
         produtos: [
-          { nome: "Matriz de Óleo Mineral" },
-          { nome: "Calibrador de Pressão" },
-          { nome: "Controlador de Vazão" }
+          { nome: "Material de Referência Certificado de densidade/ASTM D4052" },
+          { nome: "Material de Referência Certificado com Ponto de Fulgor(COC)/ASTM D92" },
+          { nome: "Material de Referência Certificado para Destilação/ASTM D86" },
+          { nome: "Material de Referência Certificado/ASTM D97/D2500" },
+          { nome: "Material de Referência Certificado/ASTM D1544/D6166" },
+          { nome: "Material de Referência Certificado/ASTM D6045/D1500" },
+          { nome: "Material de Referência Certificado/ASTM D6045/D156" }
         ]
       }
     ]
@@ -32,7 +36,15 @@ const categorias = [
           { nome: "Sensor de Temperatura" }
         ]
       },
-      { id: "forza", nome: "FORZA International", produtos: [] },
+      {
+        id: "forza",
+        nome: "FORZA International",
+        produtos: [
+          { nome: "Aparelho Manual para teste de Filtrabilidade de Óleo Hidráulico" },
+          { nome: "Aparelho de estabilidade à oxidação Banho Líquido" },
+          { nome: "Teste de Separabilidade da Água" }
+        ]
+      },
       {
         id: "crf",
         nome: "CRF",
@@ -66,10 +78,10 @@ const categorias = [
         produtos: [
           { nome: "Titulador Potenciométrico" },
           { nome: "Densímetro Portátil Digital" },
-          { nome: "Denímetro Digital" },
-          { nome: "Denímetro Digital de Bancada" },
-          { nome: "Karl Fisher Columétrico" },
-          { nome: "Karl Fisher Volumétrico e Columétrico" },
+          { nome: "Densímetro Digital" },
+          { nome: "Densímetro Digital de Bancada" },
+          { nome: "Karl Fisher Coulométrico" },
+          { nome: "Karl Fisher Híbrido - Volumétrico e Columétrico" },
           { nome: "Karl Fisher Volumétrico" },
           { nome: "Refratômetro Digital" }
         ]
@@ -78,26 +90,17 @@ const categorias = [
         id: "cannon",
         nome: "Cannon Instrument Company",
         produtos: [
-          { nome: "Viscosímetro CAV 4.2" },
-          { nome: "Viscosímetro CAV 4.1" },
-          { nome: "Cold Cranking Simulator CSS 2100" },
-          { nome: "Cold Cranking Simulator CSS 2100LT" },
+          { nome: "Viscosímetro" },
+          { nome: "Simulador de Partida Frio" },
           { nome: "Viscosímetro Mini Rotativo Semiautomático" },
           { nome: "Mini Rotary" },
           { nome: "Viscosímetro Capilar Multicélula" },
-          { nome: "Viscosímetro Cinemático MiniAV-LT" },
-          { nome: "Viscosímetro Cinemático MiniAV" },
-          { nome: "Viscosímetro Cinemático MiniAV-X" },
-          { nome: "Viscosímetro Cinemático MiniAV-HT" },
-          { nome: "Viscosímetro de Bancada Automático miniPV-HX" },
-          { nome: "Viscosímetro de Bancada Automático miniPV-H" },
-          { nome: "Viscosímetro de Bancada Automático miniPV" },
-          { nome: "Viscosímetro de Bancada Automático miniPV-X" },
+          { nome: "Viscosímetro Cinemático" },
+          { nome: "Viscosímetro de Bancada Automático" },
           { nome: "Viscosímetro - óleo usado" },
           { nome: "Viscosímetro Cinemático Automatizado Portátil com Resfriamento Ativo" },
           { nome: "Viscosímetro Cinemático Automatizado Portátil" },
-          { nome: "Viscosímetro Rotacional" },
-          { nome: "Viscosímetro UltraVis 192" }
+          { nome: "Viscosímetro Rotacional" }
         ]
       },
       {
@@ -111,7 +114,9 @@ const categorias = [
       {
         id: "huazheng",
         nome: "HUAZHENG",
-        produtos: [{ nome: "Rigidez Dielétrica" }]
+        produtos: [
+          { nome: "Rigidez Dielétrica" }
+        ]
       },
       {
         id: "tanaka",
@@ -121,11 +126,11 @@ const categorias = [
           { nome: "Colorímetro Automático para Produtos de Petróleo" },
           { nome: "Ponto de Fulgor Cleveland" },
           { nome: "Ponto de Fulgor Pensky-Martens" },
-          { nome: "Ponto de Fulgor TAF" },
+          { nome: "Ponto de Fulgor TAG" },
           { nome: "Destilador Atmosférico" },
-          { nome: "Analisador de Enxofre edxrf (12 posições)" },
+          { nome: "Analisador de Enxofre SDXRF (12 posições)" },
           { nome: "Ponto de Entupimento" },
-          { nome: "Ponto de névoa e Fluidez" }
+          { nome: "Ponto de Névoa e Fluidez" }
         ]
       }
     ]
@@ -141,6 +146,7 @@ const categorias = [
     ]
   }
 ];
+
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
