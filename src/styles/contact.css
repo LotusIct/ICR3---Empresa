@@ -1,5 +1,5 @@
 .contact-form-section {
-  background: var(--cor-verde-medio);
+  background-color: #d7dfc7;
   padding: 20px 20px;
   display: flex;
   justify-content: center;
@@ -148,4 +148,41 @@
   position: relative;
   z-index: 1;
 }
-  
+  /* Popup de Sucesso */
+.popup.sucesso {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #EAF2D8;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Popup de Erro */
+.popup.erro {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #A2B578; /* Cor de erro */
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

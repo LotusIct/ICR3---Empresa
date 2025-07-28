@@ -6,7 +6,7 @@
         "id": "aro",
         "nome": "ARO Scientific",
         "logo":"/logos/Logo aro .png",
-         "catalogo": "/catalogos/forza-catalogo.pdf",
+         "catalogo": "/catalogos/Aro.pdf",
         "produtos": [
           {
             "nome": "MRC - Material de Referência Certificado de densidade - ASTM D4052 - Certificado ISO/IEC 17025 e ISO 17034",
@@ -16,7 +16,7 @@
           {
             "nome": "MRC - Material de Referência Certificado com Ponto de Fulgor, Cleveland Open Cup (COC) - ASTM D92 - Certificado ISO/IEC 17025 e ISO 17034",
             "imagem": "/produtos/aro/aro 3 (2).png",
-            "descricao": "\n\nCRM-COC10 - Faixa de temperatura 85°C / 3 x 80 ml;\nCRM-COC20 - Faixa de temperatura 125°C / 3 x 80 ml;\nCRM-COC30 - Faixa de temperatura 160°C / 3 x 80 ml;\nCRM-COC40 - Faixa de temperatura 250°C / 3 x 80 ml;\nCRM-FCLU01 - Material de Referência certificado com ponto de fulgor, lubrificante, Cleveland Open Cup (COC), faixa de temperatura 260°C / 250 ml."
+            "descricao": "\n\nCRM-COC10 - Faixa de temperatura 85°C / 3 x 80ml;\nCRM-COC20 - Faixa de temperatura 125°C / 3 x 80ml;\nCRM-COC30 - Faixa de temperatura 160°C / 3 x 80ml;\nCRM-COC40 - Faixa de temperatura 250°C / 3 x 80ml;\nCRM-FCLU01 - Material de Referência certificado com ponto de fulgor, lubrificante, Cleveland Open Cup (COC), faixa de temperatura 260°C / 250ml."
           },
           {
             "nome": "MRC-Material de Referência Certificado para Destilação, ASTM D86, Certificado ISO 17034",
@@ -31,38 +31,38 @@
            {
             "nome": "MRC-Material de Referência Certificado, ASTM D1544/D6166 - Certificado ISO/IEC 17025 e ISO 17034",
             "imagem": "/produtos/aro/aro.png",
-            "descricao": "\n\nPADRÕES DE CORES, GARDNER COLOR:\n\n134200 - Matriz Óleo Mineral 21, 500 ml;\n\n134210 - Matriz Óleo Mineral 5.0, 500 ml;\n\n134220 - Matriz Óleo Mineral 8.0, 500 ml."
+            "descricao": "\n\nPADRÕES DE CORES, GARDNER COLOR:\n\n134200 - Matriz Óleo Mineral 21, 500ml;\n\n134210 - Matriz Óleo Mineral 5.0, 500ml;\n\n134220 - Matriz Óleo Mineral 8.0, 500ml."
           },
            {
             "nome": "MRC-Material de Referência Certificado, ASTM D6045/D1500, Certificado ISO/IEC 17025 e ISO 17034",
             "imagem": "/produtos/aro/aro.png",
-            "descricao": "\n\nPADRÕES DE CORES, COR ASTM:\n\n134290 - Padrão de referência de cor ASTM < 0,5, 500 ml;\n\n134000 - Padrão de referência de cor ASTM 1, 500 ml;\n\n134010 - Padrão de referência de cor ASTM 3, 500 ml;\n\n134020 - Padrão de referência de cor ASTM 5, 500 ml;\n\n134030 - Padrão de referência de cor ASTM 7, 500 ml."
+            "descricao": "\n\nPADRÕES DE CORES, COR ASTM:\n\n134290 - Padrão de referência de cor ASTM < 0,5, 500ml;\n\n134000 - Padrão de referência de cor ASTM 1, 500ml;\n\n134010 - Padrão de referência de cor ASTM 3, 500ml;\n\n134020 - Padrão de referência de cor ASTM 5, 500ml;\n\n134030 - Padrão de referência de cor ASTM 7, 500ml."
           },
            {
             "nome": "MRC - Material de Referência Certificado, ASTM D6045/D156, Certificado ISO/IEC 17025 e ISO 17034",
             "imagem": "/produtos/aro/aro.png",
-            "descricao": "\n\nPADRÕES DE CORES, COR SAYBOLT:\n\n134040 - Cor Saybolt -10, 500 ml;\n\n134050 - Cor Saybolt 0, 500 ml;\n\n134060 - Cor Saybolt +12, 500 ml;\n\n134070 - Cor Saybolt +25, 500 ml."
+            "descricao": "\n\nPADRÕES DE CORES, COR SAYBOLT:\n\n134040 - Cor Saybolt -10, 500ml;\n\n134050 - Cor Saybolt 0, 500ml;\n\n134060 - Cor Saybolt +12, 500ml;\n\n134070 - Cor Saybolt +25, 500ml."
 
           },
           {
             "nome": "MRC - Material de Referência Certificado, ASTM D1209/D5386, Certificado ISO 9001",
             "imagem": "/produtos/aro/aro.png",
-            "descricao": "\n\nPADRÕES DE CORES, Pt-Co / HAZEN COLOR:\n\n133990 - Matriz solução aquosa 0, 500 ml\n134170 - Matriz solução aquosa 30, 500 ml\n134140 - Matriz solução aquosa 5, 500 ml\n4180 - Matriz solução aquosa 50, 500 ml\n134150 - Matriz solução aquosa 10, 500 ml\n134190 - Matriz solução aquosa 100, 500 ml\n124160 - Matriz solução aquosa 15, 500 ml\n462805 - Matriz solução aquosa 500, 500 ml"
+            "descricao": "\n\nPADRÕES DE CORES, Pt-Co / HAZEN COLOR:\n\n133990 - Matriz solução aquosa 0, 500ml\n134170 - Matriz solução aquosa 30, 500ml\n134140 - Matriz solução aquosa 5, 500ml\n4180 - Matriz solução aquosa 50, 500ml\n134150 - Matriz solução aquosa 10, 500ml\n134190 - Matriz solução aquosa 100, 500ml\n124160 - Matriz solução aquosa 15, 500ml\n462805 - Matriz solução aquosa 500, 500ml"
           },
         {
           "nome": "MRC - Material de Referência Certificado com Ponto de Fulgor, Copo Fechado Pensky-Martens (PMCC), ASTM D93, Certificado ISO/IEC 17025 e ISO 17034",
           "imagem": "/produtos/aro/aro 3.png",
-          "descricao": "\n\nPADRÕES DE PONTO DE FULGOR - PMCC, ASTM D93:\n\nCRM-PMCC10 - Procedimento A, faixa de temperatura 80°C / 3 x 80 ml\nCRM-PMCC20 - Procedimento A, faixa de temperatura 105°C / 3 x 80 ml\nCRM-PMCC3D - Procedimento A, faixa de temperatura 140°C / 3 x 80 ml\nCRM-PMCC40 - Procedimento A, faixa de temperatura 230°C / 3 x 80 ml\nCRM-PMGODI - Procedimento A, faixa de temperatura 60°C / 250 ml\nCRM-PMLUOI - Procedimento B, valor nominal 90°C a 100°C, faixa de temperatura 105°C / 250 ml"
+          "descricao": "\n\nPADRÕES DE PONTO DE FULGOR - PMCC, ASTM D93:\n\nCRM-PMCC10 - Procedimento A, faixa de temperatura 80°C / 3 x 80ml\nCRM-PMCC20 - Procedimento A, faixa de temperatura 105°C / 3 x 80ml\nCRM-PMCC3D - Procedimento A, faixa de temperatura 140°C / 3 x 80ml\nCRM-PMCC40 - Procedimento A, faixa de temperatura 230°C / 3 x 80ml\nCRM-PMGODI - Procedimento A, faixa de temperatura 60°C / 250ml\nCRM-PMLUOI - Procedimento B, valor nominal 90°C a 100°C, faixa de temperatura 105°C / 250ml"
         },
        {
           "nome": "MRC - Material de Referência Certificado para Ponto de Entupimento de Filtro Frio (CFPP), ASTM D6371, Certificado ISO 17034",
           "imagem": "/produtos/aro/aro prata (2).png",
-          "descricao": "\n\nPADRÃO DE CFPP - Ponto de Entupimento de Filtro Frio, ASTM D6371:\n\nCRM-CFGO01 - Diesel, faixa de temperatura -15°C / 250 ml"
+          "descricao": "\n\nPADRÃO DE CFPP - Ponto de Entupimento de Filtro Frio, ASTM D6371:\n\nCRM-CFGO01 - Diesel, faixa de temperatura -15°C / 250ml"
         },
         {
           "nome": "MRC - Material de Referência Certificado TAG Flash Point, ASTM D56",
           "imagem": "/produtos/aro/aro prata.png",
-          "descricao": "\n\nPADRÃO DE PONTO DE FULGOR - TAG, ASTM D56:\n\nCRM-TAKRO - Jet A1, faixa de temperatura 40°C / 250 ml"
+          "descricao": "\n\nPADRÃO DE PONTO DE FULGOR - TAG, ASTM D56:\n\nCRM-TAKRO - Jet A1, faixa de temperatura 40°C / 250ml"
         }
         ]
       }
@@ -143,7 +143,7 @@
         "id": "crf",
         "nome": "CRF",
         "logo":"/logos/Logo IQT - cfr.png",
-        "catalogo": "/catalogos/forza-catalogo.pdf",
+        "catalogo": "/catalogos/iqt.pdf",
         "produtos": [
           {
             "nome": "Analisador de Número de Cetano - IQT",
@@ -157,7 +157,7 @@
         "id": "br",
         "nome": "B/R Instrument Corporation",
         "logo":"/logos/Logo Bri .jpeg",
-        "catalogo": "/catalogos/forza-catalogo.pdf",
+        "catalogo": "/catalogos/bf.pdf",
         "produtos": [
            {
             "nome": "Destilação Fracionada",
@@ -185,7 +185,7 @@
         "id": "zahm",
         "nome": "ZAHM & NAGEL Company Incorporated",
         "logo":"/logos/Logo zahm .png",
-        "catalogo": "/catalogos/forza-catalogo.pdf",
+        "catalogo": "/catalogos/zahms.pdf",
         "produtos": [
            {
             "nome": "Zahm SS-60",
@@ -292,7 +292,7 @@
         "id": "yateks",
         "nome": "YATEKS",
         "logo":"/logos/Logo yateks .png",
-        "catalogo": "/catalogos/forza-catalogo.pdf",
+        "catalogo": "/catalogos/yateks.pdf",
         "produtos": [
             {
       "nome": "Analizador Multi-Parâmetro de ÔLEO",
@@ -310,7 +310,7 @@
         "id": "huazheng",
         "nome": "HUAZHENG",
         "logo":"/logos/Logo huazheng.png",
-        "catalogo": "/catalogos/forza-catalogo.pdf",
+        "catalogo": "/catalogos/huazeng.pdf",
         "produtos": [
           {
       "nome": "Rigidez Dielétrica",
@@ -323,7 +323,7 @@
   "id": "tanaka",
   "nome": "Tanaka",
   "logo":"/logos/Logo Tanaka .png",
-  "catalogo": "/catalogos/forza-catalogo.pdf",
+  "catalogo": "/catalogos/tanaka.pdf",
   "produtos": [
     {
       "nome": "Ponto de Anilina",
@@ -381,7 +381,7 @@
         "id": "icr3",
         "nome": "ICR3",
         "logo":"/logos/Logo.jpeg",    
-        "catalogo": "/catalogos/forza-catalogo.pdf",    
+        "catalogo": "/catalogos/icr3.pdf",    
         "produtos": [
           {
             "nome": "ICR BC1",

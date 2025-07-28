@@ -11,13 +11,13 @@ const categorias = [
         id: "aro",
         nome: "ARO Scientific",
         produtos: [
-          { nome: "Material de Referência Certificado de densidade/ASTM D4052" },
-          { nome: "Material de Referência Certificado com Ponto de Fulgor(COC)/ASTM D92" },
-          { nome: "Material de Referência Certificado para Destilação/ASTM D86" },
-          { nome: "Material de Referência Certificado/ASTM D97/D2500" },
-          { nome: "Material de Referência Certificado/ASTM D1544/D6166" },
-          { nome: "Material de Referência Certificado/ASTM D6045/D1500" },
-          { nome: "Material de Referência Certificado/ASTM D6045/D156" }
+          { nome: "Material de Referência Certificado de densidade ASTM D4052" },
+          { nome: "Material de Referência Certificado com Ponto de Fulgor(COC) ASTM D92" },
+          { nome: "Material de Referência Certificado para Destilação ASTM D86" },
+          { nome: "Material de Referência Certificado ASTM D97 D2500" },
+          { nome: "Material de Referência Certificado ASTM D1544 D6166" },
+          { nome: "Material de Referência Certificado ASTM D6045 D1500" },
+          { nome: "Material de Referência Certificado ASTM D6045 D156" }
         ]
       }
     ]
@@ -148,6 +148,7 @@ const categorias = [
 ];
 
 
+
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     nome: '',
@@ -157,21 +158,58 @@ export default function ContactForm() {
     produto: '',
     comentario: ''
   });
-
+ const [sucessoMensagem, setSucessoMensagem] = useState(false);
+  const [erroMensagem, setErroMensagem] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value,
-      ...(name === 'marca' ? { produto: '' } : {})
+      ...(name === 'marca' ? { produto: '' } : {})  // Reset produto quando marca for alterada
     }));
   };
 
+  // Função para enviar o formulário
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Dados enviados:", formData);
+    
+    // Envia os dados para o EmailJS
+    emailjs.send(
+      'service_03o26u9',  // Substitua pelo seu Service ID do EmailJS
+      'template_swej72s',  // Substitua pelo seu Template ID
+      formData,           // Os dados do formulário que você vai enviar
+      '_SMJn5Ik1hAxMxVZL'    // Substitua pela sua Public Key do EmailJS
+    ).then((result) => {
+      console.log('E-mail enviado com sucesso!', result.text);
+      setSucessoMensagem(true); // Exibe a mensagem de sucesso
+      setErroMensagem(false); // Reseta a mensagem de erro
+      // Limpar o formulário após o envio bem-sucedido
+      setFormData({
+        nome: '',
+        email: '',
+        telefone: '',
+        marca: '',
+        produto: '',
+        comentario: ''
+      });
+        setTimeout(() => {
+      setSucessoMensagem(false);
+      setErroMensagem(false);
+    }, 5000);
+
+    }).catch((error) => {
+      console.error('Erro ao enviar o e-mail:', error);
+      setErroMensagem(true); // Exibe a mensagem de erro
+      setSucessoMensagem(false); 
+      setTimeout(() => {
+        setSucessoMensagem(false);
+        setErroMensagem(false);
+      }, 5000);
+
+    });
   };
 
+  // Encontrar as marcas e produtos
   const todasMarcas = categorias.flatMap(cat => cat.marcas);
   const produtosDaMarca = formData.marca
     ? todasMarcas.find(m => m.id === formData.marca)?.produtos || []
@@ -182,25 +220,60 @@ export default function ContactForm() {
       <div className="form-container">
         <h2>Fale Conosco</h2>
         <p>Preencha o formulário abaixo. Responderemos em breve!</p>
+ {/* Popup de Sucesso */}
+        {sucessoMensagem && (
+          <div className="popup sucesso">
+            <p>Mensagem enviada com sucesso!</p>
+          </div>
+        )}
 
+        {/* Popup de Erro */}
+        {erroMensagem && (
+          <div className="popup erro">
+            <p>Houve um erro ao enviar a mensagem. Tente novamente mais tarde.</p>
+          </div>
+        )}
         <form onSubmit={handleSubmit} className="modern-form">
           <div className="input-group">
-            <input type="text" name="nome" value={formData.nome} onChange={handleChange} required />
+            <input
+              type="text"
+              name="nome"
+              value={formData.nome}
+              onChange={handleChange}
+              required
+            />
             <label htmlFor="nome">Nome Completo</label>
           </div>
 
           <div className="input-group">
-            <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
             <label htmlFor="email">E-mail</label>
           </div>
 
           <div className="input-group">
-            <input type="tel" name="telefone" value={formData.telefone} onChange={handleChange} required />
+            <input
+              type="tel"
+              name="telefone"
+              value={formData.telefone}
+              onChange={handleChange}
+              required
+            />
             <label htmlFor="telefone">Telefone</label>
           </div>
 
           <div className="input-group">
-            <select name="marca" value={formData.marca} onChange={handleChange} className={formData.marca ? "has-value" : ""}>
+            <select
+              name="marca"
+              value={formData.marca}
+              onChange={handleChange}
+              className={formData.marca ? "has-value" : ""}
+            >
               <option value="">Selecione a marca</option>
               {todasMarcas.map(marca => (
                 <option key={marca.id} value={marca.id}>{marca.nome}</option>
@@ -226,7 +299,13 @@ export default function ContactForm() {
           </div>
 
           <div className="input-group textarea-group">
-            <textarea name="comentario" rows="4" value={formData.comentario} onChange={handleChange} required />
+            <textarea
+              name="comentario"
+              rows="4"
+              value={formData.comentario}
+              onChange={handleChange}
+              required
+            />
             <label htmlFor="comentario">Comentário</label>
           </div>
 
