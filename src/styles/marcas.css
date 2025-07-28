@@ -15,14 +15,14 @@
 }
 
 .marca-card p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #555454;
   margin-bottom: 10px;
 }
 
 .marca-card h2 {
   font-size: 1.3rem;
-  margin-bottom:10px;
+  margin-bottom:5px;
   color: #333;
 }
 .botao-catalogo-geral:hover {
@@ -111,7 +111,18 @@ margin-bottom: 40px;
   background-color: #ffffffb3;
   transition: background 0.2s ease, transform 0.2s ease;
 }
-
+.botao-catalogos {
+    margin-top: auto;
+  font-size: 0.9rem;
+  color:#a0b773;
+  text-decoration: none !important;
+  border-radius: 8px;
+  background-color: #ffffffb3;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.botao-catalogos:hover {
+   color:  #758653;
+}
 .botao-catalogo:hover {
   background-color: #a0b773;
   color: white;

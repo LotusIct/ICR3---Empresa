@@ -26,18 +26,37 @@ const Marcas = () => {
       <div className="grid-marcas">
              {/* Sessão de Catálogo Geral */}
       <div className="marca-card">
-         <h2>Catálogo Geral</h2>
-        <p>Baixe o catálogo completo com todas as nossas marcas e produtos.</p>
+         <h2>Catálogos</h2>
+  <p>Baixe agora o material completo com nossos produtos.</p>
         <a
-          href="/catalogos/catalogo-geral.pdf"
+          href="/catalogos/geral.pdf"
           download
-          className="botao-catalogo"
+          className="botao-catalogos"
           target="_blank"
           rel="noopener noreferrer"
         >
-         Baixar Catálogo Geral
+        Catálogo Geral
+        </a>
+          <a
+          href="/catalogos/mcr.pdf"
+          download
+          className="botao-catalogos"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+         Catálogo MCR
+        </a>
+         <a
+          href="/catalogos/equipamentos.pdf"
+          download
+          className="botao-catalogos"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+         Equipamentos
         </a>
       </div>
+     
         {todasMarcas.map((marca) => (
           <div key={marca.id} className="marca-card">
             <div className="marca-conteudo">
