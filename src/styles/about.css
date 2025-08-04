@@ -176,7 +176,9 @@
   .about-text-about {
     text-align: center;
   }
-
+ .about-text-about p {
+    text-align: center;
+  }
   .hero-content-about h1 {
     font-size: 2.5rem;
   }
