@@ -1,73 +1,107 @@
 [
-  {
-    "categoria": "Material de Ref. Certificado",
-    "marcas": [
-      {
-        "id": "aro",
-        "nome": "ARO Scientific",
-        "logo":"/logos/Logo aro .png",
-         "catalogo": "/catalogos/Aro.pdf",
-        "produtos": [
-          {
-            "nome": "MRC - Material de Referência Certificado de densidade - ASTM D4052 - Certificado ISO/IEC 17025 e ISO 17034",
-            "imagem": "/produtos/aro/aro 3 (3).png",
-            "descricao": "\n\nCRM-DEGO01 - Matriz diesel, faixa de densidade 0,8280g/mL\nCRM-DEKR01 - Jet A1, faixa de densidade 0,8014g/mL\nCRM-DELU01 - Lubrificante, faixa de densidade 0,8650g/mL\nCRM-DEGA01 - Gasolina, faixa de densidade 0,7495g/mL"
-          },
-          {
-            "nome": "MRC - Material de Referência Certificado com Ponto de Fulgor, Cleveland Open Cup (COC) - ASTM D92 - Certificado ISO/IEC 17025 e ISO 17034",
-            "imagem": "/produtos/aro/aro 3 (2).png",
-            "descricao": "\n\nCRM-COC10 - Faixa de temperatura 85°C / 3 x 80ml;\nCRM-COC20 - Faixa de temperatura 125°C / 3 x 80ml;\nCRM-COC30 - Faixa de temperatura 160°C / 3 x 80ml;\nCRM-COC40 - Faixa de temperatura 250°C / 3 x 80ml;\nCRM-FCLU01 - Material de Referência certificado com ponto de fulgor, lubrificante, Cleveland Open Cup (COC), faixa de temperatura 260°C / 250ml."
-          },
-          {
-            "nome": "MRC-Material de Referência Certificado para Destilação, ASTM D86, Certificado ISO 17034",
-            "imagem": "/produtos/aro/aro prata (4).png",
-            "descricao": "\n\nCRM-DIGO01 - Diesel, faixa de temperatura 166 °C a 365 °C / 250ml;\n\nCRM-DIKROJ - Jet Al, faixa de temperatura 148 °C a 259 °C / 250ml;\n\nCRM-DIGA01 - Gasolina, faixa de temperatura 34 °C a 159 °C / 250ml."
-          },
-           {
-            "nome": "MRC - Material de Referência Certificado, ASTM D97/D2500, Certificado ISO 17034",
-            "imagem": "/produtos/aro/aro prata (3).png",
-            "descricao": "\n\nCRM-CPG001 - Material de referência certificado para ponto de névoa, diesel, faixa de temperatura -5°C / 250ml;\n\nCRM-PPGO01 - Material de referência certificado para ponto de fluidez, diesel, faixa de temperatura -12°C / 250ml;\n\nCRM-PPLU01 - Material de referência certificado para ponto de fluidez, lubrificante, faixa de temperatura -15°C / 250ml."
-          },
-           {
-            "nome": "MRC-Material de Referência Certificado, ASTM D1544/D6166 - Certificado ISO/IEC 17025 e ISO 17034",
-            "imagem": "/produtos/aro/aro.png",
-            "descricao": "\n\nPADRÕES DE CORES, GARDNER COLOR:\n\n134200 - Matriz Óleo Mineral 21, 500ml;\n\n134210 - Matriz Óleo Mineral 5.0, 500ml;\n\n134220 - Matriz Óleo Mineral 8.0, 500ml."
-          },
-           {
-            "nome": "MRC-Material de Referência Certificado, ASTM D6045/D1500, Certificado ISO/IEC 17025 e ISO 17034",
-            "imagem": "/produtos/aro/aro.png",
-            "descricao": "\n\nPADRÕES DE CORES, COR ASTM:\n\n134290 - Padrão de referência de cor ASTM < 0,5, 500ml;\n\n134000 - Padrão de referência de cor ASTM 1, 500ml;\n\n134010 - Padrão de referência de cor ASTM 3, 500ml;\n\n134020 - Padrão de referência de cor ASTM 5, 500ml;\n\n134030 - Padrão de referência de cor ASTM 7, 500ml."
-          },
-           {
-            "nome": "MRC - Material de Referência Certificado, ASTM D6045/D156, Certificado ISO/IEC 17025 e ISO 17034",
-            "imagem": "/produtos/aro/aro.png",
-            "descricao": "\n\nPADRÕES DE CORES, COR SAYBOLT:\n\n134040 - Cor Saybolt -10, 500ml;\n\n134050 - Cor Saybolt 0, 500ml;\n\n134060 - Cor Saybolt +12, 500ml;\n\n134070 - Cor Saybolt +25, 500ml."
-
-          },
-          {
-            "nome": "MRC - Material de Referência Certificado, ASTM D1209/D5386, Certificado ISO 9001",
-            "imagem": "/produtos/aro/aro.png",
-            "descricao": "\n\nPADRÕES DE CORES, Pt-Co / HAZEN COLOR:\n\n133990 - Matriz solução aquosa 0, 500ml\n134170 - Matriz solução aquosa 30, 500ml\n134140 - Matriz solução aquosa 5, 500ml\n4180 - Matriz solução aquosa 50, 500ml\n134150 - Matriz solução aquosa 10, 500ml\n134190 - Matriz solução aquosa 100, 500ml\n124160 - Matriz solução aquosa 15, 500ml\n462805 - Matriz solução aquosa 500, 500ml"
-          },
+ {
+  "categoria": "Material de Ref. Certificado",
+  "marcas": [
+    {
+      "id": "aro",
+      "nome": "ARO Scientific",
+      "logo": "/logos/Logo aro .png",
+      "catalogo": "/catalogos/Aro.pdf",
+      "produtos": [
         {
-          "nome": "MRC - Material de Referência Certificado com Ponto de Fulgor, Copo Fechado Pensky-Martens (PMCC), ASTM D93, Certificado ISO/IEC 17025 e ISO 17034",
-          "imagem": "/produtos/aro/aro 3.png",
-          "descricao": "\n\nPADRÕES DE PONTO DE FULGOR - PMCC, ASTM D93:\n\nCRM-PMCC10 - Procedimento A, faixa de temperatura 80°C / 3 x 80ml\nCRM-PMCC20 - Procedimento A, faixa de temperatura 105°C / 3 x 80ml\nCRM-PMCC3D - Procedimento A, faixa de temperatura 140°C / 3 x 80ml\nCRM-PMCC40 - Procedimento A, faixa de temperatura 230°C / 3 x 80ml\nCRM-PMGODI - Procedimento A, faixa de temperatura 60°C / 250ml\nCRM-PMLUOI - Procedimento B, valor nominal 90°C a 100°C, faixa de temperatura 105°C / 250ml"
+          "nome": "MRC - Material de Referência Certificado de densidade - ASTM D4052 - Certificado ISO/IEC 17025 e ISO 17034",
+          "imagem": "/produtos/aro/aro 3 (3).png",
+           "descricaoImagem": "/descricao/aro/28.png"
         },
-       {
-          "nome": "MRC - Material de Referência Certificado para Ponto de Entupimento de Filtro Frio (CFPP), ASTM D6371, Certificado ISO 17034",
+        {
+          "nome": "MRC - Material de Referência Certificado com Ponto de Fulgor, Cleveland Open Cup (COC) - ASTM D92 - Certificado ISO/IEC 17025 e ISO 17034",
+          "imagem": "/produtos/aro/aro 3 (2).png",
+           "descricaoImagem": "/descricao/aro/22.png"
+        },
+        {
+          "nome": "MRC-Material de Referência Certificado para Destilação, ASTM D86, Certificado ISO 17034",
+          "imagem": "/produtos/aro/aro prata (4).png",
+           "descricaoImagem": "/descricao/aro/24.png"
+        },
+        {
+          "nome": "MRC - Material de Referência Certificado, ASTM D97/D2500, Certificado ISO 17034",
+          "imagem": "/produtos/aro/aro prata (3).png",
+           "descricaoImagem": "/descricao/aro/23.png"
+        },
+        {
+          "nome": "MRC-Material de Referência Certificado, ASTM D1544/D6166 - Certificado ISO/IEC 17025 e ISO 17034",
+          "imagem": "/produtos/aro/aro.png",
+           "descricaoImagem": "/descricao/aro/25.png"
+        },
+        {
+          "nome": "MRC-Material de Referência Certificado, ASTM D6045/D1500, Certificado ISO/IEC 17025 e ISO 17034",
+          "imagem": "/produtos/aro/aro.png",
+          "descricaoImagem": "/descricao/aro/27.png"
+        },
+        {
+          "nome": "MRC - Material de Referência Certificado, ASTM D6045/D156, Certificado ISO/IEC 17025 e ISO 17034",
+          "imagem": "/produtos/aro/aro.png",
+           "descricaoImagem": "/descricao/aro/26.png"
+        },
+        {
+          "nome": "MRC - Material de Referência Certificado com Ponto de Fulgor, Pensky-Martens (PMCC), ASTM D93",
+          "imagem": "/produtos/aro/aro 3.png",
+           "descricaoImagem": "/descricao/aro/18.png"
+        },
+        {
+          "nome": "MRC - Material de Referência Certificado para CFPP, ASTM D6371, Certificado ISO 17034",
           "imagem": "/produtos/aro/aro prata (2).png",
-          "descricao": "\n\nPADRÃO DE CFPP - Ponto de Entupimento de Filtro Frio, ASTM D6371:\n\nCRM-CFGO01 - Diesel, faixa de temperatura -15°C / 250ml"
+           "descricaoImagem": "/descricao/aro/19.png"
         },
         {
           "nome": "MRC - Material de Referência Certificado TAG Flash Point, ASTM D56",
           "imagem": "/produtos/aro/aro prata.png",
-          "descricao": "\n\nPADRÃO DE PONTO DE FULGOR - TAG, ASTM D56:\n\nCRM-TAKRO - Jet A1, faixa de temperatura 40°C / 250ml"
+           "descricaoImagem": "/descricao/aro/20.png"
         }
-        ]
-      }
-    ]
-  },
+      ]
+    },
+   {
+  "id": "cannon",
+  "nome": "Cannon Instrument Company",
+  "logo": "/logos/MCR.jpg",
+  "catalogo": "/catalogos/mcr cannon.pdf",
+  "produtos": [
+    {
+      "nome": "Padrões de Viscosidade em Alta Temperatura e Alto Cisalhamento da CANNON",
+      "imagem": "/produtos/cannon mcr/cannon mcr 6.jpg",
+       "descricaoImagem": "/descricao/cannon mcr/3.png"
+    },
+    {
+      "nome": "Padrões de Viscosidade em Baixa Temperatura e SimpleVIS® da CANNON",
+      "imagem": "/produtos/cannon mcr/cannon mcr 7.jpg",
+       "descricaoImagem": "/descricao/cannon mcr/13.png"
+    },
+    {
+      "nome": "Óleos para Banho CANNON",
+      "imagem": "/produtos/cannon mcr/cannon mcr2.jpg",
+       "descricaoImagem": "/descricao/cannon mcr/9.png"
+    },
+    {
+      "nome": "Padrões de Viscosidade em Alta Temperatura (HTHS)",
+      "imagem": "/produtos/cannon mcr/cannon mcr3.jpg",
+      "descricaoImagem": "/descricao/cannon mcr/10.png"
+    },
+    {
+      "nome": "Padrões de Viscosidade de Silicone CANNON & Thomas®-Stormer® (Viscosímetros Rotacionais)",
+      "imagem": "/produtos/cannon mcr/cannon mcr4.jpg",
+       "descricaoImagem": "/descricao/cannon mcr/14.png"
+    },
+    {
+      "nome": "Padrões de Viscosidade Cannon Flow Cup ",
+      "imagem": "/produtos/cannon mcr/cannonmcr5.jpg",
+       "descricaoImagem": "/descricao/cannon mcr/15.png"
+    }
+  ]
+}
+
+  ]
+},
+
   {
     "categoria": "Equipamentos",
     "marcas": [
@@ -148,7 +182,7 @@
           {
             "nome": "Analisador de Número de Cetano - IQT",
             "imagem": "/produtos/crf/iqt.png",
-            "descricao": "Nova geração do IQT, o IQT-XLM - IQT ASTM D6890; EN 15195 IP498. ASTM D975; ASTM D6751, ASTM D7467 CARB; EN 590) EN 15940 CAN/CGSB-3.517; CAN/CGSB-3.520; CAN/CGSB-3.522, CAN/CGSB-3.524."
+            "descricaoImagem": "/descricao/crf/12.png"
           }
                     
         ]
@@ -162,22 +196,22 @@
            {
             "nome": "Destilação Fracionada",
             "imagem": "/produtos/Bri/Bri .png",
-            "descricao": "Escala de Piloto /Escala de Laboratório / Mini-destilação / Micro-destilação"
+            "descricaoImagem": "/descricao/br/21.png"
           },
            {
             "nome": "Recuperação de Solvente",
             "imagem": "/produtos/Bri/Bri (1).png",
-            "descricao": "Histologia / GPC / HPLC / Solvente de Alta Pureza"
+           "descricaoImagem": "/descricao/br/22.png"
           },
           {
             "nome": "Destilação à Vácuo D1160",
             "imagem": "/produtos/Bri/Bri.png",
-            "descricao": "Automática / Semiautomática / Manual ASTM D1160"
+            "descricaoImagem": "/descricao/br/20.png"
           },
           {
             "nome": "Destilação de Petróleo Bruto",
             "imagem": "/produtos/Bri/Bri(1).png",
-            "descricao": "Automático (Automaxx 9100) / Semiautomático / Mini-destilação / Micro-destilação ASTM D2892; ASTM D5236"
+            "descricaoImagem": "/descricao/br/23.png"
           }
         ]
       },
@@ -190,22 +224,22 @@
            {
             "nome": "Zahm SS-60",
             "imagem": "/produtos/zahm/Zahm  (1).png",
-            "descricao": "Desenvolvido para determinar o nível médio de gás CO2 no taNque de armazenamento de bebidas"
+            "descricaoImagem": "/descricao/zahm/16.png"
           },
            {
             "nome": "Perfuração Computadorizada",
             "imagem": "/produtos/zahm/Zahm  (2).png",
-            "descricao": "Instrumento recém desenvolvido para testar volumes de gás CO2 em garrafas e latas."
+            "descricaoImagem": "/descricao/zahm/19.png"
           },
           {
             "nome": "Zahn Series 10000",
             "imagem": "/produtos/zahm/Zahm .png",
-            "descricao": "Reservatório para solução cáustica e uma bureta calibrada de absorção fixada numa estrutura de PVC polida para determinação de pureza em CO2."
+            "descricaoImagem": "/descricao/zahm/18.png"
           },
           {
             "nome": "Zahm Modelo DT Penetrante",
             "imagem": "/produtos/zahm/Zahm.png",
-            "descricao": "Usado para testar o volume de gás CO2 de bebidas carbonatas em garrafas de vidro/PET e latas."
+            "descricaoImagem": "/descricao/zahm/17.png"
           }
         ]
       },
@@ -297,12 +331,12 @@
             {
       "nome": "Analizador Multi-Parâmetro de ÔLEO",
       "imagem": "/produtos/yatecks/Ypf 15 yateks  .png",
-      "descricao": "Modelo YPF15"
+      "descricaoImagem": "/descricao/yateks/14.png"
     }, 
       {
       "nome": "Contador Portátil de Partículas de Óleo",
       "imagem": "/produtos/yatecks/Yjs 150 yateks (1).jpeg",
-      "descricao": "Modelo YJS-150"
+      "descricaoImagem": "/descricao/yateks/15.png"
     }
         ]
       },
@@ -315,7 +349,7 @@
           {
       "nome": "Rigidez Dielétrica",
       "imagem": "/produtos/huazheng/HZJQ-X1.jpeg",
-      "descricao": "Modelo HZJQ-X1; ASTM D1816; ASTM D877; NORMAS IEC 60156"
+      "descricaoImagem": "/descricao/huazeng/11.png"
     }
         ]
       },
@@ -328,47 +362,47 @@
     {
       "nome": "Ponto de Anilina",
       "imagem": "/produtos/tanaka/Aap 6 Tanaka .jpeg",
-      "descricao": "Modelo AAP-6 - ASTM D611"
+      "descricaoImagem": "/descricao/tanaka/7.png"
     },
     {
       "nome": "Colorímetro Automático para Produtos de Petróleo",
       "imagem": "/produtos/tanaka/Acl3 Tanaka .jpeg",
-      "descricao": "Modelo ACL-3 - Cor ASTM: ASTM D1500; D6045; Cor Saybolt: ASTM D156; D6045; Cor Pt-Co / Hazen: ASTM D1209; D5386; Gardner: ASTM D1544;"
+      "descricaoImagem": "/descricao/tanaka/10.png"
     },
     {
       "nome": "Ponto de Fulgor Cleveland",
       "imagem": "/produtos/tanaka/Aco100 Tanaka .png",
-      "descricao": "ACO-100 - ASTM D92"
+      "descricaoImagem": "/descricao/tanaka/4.png"
     },
     {
       "nome": "Ponto de Fulgor Pensky-Martens",
       "imagem": "/produtos/tanaka/Apm100 Tanaka .jpeg",
-      "descricao": "Modelo APM-100 - ASTM D93"
+      "descricaoImagem": "/descricao/tanaka/3.png"
     },
     {
       "nome": "Ponto de Fulgor TAG",
       "imagem": "/produtos/tanaka/Atg8 Tanaka .jpeg",
-      "descricao": " Modelo ATG-8 - ASTM D56"
+      "descricaoImagem": "/descricao/tanaka/8.png"
     },
     {
       "nome": "Destilador Atmosférico",
       "imagem": "/produtos/tanaka/Foto ad7 Tanaka .webp",
-      "descricao": "Modelo AD-7 - ASTM D86"
+      "descricaoImagem": "/descricao/tanaka/2.png"
     },
     {
       "nome": "Analisador de Enxofre SDXRF (12 posições)",
       "imagem": "/produtos/tanaka/Rx630 Tanaka .jpeg",
-      "descricao": "Modelo RX-630SA - ASTM D4294 - ASTM D2622; Micro resíduo de carbono - ASTM D4530; Colorímetro - ASTM D1500; ASTM D156; Ponto de Amolecimento - ASTM D36;"
+      "descricaoImagem": "/descricao/tanaka/9.png"
     },
      {
       "nome": "Ponto de Entupimento",
       "imagem": "/produtos/tanaka/AFP 300 (1).jpeg",
-      "descricao": "Modelo AFP-300; ASTM D6371"
+      "descricaoImagem": "/descricao/tanaka/5.png"
     },
      {
       "nome": "Ponto de Névoa e Fluidez",
       "imagem": "/produtos/tanaka/Mpc 6 (1).jpeg",
-      "descricao": "Modelo MPC-6 - ASTM D6749; ASTM D7683 - Correlação para ASTM D97; ASTM D2500"
+      "descricaoImagem": "/descricao/tanaka/6.png"
     }
   ]
 }
@@ -386,7 +420,7 @@
           {
             "nome": "ICR BC1",
             "imagem": "/produtos/icr3/Banho icr3 - icr-bc1 .png",
-            "descricao": "Banho Termostático e Criostático"
+            "descricaoImagem": "/descricao/icr3/13.png"
           }
         ]
       }

@@ -63,10 +63,12 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="navbar-left">
-        <div className="logo">
-          <img src={logo} alt="Logo ICR3 Científica" />
+         <div className="logo">
+          {/* Aqui envolvemos o logo com o Link */}
+          <Link to="/" onClick={handleLinkClick}>
+            <img src={logo} alt="Logo ICR3 Científica" />
+          </Link>
         </div>
-
         <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
           {isMobile && (
             <div className="close-button" onClick={() => setMenuOpen(false)}>

@@ -1,64 +1,94 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/metrology.css';
-// Ícones Material Design, mais modernos
-import { MdScale, MdThermostat, MdOpacity, MdOutlineInventory2, MdFitnessCenter } from 'react-icons/md';
+import {
+  MdScale,
+  MdThermostat,
+  MdOpacity,
+  MdOutlineInventory2
+} from 'react-icons/md';
+
+import massaImg from '../assets/massa.JPG';
+import temperaturaImg from '../assets/temperatura.JPG';
+import viscosidadeImg from '../assets/viscosidade.JPG';
+import volumeImg from '../assets/volume.JPG';
+
+const metrologyItems = [
+  {
+    title: 'Massa',
+    descrition:'Escopo da Creditação - ABNT NBR ISO/ICE 17025 - Calibração',
+    icon: <MdScale size={60} color="#4D504E" />,
+    image: massaImg
+  },
+  {
+    title: 'Temperatura e Umidade',
+      descrition:'Escopo da Creditação - ABNT NBR ISO/ICE 17025 - Calibração',
+    icon: <MdThermostat size={60} color="#4D504E" />,
+    image: temperaturaImg
+  },
+  {
+    title: 'Viscosidade', 
+     descrition:'Escopo da Creditação - ABNT NBR ISO/ICE 17025 - Calibração',
+    icon: <MdOpacity size={60} color="#4D504E" />,
+    image: viscosidadeImg
+  },
+  {
+    title: 'Volume e Massa Específica',
+    descrition:'Escopo da Creditação - ABNT NBR ISO/ICE 17025 - Calibração',
+    icon: <MdOutlineInventory2 size={60} color="#4D504E" />,
+    image: volumeImg
+  }
+];
+
 
 export default function MetrologyPage() {
+  const [modalImage, setModalImage] = useState(null);
+
+  const openModal = (image) => setModalImage(image);
+  const closeModal = () => setModalImage(null);
+
   return (
     <div className="metrology-page">
-
       {/* Hero Section */}
       <section className="hero-section-metrology">
         <div className="overlay"></div>
         <div className="hero-content-metrology">
           <h1>Metrologia</h1>
-          <p>Nossos laboratórios acreditados oferecem precisão e confiabilidade em medições das principais grandezas físicas, de acordo com os escopos do Inmetro.</p>
+          <p>
+            Nossos laboratórios possuem acreditação reconhecida para a
+            realização de calibrações em diferentes grandezas, garantindo a
+            confiabilidade e a rastreabilidade dos resultados.
+            Essa acreditação garante que cada calibração siga os mais altos
+            padrões de qualidade, dando a você a tranquilidade de tomar decisões
+            seguras e assertivas.
+          </p>
         </div>
       </section>
 
-      {/* Massa / Temperatura */}
+      {/* Metrology Sections */}
       <section className="metrology-section">
-        <div className="metrology-container">
-          <div className="metrology-icon"><MdScale size={60} color="#4D504E" /></div>
-          <div className="metrology-text">
-            <h2>Massa</h2>
-            <p>Calibração conforme ISO/IEC 17025, utilizando blocos rastreáveis ao Inmetro com incertezas certificadas.</p>
-            <p className="rtac">RTAC: Padrões rastreáveis a massa primária, com certificados contendo incerteza e validade.</p>
+        {metrologyItems.map((item, index) => (
+          <div
+            className={`metrology-container ${index % 2 === 1 ? 'reverse' : ''}`}
+            key={index}
+          >
+            <div className="metrology-icon">{item.icon}</div>
+            <div className="metrology-text">
+              <h2>{item.title}</h2>
+              <p>{item.descrition}<br></br> <button className="saiba-mais-btn" onClick={() => openModal(item.image)}>Saiba mais</button></p>
+            </div>
           </div>
-        </div>
-        <div className="metrology-container reverse">
-          <div className="metrology-icon"><MdThermostat size={60} color="#4D504E" /></div>
-          <div className="metrology-text">
-            <h2>Temperatura e Umidade</h2>
-            <p>Calibração de termômetros e RTDs, em câmara controlada, com monitoramento de temperatura, umidade e pressão.</p>
-            <p className="rtac">RTAC: Ensaios rastreáveis, com relatório documentando ambiente e incerteza. Através de métodos padronizados com incerteza específica, conforme acreditação CGCRE.</p>
-          </div>
-        </div>
+        ))}
       </section>
 
-      <section className="metrology-section">
-        <div className="metrology-container reverse">
-           <div className="metrology-icon"><MdOpacity size={60} color="#4D504E" /></div>
-          <div className="metrology-text">
-            <h2>Viscosidade</h2>
-            <p>
-              Calibração de viscosímetro capilar (0,003 a 30 mm²/s, incerteza 0,3–0,7 %) e tipo copo (20–100 s), rastreado pelo Inmetro.
-            </p>
-            <p className="rtac">RTAC: Escopo RBC inclui métodos comparativos com fluido padrão certificado.</p>
+      {/* Modal */}
+      {modalImage && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <img src={modalImage} alt="Escopo de acreditação" />
+            <button className="close-button" onClick={closeModal}>×</button>
           </div>
-         
         </div>
-        <div className="metrology-container">
-           <div className="metrology-icon"><MdOutlineInventory2 size={60} color="#4D504E" /></div>
-          <div className="metrology-text">
-            <h2>Volume e Massa Específica</h2>
-            <p>Calibração de vidrarias (pipetas, buretas, provetas) por comparação com padrões rastreáveis ao Inmetro.</p>
-            <p className="rtac">RTAC: Certificado com valores medidos, incerteza e ambiente de calibração.</p>
-          </div>
-          
-        </div>
-      </section>
-
+      )}
     </div>
   );
 }

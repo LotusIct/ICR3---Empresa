@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/services.css';
 import { useNavigate } from 'react-router-dom';
 // Importe das imagens
-import qualityImg from '../assets/qualidade.jpg';
+import qualityImg from '../assets/politica qualidade.jpeg';
 import treinamentoVImagem from '../assets/treinamento.jpg';
 import metrologyImage from '../assets/metrologia.jpg';
 import teamImage from '../assets/equipe.jpeg';
