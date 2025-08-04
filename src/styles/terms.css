@@ -41,14 +41,14 @@
 @media (max-width: 600px) {
   .terms-container {
     padding: 20px 15px;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .terms-container h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .terms-container h2 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 }

@@ -4,33 +4,13 @@ import categorias from '../data/marcas.json';
 import '../styles/products.css';
 
 const MarcaDetalhes = () => {
-  // Função para destacar partes da descrição
-const destacarDescricao = (texto) => {
-  if (!texto) return '';
-  
-  return texto
-    .replace(/PADRÕES DE CORES,.*?:/gi, (match) => {
-      return `<span class="marcado-verde">${match}</span>`;
-    })
-    .replace(/PADRÕES DE CORES, GARDNER COLOR:/gi, (match) => {
-      return `<span class="marcado-verde">${match}</span>`;
-    })
-    .replace(/PADRÕES DE PONTO DE FULGOR - PMCC, ASTM D93:/gi, (match) => {
-      return `<span class="marcado-verde">${match}</span>`;
-    })
-      .replace(/PADRÃO DE PONTO DE FULGOR - TAG, ASTM D56:/gi, (match) => {
-      return `<span class="marcado-verde">${match}</span>`;
-    })
-    .replace(/\n/g, '<br/>'); // Mantém quebra de linha
-};
-
   const [cardAtivo, setCardAtivo] = useState(null);
+  const [imagemModal, setImagemModal] = useState(null); // Modal da imagem de descrição
 
   const { id } = useParams();
 
-  // Procura pela marca em todas as categorias
+  // Procura pela marca
   let marcaEncontrada = null;
-
   for (const categoria of categorias) {
     const marca = categoria.marcas.find((m) => m.id === id);
     if (marca) {
@@ -51,51 +31,72 @@ const destacarDescricao = (texto) => {
     <div className="marca-detalhes">
       <h2>{marcaEncontrada.nome}</h2>
       <p className="categoria-titulo">Categoria: {marcaEncontrada.categoria}</p>
+
       {marcaEncontrada.catalogo && (
-      <a
-        href={marcaEncontrada.catalogo}
-        download
-        className="catalogo"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-      Baixar Catálogo
-      </a>
-    )}
+        <a
+          href={marcaEncontrada.catalogo}
+          download
+          className="catalogo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Baixar Catálogo
+        </a>
+      )}
 
       <div className="produtos-container">
-     {marcaEncontrada.produtos.length > 0 ? (
-  marcaEncontrada.produtos.map((produto, index) => (
-    <div
-      className={`produto-card ${cardAtivo === index ? 'ativo' : ''}`}
-      key={index}
-      onClick={() => setCardAtivo(cardAtivo === index ? null : index)}
-    >
-      <div className="produto-inner">
-        <div className="produto-front">
-          <img
-            src={produto.imagem}
-            alt={produto.nome}
-            className="produto-imagem"
-          />
-          <p className="produto-nome">{produto.nome}</p>
-          <p className="ver-detalhes">Toque para ver as especificações</p>
-        </div>
-        <div className="produto-back">
-         <p
-  className="produto-descricao"
-  dangerouslySetInnerHTML={{ __html: destacarDescricao(produto.descricao) }}
-></p>
-
-        </div>
+        {marcaEncontrada.produtos.length > 0 ? (
+          marcaEncontrada.produtos.map((produto, index) => (
+            <div
+              className={`produto-card ${cardAtivo === index ? 'ativo' : ''}`}
+              key={index}
+              onClick={() => setCardAtivo(cardAtivo === index ? null : index)}
+            >
+              <div className="produto-inner">
+                <div className="produto-front">
+                  <img
+                    src={produto.imagem}
+                    alt={produto.nome}
+                    className="produto-imagem"
+                  />
+                  <p className="produto-nome">{produto.nome}</p>
+                  <p className="ver-detalhes">Toque para ver as especificações</p>
+                </div>
+                <div className="produto-back">
+                  {produto.descricaoImagem && (
+                    <div
+                      className="descricao-imagem-preview"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setImagemModal(produto.descricaoImagem);
+                      }}
+                    >
+                      <img
+                        src={produto.descricaoImagem}
+                        alt={`Descrição de ${produto.nome}`}
+                        className="descricao-imagem"
+                      />
+                      <p className="descricao-hover-text">Clique para ampliar</p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))
+        ) : (
+          <p className="nenhum-produto">Nenhum produto cadastrado para esta marca.</p>
+        )}
       </div>
-    </div>
-  ))
-) : (
-  <p className="nenhum-produto">Nenhum produto cadastrado para esta marca.</p>
-)}
 
-      </div>
+      {/* Modal de imagem */}
+      {imagemModal && (
+        <div className="modal-overlay" onClick={() => setImagemModal(null)}>
+          <div className="modal-conteudo" onClick={(e) => e.stopPropagation()}>
+            <img src={imagemModal} alt="Descrição ampliada" />
+            <button className="fechar-modal" onClick={() => setImagemModal(null)}>×</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -100,7 +100,25 @@ const categorias = [
           { nome: "Viscosímetro - óleo usado" },
           { nome: "Viscosímetro Cinemático Automatizado Portátil com Resfriamento Ativo" },
           { nome: "Viscosímetro Cinemático Automatizado Portátil" },
-          { nome: "Viscosímetro Rotacional" }
+          { nome: "Viscosímetro Rotacional" },
+           {
+      "nome": "Padrões de Viscosidade em Alta Temperatura e Alto Cisalhamento",
+         },
+    {
+      "nome": "Padrões de Viscosidade em Baixa Temperatura e SimpleVIS®",
+          },
+    {
+      "nome": "Óleos para Banho CANNON",
+         },
+    {
+      "nome": "Padrões de Viscosidade em Alta Temperatura (HTHS)",
+         },
+    {
+      "nome": "Padrões de Viscosidade de Silicone",
+        },
+    {
+      "nome": "Padrões de Viscosidade Cannon Flow Cup",
+          }
         ]
       },
       {

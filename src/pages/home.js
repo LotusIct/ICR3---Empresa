@@ -53,7 +53,7 @@ const handleSaibaMaisClick = () => {
 
 
   const handleContatoClick = () => {
-    navigate('/contato');
+    navigate('/fale-conosco');
   };
   return (
     <div className="homepage">
