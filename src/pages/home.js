@@ -13,6 +13,8 @@ import logo7 from '../assets/logos/Logo Kem Kyoto.png';
 import logo8 from '../assets/logos/Logo Tanaka .png';
 import logo9 from '../assets/logos/Logo yateks .png';
 import logo10 from '../assets/logos/Logo zahm .png';
+import logo11 from '../assets/logos/hanon.jpeg';
+import logo12 from '../assets/logos/sineo.jpeg';
 
 const logos = [
   logo1,
@@ -25,6 +27,8 @@ const logos = [
   logo8,
   logo9,
   logo10,
+  logo11,
+  logo12
 ];
 
 export default function HomePage() {

@@ -150,7 +150,30 @@ const categorias = [
           { nome: "Ponto de Entupimento" },
           { nome: "Ponto de Névoa e Fluidez" }
         ]
-      }
+      },
+      {
+  id: "hanon",
+  nome: "Hanon",
+  produtos: [
+    { nome: "Analisador De Fibras Automático Modelo - F2000" },
+    { nome: "Analisador Automático De Nitrogênio/Proteína Kjeldahl Modelo K1160" },
+    { nome: "Analisador Automático De Nitrogênio/Proteína Kjeldahl Modelo K1100f" },
+    { nome: "Analisador Automático De Nitrogênio/Proteína Kjeldahl Modelo - K9860" },
+    { nome: "Unidade Automática De Destilação Kjeldahl Modelo - K9840" },
+    { nome: "Digestor Kjeldahl Modelo - Sh420f" },
+    { nome: "Digestor Kjeldahl Modelo - Sh220f" },
+    { nome: "Digestor Kjeldahl Automático Modelos - Sh520/sh508" },
+    { nome: "Analisador De Nitrogenio E Proteína (Método Dumas) D50/d200" }
+  ]
+},
+{
+  id: "sineo",
+  nome: "Sineo",
+  produtos: [
+    { nome: "Estação De Trabalho Para Digestão Por Micro-Ondas - Modelo Tank 40" }
+  ]
+}
+
     ]
   },
   {

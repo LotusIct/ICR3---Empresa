@@ -51,7 +51,7 @@ export function Footer() {
           {/* Coluna 3: Páginas */}
           <div className="footer-section footer-itens">
             <h4>Páginas</h4>
-            <a href="/home">Home</a>
+            <a href="/">Home</a>
             <a href="/sobre">Sobre Nós</a>
             <a href="/serviços">Serviços</a>
             <a href="/marcas">Marcas</a>
@@ -70,7 +70,7 @@ export function Footer() {
     <a href="https://www.instagram.com/icr3cientifica/" target="_blank" rel="noreferrer">
       <FaInstagram size={24} />
     </a>
-    <a href="https://www.linkedin.com/company/icr3-cientifica" target="_blank" rel="noreferrer">
+    <a href="https://br.linkedin.com/company/icr3-cientifica" target="_blank" rel="noreferrer">
       <FaLinkedin size={24} />
     </a>
      

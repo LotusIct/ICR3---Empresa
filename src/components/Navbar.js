@@ -211,14 +211,14 @@ const Navbar = () => {
                 <FaWhatsapp size={24} />
               </a>
               <a
-                href="https://www.instagram.com/sua_empresa"
+                href="https://www.instagram.com/icr3cientifica/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaInstagram size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/company/sua_empresa"
+                href="https://br.linkedin.com/company/icr3-cientifica"
                 target="_blank"
                 rel="noopener noreferrer"
               >

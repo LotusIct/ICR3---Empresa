@@ -142,6 +142,7 @@ margin-bottom: 40px;
   }
   .marca-card {
     width: 100%;
+    padding: 0.7rem;
     border-radius: 12px;
   }
 
@@ -155,5 +156,14 @@ margin-bottom: 40px;
 margin-bottom: 20px;
 
 }
+.marca-card p {
+  font-size: 0.8rem;
+  margin-bottom:5px;
+}
 
+.marca-card h2 {
+  font-size: 1.3rem;
+  margin-bottom:5px;
+  color: #333;
+}
 }

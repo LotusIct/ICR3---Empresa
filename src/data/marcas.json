@@ -181,8 +181,76 @@
         "produtos": [
           {
             "nome": "Analisador de Número de Cetano - IQT",
-            "imagem": "/produtos/crf/iqt.png",
+            "imagem": "/produtos/crf/iqt.jpg",
             "descricaoImagem": "/descricao/crf/12.png"
+          }
+                    
+        ]
+      },
+       {
+        "id": "hanon",
+        "nome": "Hanon",
+        "logo":"/logos/hanon.jpeg",
+        "catalogo": "/catalogos/hanon.pdf",
+        "produtos": [
+          {
+            "nome": "ANALISADOR DE FIBRAS AUTOMÁTICO Modelo - F2000",
+            "imagem": "/produtos/hanon/hanon (6).jpeg",
+            "descricaoImagem": "/descricao/hanon/64.png"
+          },
+            {
+            "nome": "ANALISADOR AUTOMÁTICO DE NITROGÊNIO/PROTEÍNA KJELDAHL Modelo K1160",
+            "imagem": "/produtos/hanon/hanon (4).jpeg",
+            "descricaoImagem": "/descricao/hanon/65.png"
+          },
+            {
+            "nome": "ANALISADOR AUTOMÁTICO DE NITROGÊNIO/PROTEÍNA KJELDAHL Modelo K1100F",
+            "imagem": "/produtos/hanon/hanon (3).jpeg",
+            "descricaoImagem": "/descricao/hanon/66.png"
+          },
+            {
+            "nome": "ANALISADOR AUTOMÁTICO DE NITROGÊNIO/PROTEÍNA KJELDAHL Modelo - K9860",
+            "imagem": "/produtos/hanon/hanon (2).jpeg",
+            "descricaoImagem": "/descricao/hanon/67.png"
+          },
+   {
+            "nome": "UNIDADE AUTOMÁTICA DE DESTILAÇÃO KJELDAHL Modelo - K9840",
+            "imagem": "/produtos/hanon/hanon (1).jpeg",
+            "descricaoImagem": "/descricao/hanon/68.png"
+          },
+            {
+            "nome": "DIGESTOR KJELDAHL Modelo - SH420F",
+            "imagem": "/produtos/hanon/hanon (9).jpeg",
+            "descricaoImagem": "/descricao/hanon/69.png"
+          },
+            {
+            "nome": "DIGESTOR KJELDAHL Modelo - SH220F",
+            "imagem": "/produtos/hanon/hanon (8).jpeg",
+            "descricaoImagem": "/descricao/hanon/70.png"
+          },
+            {
+            "nome": "DIGESTOR KJELDAHL AUTOMÁTICO Modelos - SH520/SH508",
+            "imagem": "/produtos/hanon/hanon (10).jpeg",
+            "descricaoImagem": "/descricao/hanon/71.png"
+          },
+            {
+            "nome": "ANALISADOR DE NITROGÊNIO E PROTEÍNA (MÉTODO DUMAS) D50/D200",
+            "imagem": "/produtos/hanon/hanon (5).jpeg",
+            "descricaoImagem": "/descricao/hanon/72.png"
+          }
+                    
+        ]
+      },
+      {
+        "id": "sineo",
+        "nome": "Sineo",
+        "logo":"/logos/sineo.jpeg",
+        "catalogo": "/catalogos/sineo.pdf",
+        "produtos": [
+          {
+            "nome": "ESTAÇÃO DE TRABALHO PARA DIGESTÃO POR MICRO-ONDAS - Modelo TANK 40",
+            "imagem": "/produtos/sineo/sineo.jpeg",
+            "descricaoImagem": "/descricao/sineo/sineo.png"
           }
                     
         ]

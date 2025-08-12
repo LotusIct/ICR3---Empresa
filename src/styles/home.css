@@ -61,19 +61,24 @@
   width: 100%;
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .about-text h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .about-text p {
   color: #4b5563;
   margin-bottom: 1.5rem;
-  text-align: justify;
+  text-align: center;
 }
-
+.about-text .btn-primary {
+  display: block;       /* Faz o botão ser um bloco para usar margin auto */
+  margin: 0 auto;       /* Centraliza horizontalmente */
+}
 /* Services Section */
 .services-section {
   padding: 5rem 1.5rem;
@@ -207,7 +212,7 @@
 }
 .marquee-container {
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   overflow: hidden;
   margin: 0 auto;
   position: relative;
@@ -216,13 +221,13 @@
 
 .marquee-track {
   display: flex;
+  gap: 40px;
   width: max-content;
-  animation: marqueeScroll 15s linear infinite;
+  animation: marqueeScroll 20s linear infinite;
 }
 
 .partner-logo {
   height: 50px;
-  margin: 0 30px;
   flex-shrink: 0;
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -258,8 +263,17 @@
   margin-bottom: 1.5rem;
 }
 .section-header h2 {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
+.contact-section h2{
+    font-size: 2rem;
+}
+
+.marquee-track {
+  gap: 10px;
+  animation: marqueeScroll 25s linear infinite;
+}
+
 }
 
 
@@ -276,6 +290,7 @@
   }
   .about-text p{
     width: 100%;
+    
     text-align: center;
   }
   .btn-primary {

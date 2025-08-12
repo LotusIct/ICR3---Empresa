@@ -29,7 +29,7 @@ const Marcas = () => {
          <h2>Catálogos</h2>
   <p>Baixe agora o material completo com nossos produtos.</p>
         <a
-          href="/catalogos/geral.pdf"
+          href="/catalogos/equipamentos.pdf"
           download
           className="botao-catalogos"
           target="_blank"
@@ -46,15 +46,7 @@ const Marcas = () => {
         >
          Catálogo MCR
         </a>
-         <a
-          href="/catalogos/equipamentos.pdf"
-          download
-          className="botao-catalogos"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-         Equipamentos
-        </a>
+        
       </div>
      
         {todasMarcas.map((marca) => (
