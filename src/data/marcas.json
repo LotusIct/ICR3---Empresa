@@ -61,7 +61,7 @@
       ]
     },
    {
-  "id": "cannon",
+  "id": "cannonmcr",
   "nome": "Cannon Instrument Company",
   "logo": "/logos/MCR.jpg",
   "catalogo": "/catalogos/mcr cannon.pdf",
@@ -115,32 +115,32 @@
            {
             "nome": "Calibradores de Temperatura Blocos Secos",
             "imagem": "/produtos/Jofra/Calibrador bloco seco jofra.jpeg",
-            "descricao": ""
+            "descricaoImagem": "/descricao/jofra/34.png"
           },
            {
             "nome": "Calibradores de Pressão",
             "imagem": "/produtos/Jofra/Calibrador de pressão jofra.jpeg",
-            "descricao": ""
+            "descricaoImagem": "/descricao/jofra/38.png"
           },
           {
             "nome": "Calibradores de Pressão",
             "imagem": "/produtos/Jofra/Calibrador de pressão jofra .jpeg",
-            "descricao": ""
+            "descricaoImagem": "/descricao/jofra/38.png"
           },
           {
             "nome": "Calibradores de Sinal",
             "imagem": "/produtos/Jofra/Calibrador de sinal jofra .png",
-            "descricao": ""
+            "descricaoImagem": "/descricao/jofra/37.png"
           },
            {
             "nome": "Medidores de Temperatura",
             "imagem": "/produtos/Jofra/Dti 100 - jofra .png",
-            "descricao": "Modelo: DTI-1000"
+            "descricaoImagem": "/descricao/jofra/35.png"
           },
             {
             "nome": "Sensor de Temperatura",
             "imagem": "/produtos/Jofra/Sensor de temperatura jofra .jpg",
-            "descricao": ""
+            "descricaoImagem": "/descricao/jofra/36.png"
           }
         ]
       },
@@ -153,22 +153,22 @@
     {
       "nome": "Aparelho Manual para teste de Filtrabilidade de Óleo Hidráulico",
       "imagem": "/produtos/forza/HFLT-AFNOR-AT-2_4 Forza .png",
-      "descricao": "Modelo: HFLT-AFNOR-M-2 - ASTM D8277"
+      "descricaoImagem": "/descricao/forza/31.png"
     },
     {
       "nome": "Aparelho Manual para teste de Filtrabilidade de Óleo Hidráulico",
       "imagem": "/produtos/forza/HFLT-AFNOR-M-2 Forza .png",
-      "descricao": "Modelo: HFLT-AFNOR-M-2 - ASTM D8277"
+      "descricaoImagem": "/descricao/forza/30.png"
     },
     {
       "nome": "Aparelho de estabilidade à oxidação Banho Líquido",
       "imagem": "/produtos/forza/OXI-D2274-TH-4u-RM Forza .png",
-      "descricao": "Modelo: OXI-D2274-TH-4u-RM - ASTM D2274"
+      "descricaoImagem": "/descricao/forza/33.png"
     },
     {
       "nome": "Teste de Separabilidade da Água",
       "imagem": "/produtos/forza/WS-D1401-L-7 forza .png",
-      "descricao": "Modelo: WS-D1401-L-7 - ASTM D1401"
+      "descricaoImagem": "/descricao/forza/32.png"
     }
   ]
 },
@@ -182,79 +182,77 @@
           {
             "nome": "Analisador de Número de Cetano - IQT",
             "imagem": "/produtos/crf/iqt.jpg",
-            "descricaoImagem": "/descricao/crf/12.png"
+            "descricaoImagem": "/descricao/crf/51.png"
           }
                     
         ]
       },
-       {
-        "id": "hanon",
-        "nome": "Hanon",
-        "logo":"/logos/hanon.jpeg",
-        "catalogo": "/catalogos/hanon.pdf",
-        "produtos": [
-          {
-            "nome": "ANALISADOR DE FIBRAS AUTOMÁTICO Modelo - F2000",
-            "imagem": "/produtos/hanon/hanon (6).jpeg",
-            "descricaoImagem": "/descricao/hanon/64.png"
-          },
-            {
-            "nome": "ANALISADOR AUTOMÁTICO DE NITROGÊNIO/PROTEÍNA KJELDAHL Modelo K1160",
-            "imagem": "/produtos/hanon/hanon (4).jpeg",
-            "descricaoImagem": "/descricao/hanon/65.png"
-          },
-            {
-            "nome": "ANALISADOR AUTOMÁTICO DE NITROGÊNIO/PROTEÍNA KJELDAHL Modelo K1100F",
-            "imagem": "/produtos/hanon/hanon (3).jpeg",
-            "descricaoImagem": "/descricao/hanon/66.png"
-          },
-            {
-            "nome": "ANALISADOR AUTOMÁTICO DE NITROGÊNIO/PROTEÍNA KJELDAHL Modelo - K9860",
-            "imagem": "/produtos/hanon/hanon (2).jpeg",
-            "descricaoImagem": "/descricao/hanon/67.png"
-          },
-   {
-            "nome": "UNIDADE AUTOMÁTICA DE DESTILAÇÃO KJELDAHL Modelo - K9840",
-            "imagem": "/produtos/hanon/hanon (1).jpeg",
-            "descricaoImagem": "/descricao/hanon/68.png"
-          },
-            {
-            "nome": "DIGESTOR KJELDAHL Modelo - SH420F",
-            "imagem": "/produtos/hanon/hanon (9).jpeg",
-            "descricaoImagem": "/descricao/hanon/69.png"
-          },
-            {
-            "nome": "DIGESTOR KJELDAHL Modelo - SH220F",
-            "imagem": "/produtos/hanon/hanon (8).jpeg",
-            "descricaoImagem": "/descricao/hanon/70.png"
-          },
-            {
-            "nome": "DIGESTOR KJELDAHL AUTOMÁTICO Modelos - SH520/SH508",
-            "imagem": "/produtos/hanon/hanon (10).jpeg",
-            "descricaoImagem": "/descricao/hanon/71.png"
-          },
-            {
-            "nome": "ANALISADOR DE NITROGÊNIO E PROTEÍNA (MÉTODO DUMAS) D50/D200",
-            "imagem": "/produtos/hanon/hanon (5).jpeg",
-            "descricaoImagem": "/descricao/hanon/72.png"
-          }
-                    
-        ]
+    {
+    "id": "hanon",
+    "nome": "Hanon",
+    "logo": "/logos/hanon.jpeg",
+    "catalogo": "/catalogos/hanon.pdf",
+    "produtos": [
+      {
+        "nome": "Analisador de Fibras Automático Modelo - F2000",
+        "imagem": "/produtos/hanon/hanon (6).jpeg",
+        "descricaoImagem": "/descricao/hanon/64.png"
       },
       {
-        "id": "sineo",
-        "nome": "Sineo",
-        "logo":"/logos/sineo.jpeg",
-        "catalogo": "/catalogos/sineo.pdf",
-        "produtos": [
-          {
-            "nome": "ESTAÇÃO DE TRABALHO PARA DIGESTÃO POR MICRO-ONDAS - Modelo TANK 40",
-            "imagem": "/produtos/sineo/sineo.jpeg",
-            "descricaoImagem": "/descricao/sineo/sineo.png"
-          }
-                    
-        ]
+        "nome": "Analisador Automático de Nitrogênio/Proteína Kjeldahl Modelo K1160",
+        "imagem": "/produtos/hanon/hanon (4).jpeg",
+        "descricaoImagem": "/descricao/hanon/65.png"
       },
+      {
+        "nome": "Analisador Automático de Nitrogênio/Proteína Kjeldahl Modelo K1100f",
+        "imagem": "/produtos/hanon/hanon (3).jpeg",
+        "descricaoImagem": "/descricao/hanon/66.png"
+      },
+      {
+        "nome": "Analisador Automático de Nitrogênio/Proteína Kjeldahl Modelo - K9860",
+        "imagem": "/produtos/hanon/hanon (2).jpeg",
+        "descricaoImagem": "/descricao/hanon/67.png"
+      },
+      {
+        "nome": "Unidade Automática de Destilação Kjeldahl Modelo - K9840",
+        "imagem": "/produtos/hanon/hanon (1).jpeg",
+        "descricaoImagem": "/descricao/hanon/68.png"
+      },
+      {
+        "nome": "Digestor Kjeldahl Modelo - Sh420f",
+        "imagem": "/produtos/hanon/hanon (9).jpeg",
+        "descricaoImagem": "/descricao/hanon/69.png"
+      },
+      {
+        "nome": "Digestor Kjeldahl Modelo - Sh220f",
+        "imagem": "/produtos/hanon/hanon (8).jpeg",
+        "descricaoImagem": "/descricao/hanon/70.png"
+      },
+      {
+        "nome": "Digestor Kjeldahl Automático Modelos - Sh520/Sh508",
+        "imagem": "/produtos/hanon/hanon (10).jpeg",
+        "descricaoImagem": "/descricao/hanon/71.png"
+      },
+      {
+        "nome": "Analisador de Nitrogênio e Proteína (Método Dumas) D50/D200",
+        "imagem": "/produtos/hanon/hanon (5).jpeg",
+        "descricaoImagem": "/descricao/hanon/72.png"
+      }
+    ]
+  },
+  {
+    "id": "sineo",
+    "nome": "Sineo",
+    "logo": "/logos/sineo.jpeg",
+    "catalogo": "/catalogos/sineo.pdf",
+    "produtos": [
+      {
+        "nome": "Estação de Trabalho para Digestão por Micro-Ondas - Modelo Tank 40",
+        "imagem": "/produtos/sineo/sineo.jpeg",
+        "descricaoImagem": "/descricao/sineo/sineo.png"
+      }
+    ]
+  },
       {
         "id": "br",
         "nome": "B/R Instrument Corporation",
@@ -320,42 +318,42 @@
     {
       "nome": "Titulador Potenciométrico",
       "imagem": "/produtos/kem/Kem Kyoto at710 png (1).png",
-      "descricao": "Modelo AT - 710M/ 710B/ 710S"
+      "descricaoImagem": "/descricao/kem/24.png"
     },
     {
       "nome": "Densímetro Portátil Digital",
       "imagem": "/produtos/kem/Kem kyoto da 130  (1).jpeg",
-      "descricao": "Modelo DA-130N - ASTM D7777"
+      "descricaoImagem": "/descricao/kem/29.png"
     },
     {
       "nome": "Densímetro Digital",
       "imagem": "/produtos/kem/Kem kyoto da 650  (1).png",
-      "descricao": "Modelo DA-650/ 645/ 640 - ASTM D4052; ASTM D4806; ASTM D5002; ASTM D5931; ASTM D1250"
+      "descricaoImagem": "/descricao/kem/22.png"
     },
     {
       "nome": "Densímetro Digital de Bancada",
       "imagem": "/produtos/kem/Kem Kyoto da 860  (1).png",
-      "descricao": "Modelo DA-860/ 850/ 840 - ASTM D4052; ASTM D4806; ASTM D5002; ASTM D5931; ASTM D1250"
+      "descricaoImagem": "/descricao/kem/28.png"
     },
     {
       "nome": "Karl Fisher Coulométrico",
       "imagem": "/produtos/kem/Kem Kyoto mkc 710 (1).png",
-      "descricao": "Modeo MKC-710B / 710M/ 710D/ 710S - ASTM D6869; ASTM D3401; ASTM D1533; ASTM D1123; ASTM D5460; ASTM D4672; ASTM D4928, ASTM D6304; E1064"
+      "descricaoImagem": "/descricao/kem/26.png"
     },
     {
       "nome": "Karl Fisher Híbrido - Volumétrico e Columétrico",
       "imagem": "/produtos/kem/Kem Kyoto mkh710 (1).png",
-      "descricao": "Modelo MKH-710M - ASTM D6869, ASTM D1533; ASTM D4377; ASTM D4928; ASTM D6304; E203"
+      "descricaoImagem": "/descricao/kem/27.png"
     },
     {
       "nome": "Karl Fisher Volumétrico",
       "imagem": "/produtos/kem/Kem Kyoto mkv 710png (1).png",
-      "descricao": "Modelo MKV-710B / 710D; 710M/ 710S - ASTM D6869; ASTM D1123; ASTM D4377; ASTM D4672; ASTM D1364; E203"
+      "descricaoImagem": "/descricao/kem/25.png"
     },
     {
       "nome": "Refratômetro Digital",
       "imagem": "/produtos/kem/Kem Kyoto ra620  (2).png",
-      "descricao": "Modelo RA620/ RA600 - ASTM D1218; ASTM D1569; ASTM D1992; ASTM D2140; ASTM D4056; ASTM D4095; ASTM D5006"
+      "descricaoImagem": "/descricao/kem/23.png"
     }
   ]
 },
@@ -366,26 +364,27 @@
   "logo":"/logos/Logo cannon.png",
   "catalogo": "/catalogos/forza-catalogo.pdf",
   "produtos": [
-    { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon cav 4.2.png", "descricao": "Modelo ASTM D445" },
-    { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon cav4.1.png", "descricao": "Modelo ASTM D446" },
-    { "nome": "Simulador de Partida Frio", "imagem": "/produtos/cannon/css cannon.jpeg", "descricao": "Modelo CSS 2100 - ASTM 5293" },
-    { "nome": "Simulador de Partida Frio", "imagem": "/produtos/cannon/css cannon.jpeg", "descricao": "Modelo CSS 2100LT - ASTM 5293" },
-    { "nome": "Viscosímetro Mini Rotativo Semiautomático", "imagem": "/produtos/cannon/Cannon cmrv 4500.png", "descricao": "Modelo CMRV-4500 - ASTM D4684: ASTM D3829, ASTM D6821: ASTM D6896" },
-    { "nome": "Mini Rotary", "imagem": "/produtos/cannon/Cannon cmrv5000 .png", "descricao": "Modelo CMRV-5000 - ASTM D4684; ASTM D3829 ASTM D6821, ASTM D6806" },
-    { "nome": "Viscosímetro Capilar Multicélula", "imagem": "/produtos/cannon/Cannon hths .png", "descricao": "Modelo HTHS Série II - ASTM D5481" },
-    { "nome": "Viscosímetro Cinemático", "imagem": "/produtos/cannon/Cannon mini avlt.png", "descricao": "Modelo MiniAV-LT ASTM D445/0446 ASTM D1655" },
-    { "nome": "Viscosímetro Cinemático", "imagem": "/produtos/cannon/Cannon miniav .png", "descricao": " Modelo MiniAV - ASTM D445/D446" },
-    { "nome": "Viscosímetro Cinemático", "imagem": "/produtos/cannon/Cannon Miniav hit.png", "descricao": "Modelo MiniAV-HT ASTM D2170: ASTM - D445/0446" },
-    { "nome": "Viscosímetro Cinemático", "imagem": "/produtos/cannon/Cannon miniav x .png", "descricao": " Modelo MiniAV-X - ASTM D445/D446" },
-    { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipv .png", "descricao": "Modelo miniPV - ASTM D445/D446; ASTM D1243; ASTMD1795; ASTM D2857; ASTM D3591; ASTM D4243; ASTM D5226" },
-    { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipvh .png", "descricao": "Modelo miniPV-H - ASTMD445/D446 ASTMD789; ASTM D1243; ASTM D1795; ASTM D2857; ASTM D3591 ASTM D4243; ASTM D4603; ASTM D526" },
-    { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipvhx.png", "descricao": "Modelo miniPV-HX - ASTMD445/D446; ASTM D789; ASTM D1243; ASTM D1795; ASTM D2857; ASTM D3591; ASTM D4243; ASTM D4603; ASTM D526" },
-    { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipvx .png", "descricao": "Modelo miniPV-X - ASTM D445/D446, ASTM D1243; ASTM D1795; ASTM D2857, ASTM D3591; ASTM D4243; ASTM D5226" },
-    { "nome": "Viscosímetro - óleo usado", "imagem": "/produtos/cannon/Cannon miniqv .png", "descricao": "MiniQVX - Segue a maioria dos principios ASTM D445" },
-    { "nome": "Viscosímetro Cinemático Automatizado Portátil com Resfriamento Ativo", "imagem": "/produtos/cannon/Cannon simplevisplus.png", "descricao": "Modelo SimplesVIS+ - ASTM D7279" },
-    { "nome": "Viscosímetro Cinemático Automatizado Portátil", "imagem": "/produtos/cannon/Cannon simplevis.png", "descricao": "Modelo SimplesVIS - ASTM D7279" },
-    { "nome": "Viscosímetro Rotacional", "imagem": "/produtos/cannon/Cannon tesc.png", "descricao": "Modelo TESC 2983 / TESC 5133 / TESC 2983-ASTM D 2983; ASTM D8210 / TESC 5133-ASTM D5133" },
-    { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon ultravis_.png", "descricao": "Modelo UltraVis 192 - Segua a maioria dos princípios ASTM D445" }
+    { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon cav 4.2.png", "descricaoImagem": "/descricao/cannon/3.png" },
+    { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon cav4.1.png", "descricaoImagem": "/descricao/cannon/2.png" },
+    { "nome": "Simulador de Partida Frio", "imagem": "/produtos/cannon/css cannon.jpeg", "descricaoImagem": "/descricao/cannon/7.png" },
+    { "nome": "Simulador de Partida Frio", "imagem": "/produtos/cannon/css cannon.jpeg", "descricaoImagem": "/descricao/cannon/7.png" },
+    { "nome": "Viscosímetro Mini Rotativo Semiautomático", "imagem": "/produtos/cannon/Cannon cmrv 4500.png", "descricaoImagem": "/descricao/cannon/13.png" },
+    { "nome": "Mini Rotary", "imagem": "/produtos/cannon/Cannon cmrv5000 .png", "descricaoImagem": "/descricao/cannon/12.png" },
+    { "nome": "Viscosímetro Capilar Multicélula", "imagem": "/produtos/cannon/Cannon hths .png", "descricaoImagem": "/descricao/cannon/15.png" },
+    { "nome": "Viscosímetro Cinemático", "imagem": "/produtos/cannon/Cannon mini avlt.png", "descricaoImagem": "/descricao/cannon/11.png" },
+    { "nome": "Viscosímetro Cinemático", "imagem": "/produtos/cannon/Cannon miniav .png", "descricaoImagem": "/descricao/cannon/8.png" },
+    { "nome": "Viscosímetro Cinemático", "imagem": "/produtos/cannon/Cannon Miniav hit.png", "descricaoImagem": "/descricao/cannon/10.png" },
+    { "nome": "Viscosímetro Cinemático", "imagem": "/produtos/cannon/Cannon miniav x .png", "descricaoImagem": "/descricao/cannon/9.png" },
+    { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipv .png", "descricaoImagem": "/descricao/cannon/18.png" },
+    { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipvh .png", "descricaoImagem": "/descricao/cannon/20.png" },
+    { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipvhx.png", "descricaoImagem": "/descricao/cannon/19.png" },
+    { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipvx .png", "descricaoImagem": "/descricao/cannon/21.png" },
+    { "nome": "Viscosímetro - óleo usado", "imagem": "/produtos/cannon/Cannon miniqv .png", "descricaoImagem": "/descricao/cannon/4.png" },
+    { "nome": "Viscosímetro Cinemático Automatizado Portátil com Resfriamento Ativo", "imagem": "/produtos/cannon/Cannon simplevisplus.png", "descricaoImagem": "/descricao/cannon/16.png" },
+    { "nome": "Viscosímetro Cinemático Automatizado Portátil", "imagem": "/produtos/cannon/Cannon simplevis.png", "descricaoImagem": "/descricao/cannon/17.png" },
+    { "nome": "Viscosímetro Rotacional", "imagem": "/produtos/cannon/viscorot1.jpg", "descricaoImagem": "/descricao/cannon/5.png" },
+        { "nome": "Viscosímetro Rotacional", "imagem": "/produtos/cannon/viscorot2.jpg", "descricaoImagem": "/descricao/cannon/6.png" },
+    { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon ultravis_.png", "descricaoImagem": "/descricao/cannon/14.png" }
   ]
 },
 
@@ -471,6 +470,11 @@
       "nome": "Ponto de Névoa e Fluidez",
       "imagem": "/produtos/tanaka/Mpc 6 (1).jpeg",
       "descricaoImagem": "/descricao/tanaka/6.png"
+    },
+      {
+      "nome": "Ponto de Fulgor em Copo Fechado de Pequena Escala",
+      "imagem": "/produtos/tanaka/tanaka46.jpeg",
+      "descricaoImagem": "/descricao/tanaka/46.png"
     }
   ]
 }
