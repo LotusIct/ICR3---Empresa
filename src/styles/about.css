@@ -208,6 +208,7 @@
 
 .about-text-about p {
   line-height: 1.5;
+  padding-bottom: 20px;
 }
 .about-text-about h2 {
   font-size: 1.5rem;
