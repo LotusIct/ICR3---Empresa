@@ -182,7 +182,7 @@
           {
             "nome": "Analisador de Número de Cetano - IQT",
             "imagem": "/produtos/crf/iqt.jpg",
-            "descricaoImagem": "/descricao/crf/51.png"
+            "descricaoImagem": "/descricao/crf/51.jpeg"
           }
                     
         ]
@@ -196,7 +196,7 @@
       {
         "nome": "Analisador de Fibras Automático Modelo - F2000",
         "imagem": "/produtos/hanon/hanon (6).jpeg",
-        "descricaoImagem": "/descricao/hanon/64.png"
+        "descricaoImagem": "/descricao/hanon/64.jpeg"
       },
       {
         "nome": "Analisador Automático de Nitrogênio/Proteína Kjeldahl Modelo K1160",
@@ -249,7 +249,7 @@
       {
         "nome": "Estação de Trabalho para Digestão por Micro-Ondas - Modelo Tank 40",
         "imagem": "/produtos/sineo/sineo.jpeg",
-        "descricaoImagem": "/descricao/sineo/sineo.png"
+        "descricaoImagem": "/descricao/sineo/sineo.jpeg"
       }
     ]
   },
@@ -362,12 +362,11 @@
   "id": "cannon",
   "nome": "Cannon Instrument Company",
   "logo":"/logos/Logo cannon.png",
-  "catalogo": "/catalogos/forza-catalogo.pdf",
+  "catalogo": "/catalogos/cannon.pdf",
   "produtos": [
     { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon cav 4.2.png", "descricaoImagem": "/descricao/cannon/3.png" },
     { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon cav4.1.png", "descricaoImagem": "/descricao/cannon/2.png" },
-    { "nome": "Simulador de Partida Frio", "imagem": "/produtos/cannon/css cannon.jpeg", "descricaoImagem": "/descricao/cannon/7.png" },
-    { "nome": "Simulador de Partida Frio", "imagem": "/produtos/cannon/css cannon.jpeg", "descricaoImagem": "/descricao/cannon/7.png" },
+    { "nome": "Simulador de Partida Frio", "imagem": "/produtos/cannon/css cannon.jpeg", "descricaoImagem": "/descricao/cannon/7.jpeg" },
     { "nome": "Viscosímetro Mini Rotativo Semiautomático", "imagem": "/produtos/cannon/Cannon cmrv 4500.png", "descricaoImagem": "/descricao/cannon/13.png" },
     { "nome": "Mini Rotary", "imagem": "/produtos/cannon/Cannon cmrv5000 .png", "descricaoImagem": "/descricao/cannon/12.png" },
     { "nome": "Viscosímetro Capilar Multicélula", "imagem": "/produtos/cannon/Cannon hths .png", "descricaoImagem": "/descricao/cannon/15.png" },
@@ -448,13 +447,13 @@
     },
     {
       "nome": "Ponto de Fulgor TAG",
-      "imagem": "/produtos/tanaka/Atg8 Tanaka .jpeg",
-      "descricaoImagem": "/descricao/tanaka/8.png"
+      "imagem": "/produtos/tanaka/ATG100.jpeg",
+      "descricaoImagem": "/descricao/tanaka/8.jpeg"
     },
     {
       "nome": "Destilador Atmosférico",
       "imagem": "/produtos/tanaka/Foto ad7 Tanaka .webp",
-      "descricaoImagem": "/descricao/tanaka/2.png"
+      "descricaoImagem": "/descricao/tanaka/2.jpeg"
     },
     {
       "nome": "Analisador de Enxofre SDXRF (12 posições)",
@@ -474,7 +473,7 @@
       {
       "nome": "Ponto de Fulgor em Copo Fechado de Pequena Escala",
       "imagem": "/produtos/tanaka/tanaka46.jpeg",
-      "descricaoImagem": "/descricao/tanaka/46.png"
+      "descricaoImagem": "/descricao/tanaka/46.jpeg"
     }
   ]
 }

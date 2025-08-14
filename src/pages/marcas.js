@@ -29,7 +29,7 @@ const Marcas = () => {
          <h2>Catálogos</h2>
   <p>Baixe agora o material completo com nossos produtos.</p>
         <a
-          href="/catalogos/catalogo equipamentos.pdf"
+          href="/catalogos/equipamentos geral.pdf"
           download
           className="botao-catalogos"
           target="_blank"
