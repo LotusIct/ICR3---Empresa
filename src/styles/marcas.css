@@ -1,6 +1,9 @@
 .marcas-section {
   text-align: center;
-  background-color:#f4f5f1;
+    background-image: url('../assets/plano\ \(1\)\ \(1\).jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .catalogo-geral-section {
   text-align: center;
@@ -39,20 +42,20 @@
   padding: 20px 80px 50px 80px;
   justify-items: center;
 }
-.hero-section-marcas{
+.hero-section-marcas {
   position: relative;
   height: 200px;
   color: #fff;
   text-align: center;
   padding-top: 60px;
-  background: linear-gradient(135deg, #A2B578,  #a9b889,  #EAF2D8);
-margin-bottom: 40px;
-
+  margin-bottom: 40px;
 }
+
 .hero-content-marcas h1 {
   font-size: 3.5rem;
   margin-bottom: 15px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Aumentando a sombra para melhorar o contraste */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color:#181c11;
 }
 
 .marca-card {

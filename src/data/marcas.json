@@ -204,7 +204,7 @@
         "descricaoImagem": "/descricao/hanon/65.png"
       },
       {
-        "nome": "Analisador Automático de Nitrogênio/Proteína Kjeldahl Modelo K1100f",
+        "nome": "Analisador Automático de Nitrogênio/Proteína Kjeldahl Modelo K1100F",
         "imagem": "/produtos/hanon/hanon (3).jpeg",
         "descricaoImagem": "/descricao/hanon/66.png"
       },
@@ -219,17 +219,17 @@
         "descricaoImagem": "/descricao/hanon/68.png"
       },
       {
-        "nome": "Digestor Kjeldahl Modelo - Sh420f",
+        "nome": "Digestor Kjeldahl Modelo - SH420F",
         "imagem": "/produtos/hanon/hanon (9).jpeg",
         "descricaoImagem": "/descricao/hanon/69.png"
       },
       {
-        "nome": "Digestor Kjeldahl Modelo - Sh220f",
+        "nome": "Digestor Kjeldahl Modelo - SH220F",
         "imagem": "/produtos/hanon/hanon (8).jpeg",
         "descricaoImagem": "/descricao/hanon/70.png"
       },
       {
-        "nome": "Digestor Kjeldahl Automático Modelos - Sh520/Sh508",
+        "nome": "Digestor Kjeldahl Automático Modelos - SH520/SH508",
         "imagem": "/produtos/hanon/hanon (10).jpeg",
         "descricaoImagem": "/descricao/hanon/71.png"
       },
@@ -270,7 +270,7 @@
            "descricaoImagem": "/descricao/br/22.png"
           },
           {
-            "nome": "Destilação à Vácuo D1160",
+            "nome": "Destilação à Vácuo ASTM D1160",
             "imagem": "/produtos/Bri/Bri.png",
             "descricaoImagem": "/descricao/br/20.png"
           },
@@ -288,22 +288,22 @@
         "catalogo": "/catalogos/zahms.pdf",
         "produtos": [
            {
-            "nome": "Zahm SS-60",
+            "nome": "Analisador de Carbnação em tanques - Zahm SS-60",
             "imagem": "/produtos/zahm/Zahm  (1).png",
             "descricaoImagem": "/descricao/zahm/16.png"
           },
            {
-            "nome": "Perfuração Computadorizada",
+            "nome": "Dispositivo de Perfuração Computadorizada",
             "imagem": "/produtos/zahm/Zahm  (2).png",
             "descricaoImagem": "/descricao/zahm/19.png"
           },
           {
-            "nome": "Zahn Series 10000",
+            "nome": "Analisador de Pureza CO2 - Zahn Series 10000",
             "imagem": "/produtos/zahm/Zahm .png",
             "descricaoImagem": "/descricao/zahm/18.png"
           },
           {
-            "nome": "Zahm Modelo DT Penetrante",
+            "nome": "Analizador de Volume de Gás em Embalagens Fechadas - Modelo DT Penetrante",
             "imagem": "/produtos/zahm/Zahm.png",
             "descricaoImagem": "/descricao/zahm/17.png"
           }
@@ -331,7 +331,7 @@
       "descricaoImagem": "/descricao/kem/22.png"
     },
     {
-      "nome": "Densímetro Digital de Bancada",
+      "nome": "Refratômetro Digital",
       "imagem": "/produtos/kem/Kem Kyoto da 860  (1).png",
       "descricaoImagem": "/descricao/kem/28.png"
     },
@@ -366,7 +366,7 @@
   "produtos": [
     { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon cav 4.2.png", "descricaoImagem": "/descricao/cannon/3.png" },
     { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon cav4.1.png", "descricaoImagem": "/descricao/cannon/2.png" },
-    { "nome": "Simulador de Partida Frio", "imagem": "/produtos/cannon/css cannon.jpeg", "descricaoImagem": "/descricao/cannon/7.jpeg" },
+    { "nome": "Simulador de Partida a Frio", "imagem": "/produtos/cannon/css cannon.jpeg", "descricaoImagem": "/descricao/cannon/7.jpeg" },
     { "nome": "Viscosímetro Mini Rotativo Semiautomático", "imagem": "/produtos/cannon/Cannon cmrv 4500.png", "descricaoImagem": "/descricao/cannon/13.png" },
     { "nome": "Mini Rotary", "imagem": "/produtos/cannon/Cannon cmrv5000 .png", "descricaoImagem": "/descricao/cannon/12.png" },
     { "nome": "Viscosímetro Capilar Multicélula", "imagem": "/produtos/cannon/Cannon hths .png", "descricaoImagem": "/descricao/cannon/15.png" },
@@ -379,8 +379,8 @@
     { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipvhx.png", "descricaoImagem": "/descricao/cannon/19.png" },
     { "nome": "Viscosímetro de Bancada Automático", "imagem": "/produtos/cannon/Cannon minipvx .png", "descricaoImagem": "/descricao/cannon/21.png" },
     { "nome": "Viscosímetro - óleo usado", "imagem": "/produtos/cannon/Cannon miniqv .png", "descricaoImagem": "/descricao/cannon/4.png" },
-    { "nome": "Viscosímetro Cinemático Automatizado Portátil com Resfriamento Ativo", "imagem": "/produtos/cannon/Cannon simplevisplus.png", "descricaoImagem": "/descricao/cannon/16.png" },
-    { "nome": "Viscosímetro Cinemático Automatizado Portátil", "imagem": "/produtos/cannon/Cannon simplevis.png", "descricaoImagem": "/descricao/cannon/17.png" },
+    { "nome": "Viscosímetro Cinemático Automatizado Portátil", "imagem": "/produtos/cannon/Cannon simplevisplus.png", "descricaoImagem": "/descricao/cannon/16.png" },
+    { "nome": "Viscosímetro Cinemático Automatizado Portátil com Resfriamento Ativo", "imagem": "/produtos/cannon/Cannon simplevis.png", "descricaoImagem": "/descricao/cannon/17.png" },
     { "nome": "Viscosímetro Rotacional", "imagem": "/produtos/cannon/viscorot1.jpg", "descricaoImagem": "/descricao/cannon/5.png" },
         { "nome": "Viscosímetro Rotacional", "imagem": "/produtos/cannon/viscorot2.jpg", "descricaoImagem": "/descricao/cannon/6.png" },
     { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon ultravis_.png", "descricaoImagem": "/descricao/cannon/14.png" }
@@ -395,7 +395,7 @@
         "catalogo": "/catalogos/yateks.pdf",
         "produtos": [
             {
-      "nome": "Analizador Multi-Parâmetro de ÔLEO",
+      "nome": "Analisador Multi-Parâmetro de ÔLEO",
       "imagem": "/produtos/yatecks/Ypf 15 yateks  .png",
       "descricaoImagem": "/descricao/yateks/14.png"
     }, 
@@ -466,7 +466,7 @@
       "descricaoImagem": "/descricao/tanaka/5.png"
     },
      {
-      "nome": "Ponto de Névoa e Fluidez",
+      "nome": "Ponto de Fluidez e Névoa",
       "imagem": "/produtos/tanaka/Mpc 6 (1).jpeg",
       "descricaoImagem": "/descricao/tanaka/6.png"
     },

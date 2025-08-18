@@ -66,10 +66,10 @@ const categorias = [
         id: "zahm",
         nome: "ZAHM & NAGEL Company Incorporated",
         produtos: [
-          { nome: "Zahm SS-60" },
-          { nome: "Perfuração Computadorizada" },
-          { nome: "Zahn Series 10000" },
-          { nome: "Zahm Modelo DT Penetrante" }
+          { nome: "Analisador de Carbonação em Tanques" },
+          { nome: "Dispositivo de Perfuração Computadorizada" },
+          { nome: "Analisador de pureza CO2" },
+          { nome: "Analisador de Volume de Gás em Embalagens Fechadas" }
         ]
       },
       {
@@ -79,7 +79,7 @@ const categorias = [
           { nome: "Titulador Potenciométrico" },
           { nome: "Densímetro Portátil Digital" },
           { nome: "Densímetro Digital" },
-          { nome: "Densímetro Digital de Bancada" },
+          { nome: "Refratômetro Digital" },
           { nome: "Karl Fisher Coulométrico" },
           { nome: "Karl Fisher Híbrido - Volumétrico e Columétrico" },
           { nome: "Karl Fisher Volumétrico" },
@@ -91,7 +91,7 @@ const categorias = [
         nome: "Cannon Instrument Company",
         produtos: [
           { nome: "Viscosímetro" },
-          { nome: "Simulador de Partida Frio" },
+          { nome: "Simulador de Partida a Frio" },
           { nome: "Viscosímetro Mini Rotativo Semiautomático" },
           { nome: "Mini Rotary" },
           { nome: "Viscosímetro Capilar Multicélula" },
@@ -148,7 +148,7 @@ const categorias = [
           { nome: "Destilador Atmosférico" },
           { nome: "Analisador de Enxofre SDXRF (12 posições)" },
           { nome: "Ponto de Entupimento" },
-          { nome: "Ponto de Névoa e Fluidez" }
+          { nome: "Ponto de Fluidez e Névoa" }
         ]
       },
       {

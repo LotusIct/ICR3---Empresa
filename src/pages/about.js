@@ -44,7 +44,7 @@ export default function AboutPage() {
       </section>
 
       {/* Nossa História */}
-      <section className="about-section-about">
+      <section className="about-section-about proposito">
         <div className="about-container-about">
           <div className="about-text-about">
             <h2>Nosso Propósito</h2>
@@ -65,7 +65,7 @@ export default function AboutPage() {
       </section>
 
       {/* Nossa Equipe */}
-      <section className="about-section-about">
+      <section className="about-section-about equipe">
         <div className="about-container-about">
           <div className="about-text-about">
             <h2>Nossa Equipe</h2>
@@ -85,7 +85,7 @@ export default function AboutPage() {
       </section>
 
       {/* Apresentação da Sede */}
-     <section className="about-section-about">
+     <section className="about-section-about sede">
   <div className="about-container-about reverse">
        {/* Substituindo o slider por um vídeo */}
    <div className="image-slider">

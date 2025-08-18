@@ -1,5 +1,8 @@
 .contact-form-section {
-  background-color: #d7dfc7;
+  background-image: url('../assets/plano\ \(5\)\ \(1\).jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 20px 20px;
   display: flex;
   justify-content: center;
@@ -7,27 +10,27 @@
   min-height: 100vh;
 }
 
+
 .form-container {
   max-width: 600px;
   width: 100%;
-  background: white;
-  padding: 40px;
+  /* background-image: url('../assets/bola.jpeg'); */ /* REMOVIDO */
+  background-color: #fafff8; /* cor suave que estava no ::before */
+  padding: 60px 50px;
   border-radius: 15px;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
   text-align: center;
-  position: relative;
-  background-image: url('../assets/bola.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   overflow: hidden;
+  position: relative;
 }
 
+
+
 .form-container::before {
-  content: "";
+   content: none;
   position: absolute;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(243, 249, 242, 0.85);
   z-index: 0;
 }
 
@@ -55,7 +58,7 @@
 
 .input-group {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .input-group input,
@@ -91,13 +94,15 @@
 .input-group label {
   position: absolute;
   top: 50%;
-  left: 1px;
+  left: 10px;
   transform: translateY(-50%);
   color: var(--cor-cinza-claro);
   pointer-events: none;
   transition: 0.3s ease all;
   font-weight: 700;
-  padding: 0 6px;
+  padding: 0px 5px 5px 5px;
+  background-color: #fafff8;/* Fundo branco para "cortar" o input */
+  z-index: 1; /* Garante que fique acima da borda do input */
 }
 
 .input-group select {

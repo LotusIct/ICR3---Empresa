@@ -21,14 +21,14 @@ const MarcaDetalhes = () => {
 
   if (!marcaEncontrada) {
     return (
-      <div className="marca-detalhes">
+      <div className="marca-detalhes marca-detalhes-com-imagem">
         <h2>Marca não encontrada</h2>
       </div>
     );
   }
 
   return (
-    <div className="marca-detalhes">
+    <div className="marca-detalhes marca-detalhes-com-imagem">
       <h2>{marcaEncontrada.nome}</h2>
       <p className="categoria-titulo">Categoria: {marcaEncontrada.categoria}</p>
 

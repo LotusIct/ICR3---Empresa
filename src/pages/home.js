@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/home.css';
-import imagemHome from '../assets/imagem home.jpg'; 
+import videoHome from '../assets/homedestaque.mp4'; 
 import { useNavigate } from 'react-router-dom';
 
 import logo1 from '../assets/logos/Logo aro .png';
@@ -64,7 +64,17 @@ const handleSaibaMaisClick = () => {
 
       {/* Hero Section */}
       <section className="hero-section">
-       <img src={imagemHome} alt="Imagem de fundo" className="background-image" />
+       <video
+  className="background-video"
+  autoPlay
+  muted
+  loop
+  playsInline
+   preload="auto"
+>
+  <source src={videoHome} type="video/mp4" />
+  Seu navegador não suporta o elemento de vídeo.
+</video>
 
         <div className="overlay"></div>
         <div className="hero-content">
