@@ -10,11 +10,11 @@
   color: #fff;
   text-align: center;
   padding-top: 120px;
-  background-image: url('../assets/sobre\ nos2\ \(1\).jpg'); /* Imagem de fundo */
+  background-image: url('../assets/sobre\ nos.jpg'); /* Imagem de fundo */
   background-position: center;
   background-size: cover;
   background-blend-mode: overlay; /* Blending da imagem */
-  background-color: rgba(30, 42, 58, 0.7); /* Alterando a cor de fundo para ser mais escura e com transparência */
+  background-color: rgba(46, 58, 30, 0.7); /* Alterando a cor de fundo para ser mais escura e com transparência */
 }
 
 .hero-content-about h1 {
@@ -36,8 +36,6 @@
   align-items: center;
   background-color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  
-  border-radius: 10px;
 }
 .about-section-about.proposito {
   background-image: url('../assets/plano\ \(2\).jpeg'); /* use sua imagem */
@@ -45,7 +43,7 @@
   background-position: center;
   background-repeat: no-repeat;
   color: #000000;
-  padding: 5rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
   position: relative;
 }
@@ -65,15 +63,15 @@
 }
 
 .about-section-about.proposito h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color:var(--cor-cinza-escuro);
 }
 
 .about-section-about.proposito p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.8;
-  text-align: center;
+  text-align: justify;
   color: var(--cor-cinza-escuro);
 }
 
@@ -134,7 +132,7 @@
 .about-text-about p {
   line-height: 1.8;
   text-align: justify;
-  color: var(--cor-cinza-claro); /* Cor de texto */
+  color: var(--cor-cinza-escuro); /* Cor de texto */
 }
 
 /* Ajuste no tamanho das imagens */
@@ -291,10 +289,21 @@
   margin-bottom: 10px;
   line-height: 1.3;
 }
+.about-section-about.equipe p {
+  line-height: 1.5;
+  text-align: center;
+  color: whitesmoke;
+}
 .about-section-about.proposito p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
   text-align: center;
   color: var(--cor-cinza-escuro);
 }
+.about-section-about.proposito h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color:var(--cor-cinza-escuro);
+}
+
 }

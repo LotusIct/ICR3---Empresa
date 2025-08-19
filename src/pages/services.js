@@ -51,7 +51,7 @@ ABNT NBR ISO/IEC 17025, promovendo a melhoria contínua dentro da organização 
       </section>
 
       {/* Metrologia */}
-     <section className="about-section-services">
+     <section className="about-section-services metrologia-section">
   <div className="about-container-services reverse">
     <img src={metrologyImage} alt="Metrologia" style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
     <div className="about-text-services">

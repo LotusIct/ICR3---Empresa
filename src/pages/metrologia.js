@@ -53,17 +53,21 @@ export default function MetrologyPage() {
         <div className="overlay"></div>
         <div className="hero-content-metrology">
           <h1>Metrologia</h1>
-          <p>
-            Nossos laboratórios possuem acreditação reconhecida para a
-            realização de calibrações em diferentes grandezas, garantindo a
-            confiabilidade e a rastreabilidade dos resultados.
-            Essa acreditação garante que cada calibração siga os mais altos
-            padrões de qualidade, dando a você a tranquilidade de tomar decisões
-            seguras e assertivas.
-          </p>
+         
         </div>
       </section>
-
+<section className="metrology-description">
+<div className='metrology'>
+    <h2>Qualidade e Confiabilidade em Calibração</h2>
+  <p>
+    Nossos laboratórios possuem acreditação reconhecida para a
+    realização de calibrações em diferentes grandezas, garantindo a
+    confiabilidade e a rastreabilidade dos resultados. Essa acreditação
+    garante que cada calibração siga os mais altos padrões de qualidade,
+    dando a você a tranquilidade de tomar decisões seguras e assertivas.
+  </p>
+</div>
+</section>
       {/* Metrology Sections */}
       <section className="metrology-section">
         {metrologyItems.map((item, index) => (
@@ -74,7 +78,8 @@ export default function MetrologyPage() {
             <div className="metrology-icon">{item.icon}</div>
             <div className="metrology-text">
               <h2>{item.title}</h2>
-              <p>{item.descrition}<br></br> <button className="saiba-mais-btn" onClick={() => openModal(item.image)}>Saiba mais</button></p>
+              <p>{item.descrition}</p>
+              <button className="saiba-mais-btn" onClick={() => openModal(item.image)}>Saiba mais</button>
             </div>
           </div>
         ))}
