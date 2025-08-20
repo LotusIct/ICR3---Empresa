@@ -368,7 +368,7 @@ body {
   height: 100vh;
   width: 100%;
   overflow-y: auto;
-  background-image: url('../assets/plano\ \(5\)\ \(1\).jpg');  /* Altere para o caminho correto da sua imagem */
+  background-image: url('../assets/plano\ \(3\).JPG');  /* Altere para o caminho correto da sua imagem */
   background-size: cover;  /* Ajusta a imagem para cobrir toda a área */
   background-position: center;  /* Centraliza a imagem */
   flex-direction: column;
