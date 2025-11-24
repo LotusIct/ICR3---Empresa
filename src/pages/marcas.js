@@ -35,10 +35,19 @@ const Marcas = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
+        Catálogo Completo
+        </a>
+         <a
+          href="/catalogos/Catálogo Geral de Equipamentos Resumido.pdf"
+          download
+          className="botao-catalogos"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
         Catálogo Geral
         </a>
           <a
-          href="/catalogos/mcr.pdf"
+          href="/catalogos/mcr aro e cannon.pdf"
           download
           className="botao-catalogos"
           target="_blank"
