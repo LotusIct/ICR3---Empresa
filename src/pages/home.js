@@ -15,7 +15,7 @@ import logo9 from '../assets/logos/Logo yateks .png';
 import logo10 from '../assets/logos/Logo zahm .png';
 import logo11 from '../assets/logos/hanon.jpeg';
 import logo12 from '../assets/logos/sineo.jpeg';
-
+import logo13 from '../assets/logos/roget.jpeg';
 const logos = [
   logo1,
   logo2,
@@ -28,7 +28,8 @@ const logos = [
   logo9,
   logo10,
   logo11,
-  logo12
+  logo12,
+  logo13
 ];
 
 export default function HomePage() {
