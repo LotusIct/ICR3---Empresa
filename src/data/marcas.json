@@ -174,8 +174,8 @@
 },
 
       {
-        "id": "crf",
-        "nome": "CRF",
+        "id": "cfr",
+        "nome": "CFR",
         "logo":"/logos/Logo IQT - cfr.png",
         "catalogo": "/catalogos/iqt.pdf",
         "produtos": [
@@ -481,7 +481,7 @@
 },
 {
         "id": "roget",
-        "nome": "ROGET",
+        "nome": "ROGET SCIENTIFIC",
         "logo":"/logos/roget.jpeg",
         "catalogo": "/catalogos/roget.pdf",
         "produtos": [

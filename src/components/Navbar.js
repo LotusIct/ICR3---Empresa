@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 868);
   const [isDesktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
-  const ordemPrioridade = ['tanaka', 'cannon', 'crf', 'kem'];
+  const ordemPrioridade = ['tanaka', 'cannon', 'cfr', 'kem'];
 
   const location = useLocation();
 

@@ -220,7 +220,7 @@ body {
 .megamenu-column.duas-colunas ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 0px;
+  column-gap: 20px;
 }
 
 .megamenu-column h4 {
