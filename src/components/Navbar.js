@@ -144,7 +144,6 @@ const Navbar = () => {
               <li
                 className="dropdown"
                 onMouseEnter={() => setDesktopDropdownOpen(true)}
-                  onMouseLeave={() => setDesktopDropdownOpen(false)}
               >
                 <span
                   className="nav-link"
@@ -154,9 +153,16 @@ const Navbar = () => {
                   Marcas
                 </span>
                 {isDesktopDropdownOpen && (
-                  <div id="desktop-dropdown-menu" className="megamenu">
+                  <div id="desktop-dropdown-menu" className="megamenu"  onMouseLeave={() => setDesktopDropdownOpen(false)}>
                     {marcas.map((categoria, index) => (
-                      <div key={index} className="megamenu-column">
+                      <div
+                        key={index}
+                        className={`megamenu-column ${
+                          categoria.categoria.toLowerCase().includes('equipamentos')
+                            ? 'duas-colunas'
+                            : ''
+                        }`}
+                      >
                         <h4>{categoria.categoria}</h4>
                         <ul>
                           {ordenarMarcas(categoria.marcas).map((marca) => (

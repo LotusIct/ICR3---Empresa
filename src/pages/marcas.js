@@ -38,7 +38,7 @@ const Marcas = () => {
         Catálogo Completo
         </a>
          <a
-          href="/catalogos/Catálogo Geral de Equipamentos Resumido.pdf"
+          href="/catalogos/Catálogo Geral de Equipamentos.pdf.pdf"
           download
           className="botao-catalogos"
           target="_blank"
@@ -47,7 +47,7 @@ const Marcas = () => {
         Catálogo Geral
         </a>
           <a
-          href="/catalogos/mcr aro e cannon.pdf"
+          href="/catalogos/CATÁLOGO MRC - ARO e CANNON.pdf.pdf"
           download
           className="botao-catalogos"
           target="_blank"

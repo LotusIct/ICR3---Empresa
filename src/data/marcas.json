@@ -311,7 +311,7 @@
       },
      {
   "id": "kem",
-  "nome": "KEM Kyoto Electronics Manufacturing Co. Ltd.",
+  "nome": "KEM Kyoto Electronics Manufact. Co. Ltd.",
   "logo":"/logos/Logo Kem Kyoto.png",
   "catalogo": "/catalogos/forza-catalogo.pdf",
   "produtos": [
@@ -382,8 +382,10 @@
     { "nome": "Viscosímetro Cinemático Automatizado Portátil", "imagem": "/produtos/cannon/Cannon simplevisplus.png", "descricaoImagem": "/descricao/cannon/16.png" },
     { "nome": "Viscosímetro Cinemático Automatizado Portátil com Resfriamento Ativo", "imagem": "/produtos/cannon/Cannon simplevis.png", "descricaoImagem": "/descricao/cannon/17.png" },
     { "nome": "Viscosímetro Rotacional", "imagem": "/produtos/cannon/viscorot1.jpg", "descricaoImagem": "/descricao/cannon/5.png" },
-        { "nome": "Viscosímetro Rotacional", "imagem": "/produtos/cannon/viscorot2.jpg", "descricaoImagem": "/descricao/cannon/6.png" },
-    { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon ultravis_.png", "descricaoImagem": "/descricao/cannon/14.png" }
+    { "nome": "Viscosímetro Rotacional", "imagem": "/produtos/cannon/viscorot2.jpg", "descricaoImagem": "/descricao/cannon/6.png" },
+    { "nome": "Viscosímetro", "imagem": "/produtos/cannon/Cannon ultravis_.png", "descricaoImagem": "/descricao/cannon/14.png" },
+    { "nome": "Viscos. Rot. de Pá Termoelétrico para Asfalto", "imagem": "/produtos/cannon/cannon-new-img.jpg", "descricaoImagem": "/descricao/cannon/cannon-new.jpg" },
+    { "nome": "Reômetro de Viga em Flexão Termoelétrico", "imagem": "/produtos/cannon/cannon-new-img1.jpg", "descricaoImagem": "/descricao/cannon/cannon-new1.jpg" }
   ]
 },
 
@@ -476,7 +478,30 @@
       "descricaoImagem": "/descricao/tanaka/46.jpeg"
     }
   ]
-}
+},
+{
+        "id": "roget",
+        "nome": "ROGET",
+        "logo":"/logos/roget.jpeg",
+        "catalogo": "/catalogos/roget.pdf",
+        "produtos": [
+          {
+      "nome": "Espectrômetro de Alto Desempenho para Análise de Óleo",
+      "imagem": "/produtos/roget/roget1.jpg",
+      "descricaoImagem": "/descricao/roget/roget1-equip.jpg"
+    },
+       {
+      "nome": "Espectrômetro de Análise Precisa de Óleo",
+      "imagem": "/produtos/roget/roget2.jpg",
+      "descricaoImagem": "/descricao/roget/roget2-equip.jpg"
+    },
+       {
+      "nome": "Espectrômetro Móvel de Análise de Óleo",
+      "imagem": "/produtos/roget/roget3.jpg",
+      "descricaoImagem": "/descricao/roget/roget3-equip.jpg"
+    }
+        ]
+      }
     ]
   },
    {

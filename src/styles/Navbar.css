@@ -188,23 +188,39 @@ body {
   padding: 5px 0;
 }
 .megamenu {
-  position: absolute;
-  top: 30px;
+  position: fixed;          /* sai do contexto do li */
+  top: 80px;                /* ajuste conforme a altura da navbar */
   left: 0;
+  width: 100vw;             /* ocupa toda a tela */
   display: flex;
-  gap: 30px;
+  justify-content: center;  /* centraliza as colunas */
+  gap: 40px;
+
   background-color: white;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  padding: 30px 40px;
+  padding: 30px 60px;
   z-index: 1000;
-  border-radius: 8px;
-  min-width: 500px;
 }
+
 
 .megamenu-column {
   display: flex;
   flex-direction: column;
   min-width: 200px;
+}
+.megamenu::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+
+.megamenu-column.duas-colunas ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0px;
 }
 
 .megamenu-column h4 {
@@ -228,7 +244,7 @@ body {
   color: #333;
 }
 .megamenu-column li {
-  margin: 6px 0;
+  margin: 2px 0;
 }
 
 .megamenu-column a {
