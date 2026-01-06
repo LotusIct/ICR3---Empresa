@@ -28,15 +28,6 @@ const Marcas = () => {
       <div className="marca-card">
          <h2>Catálogos</h2>
   <p>Baixe agora o material completo com nossos produtos.</p>
-        <a
-          href="/catalogos/equipamentos geral.pdf"
-          download
-          className="botao-catalogos"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        Catálogo Completo
-        </a>
          <a
           href="/catalogos/Catálogo Geral de Equipamentos.pdf.pdf"
           download
