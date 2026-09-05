@@ -9,33 +9,6 @@
     ]
   },
   {
-    "id": "jofra",
-    "nome": "JOFRA Calibration",
-    "produtos": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
-  },
-  {
-    "id": "forza",
-    "nome": "FORZA International",
-    "produtos": []
-  },
-  {
-    "id": "br",
-    "nome": "B/R Instrument Corporation",
-    "produtos": [
-      "",
-      "",
-      "",
-      ""
-    ]
-  },
-  {
     "id": "zahm",
     "nome": "ZAHM & NAGEL Company Incorporated",
     "produtos": [
@@ -90,6 +63,22 @@
     "nome": "ICR3",
     "produtos": [
       "ICR BC1"
+    ]
+  },
+  {
+    "id": "scion",
+    "nome": "SCION Instruments",
+    "produtos": [
+      "Cromatógrafo a Gás SCION - Sistema 1",
+      "Cromatógrafo a Gás SCION - Sistema 2"
+    ]
+  },
+  {
+    "id": "ckic",
+    "nome": "CKIC",
+    "produtos": [
+      "Equipamento de Análise CKIC",
+      "Sistema de Digestão por Micro-ondas 5E-MW6522"
     ]
   }
 ]

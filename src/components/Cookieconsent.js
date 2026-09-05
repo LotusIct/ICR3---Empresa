@@ -8,22 +8,29 @@ const CATEGORIES = {
   MARKETING: 'marketing',
 };
 
+const DEFAULT_PREFERENCES = {
+  [CATEGORIES.ESSENTIAL]: true,
+  [CATEGORIES.ANALYTICS]: false,
+  [CATEGORIES.MARKETING]: false,
+};
+
 const CookieConsent = () => {
   const [showBanner, setShowBanner] = useState(false);
   const [showPreferences, setShowPreferences] = useState(false);
-  const [preferences, setPreferences] = useState({
-    [CATEGORIES.ESSENTIAL]: true,  // sempre true e obrigatório
-    [CATEGORIES.ANALYTICS]: false,
-    [CATEGORIES.MARKETING]: false,
-  });
+  const [preferences, setPreferences] = useState(DEFAULT_PREFERENCES);
 
   useEffect(() => {
     const saved = localStorage.getItem('cookiePreferences');
     if (!saved) {
       setShowBanner(true);
     } else {
-      const prefs = JSON.parse(saved);
-      setPreferences({ ...preferences, ...prefs });
+      try {
+        const prefs = JSON.parse(saved);
+        setPreferences({ ...DEFAULT_PREFERENCES, ...prefs, essential: true });
+      } catch {
+        localStorage.removeItem('cookiePreferences');
+        setShowBanner(true);
+      }
     }
   }, []);
 
@@ -66,24 +73,28 @@ const CookieConsent = () => {
   if (!showBanner && !showPreferences) return null;
 
   return (
-    <div className="cookie-banner">
+    <div className={`cookie-banner ${showPreferences ? 'is-preferences' : ''}`} role={showPreferences ? 'dialog' : 'region'} aria-label="Preferências de cookies">
       {!showPreferences && (
         <>
-          <span>
-            Usamos cookies para melhorar sua experiência. Leia nossa&nbsp;
-            <Link to="/privacidade">Política de Privacidade</Link> e&nbsp;
-            <Link to="/termos">Termos de Uso</Link>.
-          </span>
+          <div className="cookie-message">
+            <strong>Sua privacidade importa</strong>
+            <span>Usamos cookies para melhorar sua experiência. Leia nossa&nbsp;
+              <Link to="/privacidade">Política de Privacidade</Link> e&nbsp;
+              <Link to="/termos">Termos de Uso</Link>.
+            </span>
+          </div>
           <div className="cookie-buttons">
-            <button onClick={handleAcceptAll}>Aceitar</button>
-            <button onClick={handleShowPreferences}>Alterar preferências de cookies</button>
+            <button className="cookie-primary" onClick={handleAcceptAll}>Aceitar todos</button>
+            <button className="cookie-secondary" onClick={handleShowPreferences}>Preferências</button>
           </div>
         </>
       )}
 
       {showPreferences && (
         <div className="preferences-panel">
-          <h2>Configurações de Cookies</h2>
+          <span className="cookie-eyebrow">Privacidade</span>
+          <h2>Configurações de cookies</h2>
+          <p>Escolha quais categorias deseja permitir. Os cookies essenciais permanecem ativos para o funcionamento do site.</p>
           <form>
             <label>
               <input type="checkbox" checked disabled />
@@ -107,8 +118,8 @@ const CookieConsent = () => {
             </label>
           </form>
           <div className="cookie-buttons">
-            <button onClick={handleSavePreferences}>Salvar preferências</button>
-            <button onClick={handleResetPreferences}>Cancelar</button>
+            <button className="cookie-primary" onClick={handleSavePreferences}>Salvar preferências</button>
+            <button className="cookie-secondary" onClick={handleResetPreferences}>Cancelar</button>
           </div>
         </div>
       )}

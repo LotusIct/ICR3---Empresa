@@ -1,179 +1,100 @@
-.marcas-section {
-  text-align: center;
-    background-image: url('../assets/plano\ \(1\)\ \(1\).jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.catalogo-geral-section {
-  text-align: center;
-  margin: 40px auto;
-  padding: 1.5rem;
-  background-color: #ffffffb3; /* branco com transparência, como nos cards */
-  border-radius: 16px;
-  max-width: 600px;
-  border: 1px solid rgba(160, 183, 115, 0.3);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  backdrop-filter: blur(6px);
-}
+.marcas-section{min-height:100vh;padding-bottom:100px;background:var(--paper);overflow:hidden}.hero-section-marcas{height:410px;position:relative;display:grid;place-items:center;background:var(--ink);overflow:hidden}.hero-section-marcas::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 78% 18%,rgba(141,168,93,.28),transparent 34%),linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:auto,42px 42px,42px 42px}.hero-content-marcas{position:relative;z-index:2;width:min(1180px,calc(100% - 48px));color:#fff;animation:riseIn .6s ease both}.hero-content-marcas .hero-kicker{color:#b8ce8e}.hero-content-marcas h1{max-width:950px;font-size:clamp(3rem,5.5vw,5rem);line-height:1;letter-spacing:-.055em;margin-bottom:20px}.hero-content-marcas p{color:#c4cbc5;font-size:clamp(1rem,2vw,1.2rem)}.catalogos-feature{width:min(1180px,calc(100% - 48px));margin:-42px auto 0;position:relative;z-index:3;padding:34px 38px;display:grid;grid-template-columns:1fr .9fr;gap:60px;align-items:center;border-radius:18px;background:#fff;box-shadow:var(--shadow);border:1px solid var(--line)}.catalogos-feature .section-kicker{margin-bottom:8px}.catalogos-feature h2{color:var(--ink);font-size:2rem;margin-bottom:9px}.catalogos-feature p{max-width:550px;color:var(--muted);line-height:1.55;margin:0}.catalogos-actions{display:grid;gap:10px}.catalogos-actions a{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-radius:10px;background:var(--green-pale);color:var(--green-dark);font-weight:700;text-decoration:none}.catalogos-actions a:hover{background:var(--green);color:var(--ink);transform:translateX(3px)}.marcas-browser{width:min(1180px,calc(100% - 48px));margin:90px auto 0}.marcas-intro{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:30px}.marcas-intro h2{font-size:clamp(2.2rem,4vw,3.5rem);line-height:1.05;letter-spacing:-.045em;color:var(--ink);margin:0}.marcas-intro>p{color:var(--muted);font-size:1.03rem;margin-bottom:5px}.marcas-filtros{display:grid;grid-template-columns:1fr minmax(250px,.38fr);gap:12px}.marcas-filtros label{position:relative}.marcas-filtros input,.marcas-filtros select,.busca-produtos input{width:100%;height:54px;padding:0 17px;border:1px solid var(--line);border-radius:11px;background:#fff;color:var(--ink);outline:none}.marca-search>span[aria-hidden]{position:absolute;left:18px;top:14px;color:var(--green-dark);font-size:1.35rem;line-height:1}.marca-search input{padding-left:48px}.marcas-filtros input:focus,.marcas-filtros select:focus,.busca-produtos input:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(141,168,93,.18)}.marcas-results-bar{min-height:58px;display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:.88rem}.marcas-results-bar button{border:0;background:transparent;color:var(--green-dark);font-weight:700}.grid-marcas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.marca-card{position:relative;min-height:330px;padding:24px;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;transition:.25s ease}.marca-card::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}.marca-card:hover{transform:translateY(-6px);border-color:transparent;box-shadow:var(--shadow)}.marca-card:hover::before{transform:scaleX(1)}.marca-index{position:absolute;top:19px;right:21px;color:#aab3aa;font-size:.75rem;font-weight:700;letter-spacing:.1em}.link-marca{height:150px;display:grid;place-items:center;padding:20px}.marca-logo{max-width:190px;max-height:95px;object-fit:contain;transition:transform .3s ease}.marca-card:hover .marca-logo{transform:scale(1.045)}.marca-card-info{display:flex;align-items:end;justify-content:space-between;gap:15px;padding-top:19px;border-top:1px solid var(--line)}.marca-card-info>div>span{display:block;color:var(--green-dark);font-size:.71rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;line-height:1.3}.marca-card h3{color:var(--ink);font-size:1.28rem;margin:7px 0 0}.marca-products-link{flex:0 0 auto;color:var(--green-dark);text-decoration:none;font-size:.82rem;font-weight:700}.marca-products-link:hover{transform:translateX(3px)}.botao-catalogo{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding:12px 0 0;color:var(--muted);font-size:.82rem;text-decoration:none}.botao-catalogo:hover{color:var(--green-dark)}.sem-resultados{grid-column:1/-1;padding:65px 25px;text-align:center;border:1px dashed #cad2c7;border-radius:16px;background:#fff}.sem-resultados strong{display:block;color:var(--ink);font-size:1.35rem}.sem-resultados p{color:var(--muted);margin:9px 0 20px}.sem-resultados button{border:0;border-radius:9px;padding:12px 17px;background:var(--green);color:var(--ink);font-weight:700}
+@media(max-width:900px){.grid-marcas{grid-template-columns:repeat(2,1fr)}.catalogos-feature{grid-template-columns:1fr;gap:25px}.marcas-intro{align-items:start;flex-direction:column;gap:10px}}
+@media(max-width:600px){.hero-section-marcas{height:370px}.hero-content-marcas{width:calc(100% - 40px)}.hero-content-marcas h1{font-size:clamp(2.7rem,12vw,3.8rem)}.catalogos-feature{width:calc(100% - 32px);margin-top:-28px;padding:27px 22px}.marcas-browser{width:calc(100% - 40px);margin-top:68px}.marcas-filtros,.grid-marcas{grid-template-columns:1fr}.marca-card{min-height:310px}.marcas-results-bar{padding:5px 0}}
 
-.marca-card p {
-  font-size: 0.9rem;
-  color: #555454;
-  margin-bottom: 10px;
-}
+@media(min-width:921px){.hero-content-marcas h1{font-size:clamp(3rem,4.4vw,4.25rem)}.marcas-intro h2{font-size:clamp(2.15rem,3vw,3rem)}}
 
-.marca-card h2 {
-  font-size: 1.3rem;
-  margin-bottom:5px;
-  color: #333;
-}
-.botao-catalogo-geral:hover {
-  background-color: #a0b773;
-  color: white;
-  transform: translateY(-2px);
-}
+/* Seletor de categorias personalizado */
+.category-select{position:relative;z-index:10}.category-select-trigger{width:100%;height:54px;padding:0 16px 0 18px;display:flex;align-items:center;justify-content:space-between;gap:16px;border:1px solid var(--line);border-radius:11px;background:#fff;color:var(--ink);text-align:left}.category-select-trigger:hover,.category-select-trigger[aria-expanded=true]{border-color:var(--green);box-shadow:0 0 0 3px rgba(141,168,93,.14)}.category-chevron{font-size:1.25rem;color:var(--green-dark);line-height:1;transform:translateY(-2px);transition:transform .22s ease}.category-chevron.open{transform:rotate(180deg) translateY(-2px)}.category-options{position:absolute;left:0;right:0;top:calc(100% + 8px);padding:7px;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 18px 45px rgba(17,23,19,.16);animation:categoryMenuIn .18s ease both;overflow:hidden}.category-options button{width:100%;min-height:43px;padding:9px 11px;display:flex;align-items:center;justify-content:space-between;gap:12px;border:0;border-radius:8px;background:transparent;color:#4c544e;text-align:left}.category-options button:hover{background:var(--green-pale);color:var(--green-dark)}.category-options button[aria-selected=true]{background:var(--ink);color:#fff}.category-check{width:22px;height:22px;display:grid;place-items:center;border-radius:50%;background:var(--green);color:var(--ink);font-size:.75rem;font-weight:700}@keyframes categoryMenuIn{from{opacity:0;transform:translateY(-7px) scale(.985)}to{opacity:1;transform:none}}
 
+/* Ações dos cartões com hierarquia clara */
+.marca-card-info{display:block}
+.marca-card-info>div{margin-bottom:18px}
+.marca-products-link{width:100%;min-height:44px;padding:0 15px;display:flex;align-items:center;justify-content:space-between;border-radius:9px;background:var(--green);color:var(--ink);font-size:.9rem;font-weight:700}
+.marca-products-link:hover{background:#a2bb74;color:var(--ink);transform:translateY(-2px);box-shadow:0 8px 18px rgba(96,120,60,.2)}
+.botao-catalogo{width:100%;min-height:44px;margin-top:9px;padding:0 15px;display:flex;align-items:center;justify-content:space-between;border:1px solid var(--line);border-radius:9px;background:#fff;color:#535c55;font-size:.87rem;font-weight:700}
+.botao-catalogo:hover{border-color:var(--green);background:var(--green-pale);color:var(--green-dark);transform:translateY(-2px)}
 
-.grid-marcas {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 4rem;
-  padding: 20px 80px 50px 80px;
-  justify-items: center;
-}
-.hero-section-marcas {
-  position: relative;
-  height: 140px;
-  color: #fff;
-  text-align: center;
-  padding-top: 30px;
-}
+.category-chevron{width:12px;height:12px;font-size:inherit;transform:none}
+.category-chevron.open{transform:rotate(180deg)}
+.category-check{width:21px;height:21px;background:var(--green);color:var(--ink)}
+.category-check svg{width:9px;height:9px}
 
-.hero-content-marcas h1 {
-  font-size: 3.5rem;
-  margin-bottom: 15px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  color:var(--cor-preto);
-}
+/* Equilíbrio entre clareza das ações e alinhamento dos cartões */
+.marca-card-info>div{height:78px;margin-bottom:10px;display:flex;flex-direction:column;justify-content:flex-start}
+.marca-card h3{line-height:1.18}
+.marca-products-link{min-height:42px;padding:0 14px;border:1px solid #c8d7b2;background:var(--green-pale);color:var(--green-dark)}
+.marca-products-link:hover{border-color:var(--green);background:var(--green);color:var(--ink);box-shadow:0 7px 16px rgba(96,120,60,.16)}
+.botao-catalogo{min-height:42px;margin-top:8px;padding:0 14px;background:transparent}
+@media(max-width:600px){.marca-card-info>div{height:auto;min-height:66px}}
 
-.marca-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  padding: 1.5rem;
-  width: 200px;
-  height: 100%;
-  border-radius: 16px;
-  background: rgba(255, 255, 255);
-  border: 1px solid rgba(160, 183, 115, 0.3); /* verde com transparência */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  backdrop-filter: blur(6px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+/* Ações discretas, preservando o alinhamento */
+.marca-products-link{width:max-content;min-height:36px;padding:0 13px;display:inline-flex;justify-content:center;border:1px solid #c8d7b2;border-radius:8px;background:var(--green-pale);color:var(--green-dark)}
+.botao-catalogo{width:max-content;min-height:auto;margin-top:12px;padding:5px 0;border:0;border-radius:0;background:transparent;color:var(--muted);font-weight:400;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:4px}
+.botao-catalogo:hover{border:0;background:transparent;color:var(--green-dark);transform:none;text-decoration-color:var(--green)}
 
-.marca-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
-}
+/* Primeira versão das ações dos cartões */
+.marca-card-info{display:flex;align-items:end;justify-content:space-between;gap:15px}
+.marca-card-info>div{height:auto;min-height:0;margin-bottom:0;display:block}
+.marca-products-link{width:auto;min-height:0;padding:0;display:inline-flex;justify-content:flex-start;gap:5px;border:0;border-radius:0;background:transparent;color:var(--green-dark);font-size:.82rem;font-weight:700}
+.marca-products-link:hover{border:0;background:transparent;color:var(--green-dark);transform:translateX(3px);box-shadow:none}
+.botao-catalogo{width:100%;min-height:0;margin-top:auto;padding:12px 0 0;display:flex;align-items:center;justify-content:space-between;border:0;border-radius:0;background:transparent;color:var(--muted);font-size:.82rem;font-weight:400;text-decoration:none}
+.botao-catalogo:hover{border:0;background:transparent;color:var(--green-dark);transform:none;text-decoration:none}
 
-.marca-logo {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 0.75rem;
-  object-fit: contain;
-}
+/* Alinhamento uniforme mantendo as ações discretas */
+.marca-card{display:grid;grid-template-rows:150px 1fr auto}
+.marca-card-info{min-height:92px;padding-top:19px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;column-gap:16px;border-top:1px solid var(--line)}
+.marca-card-info>div{align-self:start;min-width:0}
+.marca-card h3{max-width:270px;line-height:1.2}
+.marca-products-link{align-self:end;white-space:nowrap;margin-bottom:2px}
+.botao-catalogo{margin-top:14px}
+@media(max-width:600px){.marca-card{grid-template-rows:150px 1fr auto}.marca-card-info{min-height:92px}}
 
-.marca-nome {
-  color: #333;
-  font-weight: 600;
-  font-size: 1rem;
-  text-align: center;
-  text-decoration: none !important;
-}
-.link-marca {
-  text-decoration: none;
-  color: inherit;
-}
-.marca-conteudo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1rem; 
-}
-.botao-catalogo {
-    margin-top: auto;
-  font-size: 0.7rem;
-  color: #4d504e;
-  text-decoration: none !important;
-  border: 1px solid #a0b773;
-  border-radius: 8px;
-  padding: 0.4rem 0.8rem;
-  background-color: #ffffffb3;
-  transition: background 0.2s ease, transform 0.2s ease;
-}
-.botao-catalogos {
-    margin-top: auto;
-  font-size: 0.9rem;
-  color:#a0b773;
-  text-decoration: none !important;
-  border-radius: 8px;
-  background-color: #ffffffb3;
-  transition: background 0.2s ease, transform 0.2s ease;
-}
-.botao-catalogos:hover {
-   color:  #758653;
-}
-.botao-catalogo:hover {
-  background-color: #a0b773;
-  color: white;
-  transform: translateY(-2px);
-}
+/* Botões compactos e visualmente distintos */
+.marca-products-link{min-height:38px;padding:0 13px;border:1px solid #c8d7b2;border-radius:8px;background:var(--green-pale);color:var(--green-dark)}
+.marca-products-link:hover{border:1px solid var(--green);background:var(--green);color:var(--ink);transform:translateY(-2px)}
+.botao-catalogo{width:max-content;min-height:38px;margin-top:11px;padding:0 13px;display:inline-flex;justify-content:center;border:1px solid var(--line);border-radius:8px;background:#fff;color:#59615b;font-weight:700}
+.botao-catalogo:hover{border:1px solid var(--green);background:var(--green-pale);color:var(--green-dark);transform:translateY(-2px)}
 
-@media (max-width: 700px) {
- 
-.hero-content-marcas h1 {
-  font-size: 2.5rem;
-}
-  .grid-marcas {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 2rem;
-    
-  padding: 20px 20px 40px 20px ;
-  }
-  .marca-card {
-    width: 100%;
-    padding: 0.7rem;
-    border-radius: 12px;
-  }
+/* Ações alinhadas, sem contornos */
+.marca-card{grid-template-rows:150px 1fr auto}
+.marca-card-info{display:block;min-height:92px}
+.marca-card-actions{display:flex;align-items:center;gap:9px;margin-top:14px}
+.marca-products-link,.botao-catalogo{width:auto;min-height:38px;margin:0;padding:0 13px;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:8px;font-size:.82rem;font-weight:700;text-decoration:none;white-space:nowrap}
+.marca-products-link{background:var(--green);color:var(--ink)}
+.marca-products-link:hover{border:0;background:#a2bb74;color:var(--ink);transform:translateY(-2px);box-shadow:none}
+.botao-catalogo{background:var(--green-pale);color:var(--green-dark)}
+.botao-catalogo:hover{border:0;background:#dfe9d0;color:var(--green-dark);transform:translateY(-2px)}
+@media(max-width:380px){.marca-card-actions{align-items:stretch;flex-direction:column}.marca-products-link,.botao-catalogo{width:100%}}
 
-  .marca-logo {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 0rem;
-  }
-  .hero-section-marcas{
-  
-margin-bottom: 20px;
+.marca-products-link,.botao-catalogo{gap:9px}
+.marca-products-link svg,.botao-catalogo svg{width:10px;height:10px;transition:transform .2s ease}
+.marca-products-link:hover svg{transform:translateX(2px)}
+.botao-catalogo:hover svg{transform:translateY(2px)}
 
-}
-.marca-card p {
-  font-size: 0.8rem;
-  margin-bottom:5px;
-}
+@media(max-width:900px){.marca-card-actions{flex-direction:column;align-items:stretch}.marca-products-link,.botao-catalogo{width:100%}.marca-card{min-height:380px}}
+@media(max-width:600px){.marca-card{min-height:350px}}
 
-.marca-card h2 {
-  font-size: 1.3rem;
-  margin-bottom:5px;
-  color: #333;
-}
-.hero-section-marcas {
-  position: relative;
-  height: 100px;
-  color: #fff;
-  text-align: center;
-  padding-top: 30px;
-}
+.marca-products-link:hover svg{transform:translateY(-2px)}
 
+.product-arrow{font-size:.95rem;line-height:1;transition:transform .2s ease}
+.marca-products-link:hover .product-arrow{transform:translate(2px,-2px)}
+
+.marca-products-link,.botao-catalogo{justify-content:space-between;gap:22px}
+.marca-products-link{min-width:134px}
+.botao-catalogo{min-width:151px}
+
+.marca-card-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.marca-products-link,.botao-catalogo{width:100%;min-width:0;gap:10px;padding:0 12px}
+@media(max-width:900px){.marca-card-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.marca-products-link,.botao-catalogo{width:100%;font-size:.78rem;gap:7px;padding:0 10px}}
+@media(max-width:420px){.marca-card-actions{grid-template-columns:1fr}.marca-products-link,.botao-catalogo{font-size:.82rem}}
+
+@media(max-width:600px){
+  .hero-section-marcas{height:350px}
+  .hero-content-marcas h1{font-size:clamp(2.55rem,12vw,3.25rem);color:#fff}
+  .hero-content-marcas p{max-width:310px;line-height:1.5}
+  .catalogos-feature h2{font-size:1.8rem}
+  .marcas-browser{margin-top:58px}
+  .marcas-intro h2{font-size:2.25rem}
+  .marca-card{padding:22px;min-height:340px}
 }

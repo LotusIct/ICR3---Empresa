@@ -1,99 +1,102 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/metrology.css';
-import {
-  MdScale,
-  MdThermostat,
-  MdOpacity,
-  MdOutlineInventory2
-} from 'react-icons/md';
-
-import massaImg from '../assets/massa.JPG';
+import { MdScale, MdThermostat, MdOpacity, MdOutlineInventory2 } from 'react-icons/md';
+import massaImg from '../assets/massa-novo.jpg';
 import temperaturaImg from '../assets/temperatura.JPG';
 import viscosidadeImg from '../assets/viscosidade.JPG';
 import volumeImg from '../assets/volume.JPG';
 
 const metrologyItems = [
-  {
-    title: 'Massa',
-    descrition:'Escopo da Creditação - ABNT NBR ISO/ICE 17025 - Calibração',
-    icon: <MdScale size={60} color="#4D504E" />,
-    image: massaImg
-  },
-  {
-    title: 'Temperatura e Umidade',
-      descrition:'Escopo da Creditação - ABNT NBR ISO/ICE 17025 - Calibração',
-    icon: <MdThermostat size={60} color="#4D504E" />,
-    image: temperaturaImg
-  },
-  {
-    title: 'Viscosidade', 
-     descrition:'Escopo da Creditação - ABNT NBR ISO/ICE 17025 - Calibração',
-    icon: <MdOpacity size={60} color="#4D504E" />,
-    image: viscosidadeImg
-  },
-  {
-    title: 'Volume e Massa Específica',
-    descrition:'Escopo da Creditação - ABNT NBR ISO/ICE 17025 - Calibração',
-    icon: <MdOutlineInventory2 size={60} color="#4D504E" />,
-    image: volumeImg
-  }
+  { title: 'Massa', description: 'Calibração com rastreabilidade para medições de massa confiáveis.', icon: <MdScale aria-hidden="true" />, image: massaImg },
+  { title: 'Temperatura e Umidade', description: 'Controle preciso de condições térmicas e ambientais.', icon: <MdThermostat aria-hidden="true" />, image: temperaturaImg },
+  { title: 'Viscosidade', description: 'Medições confiáveis para controle de fluidos e processos.', icon: <MdOpacity aria-hidden="true" />, image: viscosidadeImg },
+  { title: 'Volume e Massa Específica', description: 'Calibração especializada para análises volumétricas e de densidade.', icon: <MdOutlineInventory2 aria-hidden="true" />, image: volumeImg },
 ];
 
-
 export default function MetrologyPage() {
-  const [modalImage, setModalImage] = useState(null);
+  const [modalItem, setModalItem] = useState(null);
+  const [zoom, setZoom] = useState(0.85);
 
-  const openModal = (image) => setModalImage(image);
-  const closeModal = () => setModalImage(null);
+  const openModal = (item) => {
+    setZoom(0.85);
+    setModalItem(item);
+  };
+
+  useEffect(() => {
+    const handleEscape = (event) => event.key === 'Escape' && setModalItem(null);
+    window.addEventListener('keydown', handleEscape);
+    return () => window.removeEventListener('keydown', handleEscape);
+  }, []);
 
   return (
-    <div className="metrology-page">
-      {/* Hero Section */}
+    <main className="metrology-page">
       <section className="hero-section-metrology">
-        <div className="overlay"></div>
         <div className="hero-content-metrology">
-          <h1>Metrologia</h1>
-         
+          <span className="hero-kicker">Laboratório acreditado</span>
+          <h1>Metrologia que transforma medição em confiança.</h1>
+          <p>Calibrações realizadas com rigor técnico, rastreabilidade e padrões reconhecidos.</p>
         </div>
       </section>
-<section className="metrology-description">
-<div className='metrology'>
-    <h2>Qualidade e Confiabilidade em Calibração</h2>
-  <p>
-    Nossos laboratórios possuem acreditação reconhecida para a
-    realização de calibrações em diferentes grandezas, garantindo a
-    confiabilidade e a rastreabilidade dos resultados. Essa acreditação
-    garante que cada calibração siga os mais altos padrões de qualidade,
-    dando a você a tranquilidade de tomar decisões seguras e assertivas.
-  </p>
-</div>
-</section>
-      {/* Metrology Sections */}
-      <section className="metrology-section">
-        {metrologyItems.map((item, index) => (
-          <div
-            className={`metrology-container ${index % 2 === 1 ? 'reverse' : ''}`}
-            key={index}
-          >
-            <div className="metrology-icon">{item.icon}</div>
-            <div className="metrology-text">
-              <h2>{item.title}</h2>
-              <p>{item.descrition}</p>
-              <button className="saiba-mais-btn" onClick={() => openModal(item.image)}>Saiba mais</button>
-            </div>
-          </div>
-        ))}
+
+      <section className="metrology-credentials" aria-label="Credenciais de metrologia">
+        <div><strong>537</strong><span>Número de acreditação</span></div>
+        <div><strong>ISO/IEC 17025</strong><span>Conformidade laboratorial</span></div>
+        <div><strong>4</strong><span>grupos de grandezas</span></div>
       </section>
 
-      {/* Modal */}
-      {modalImage && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={modalImage} alt="Escopo de acreditação" />
-            <button className="close-button" onClick={closeModal}>×</button>
+      <section className="metrology-intro">
+        <div>
+          <span className="section-kicker">Qualidade e confiabilidade</span>
+          <h2>Resultados rastreáveis para decisões seguras</h2>
+        </div>
+        <div className="metrology-intro-copy">
+          <p>Nossos laboratórios realizam calibrações em diferentes grandezas, seguindo requisitos técnicos reconhecidos. Cada serviço é conduzido para assegurar precisão, rastreabilidade e confiança nos resultados.</p>
+          <p>A acreditação nº 537 abrange serviços em massa, temperatura, umidade, viscosidade, volume e massa específica, apoiados por uma equipe técnica qualificada.</p>
+        </div>
+      </section>
+
+      <section className="metrology-services" aria-labelledby="grandezas-title">
+        <div className="metrology-services-heading">
+          <span className="section-kicker">Escopo de atuação</span>
+          <h2 id="grandezas-title">Grandezas atendidas</h2>
+          <p>Selecione uma grandeza para consultar seu escopo de acreditação.</p>
+        </div>
+        <div className="metrology-grid">
+          {metrologyItems.map((item, index) => (
+            <article className="metrology-card" key={item.title}>
+              <span className="metrology-card-number">0{index + 1}</span>
+              <div className="metrology-icon">{item.icon}</div>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+              <button onClick={() => openModal(item)}>Ver escopo <span aria-hidden="true">→</span></button>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="metrology-standard">
+        <div><span className="section-kicker">Compromisso técnico</span><h2>ABNT NBR ISO/IEC 17025:2017</h2></div>
+        <p>A acreditação demonstra competência técnica e assegura que os processos laboratoriais atendam a critérios internacionais de qualidade e confiabilidade.</p>
+      </section>
+
+      {modalItem && (
+        <div className="metro-modal-overlay" onClick={() => setModalItem(null)} role="presentation">
+          <div className="metro-modal-content" onClick={(event) => event.stopPropagation()} role="dialog" aria-modal="true" aria-label={`Escopo de acreditação: ${modalItem.title}`}>
+            <div className="metro-modal-header">
+              <div><span>Escopo de acreditação</span><h2>{modalItem.title}</h2></div>
+              <div className="metro-modal-actions" aria-label="Controles de zoom">
+                <button onClick={() => setZoom((value) => Math.max(0.65, value - 0.15))} aria-label="Diminuir zoom">−</button>
+                <button className="zoom-value" onClick={() => setZoom(0.85)} aria-label="Restaurar zoom">{Math.round(zoom * 100)}%</button>
+                <button onClick={() => setZoom((value) => Math.min(2.5, value + 0.15))} aria-label="Aumentar zoom">+</button>
+              </div>
+              <button className="metro-modal-close" onClick={() => setModalItem(null)} aria-label="Fechar">×</button>
+            </div>
+            <div className="metro-image-viewport">
+              <img src={modalItem.image} alt={`Escopo de acreditação para ${modalItem.title}`} decoding="async" style={{ width: `${zoom * 100}%` }} />
+            </div>
           </div>
         </div>
       )}
-    </div>
+    </main>
   );
 }

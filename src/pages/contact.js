@@ -1,193 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/contact.css';
 import emailjs from 'emailjs-com';
-
-
-const categorias = [
-  {
-    categoria: "Material de Ref. Certificado",
-    marcas: [
-      {
-        id: "aro",
-        nome: "ARO Scientific",
-        produtos: [
-          { nome: "Material de Referência Certificado de densidade ASTM D4052" },
-          { nome: "Material de Referência Certificado com Ponto de Fulgor(COC) ASTM D92" },
-          { nome: "Material de Referência Certificado para Destilação ASTM D86" },
-          { nome: "Material de Referência Certificado ASTM D97 D2500" },
-          { nome: "Material de Referência Certificado ASTM D1544 D6166" },
-          { nome: "Material de Referência Certificado ASTM D6045 D1500" },
-          { nome: "Material de Referência Certificado ASTM D6045 D156" }
-        ]
-      }
-    ]
-  },
-  {
-    categoria: "Equipamentos",
-    marcas: [
-      {
-        id: "jofra",
-        nome: "JOFRA Calibration",
-        produtos: [
-          { nome: "Calibradores de Temperatura Blocos Secos" },
-          { nome: "Calibradores de Pressão" },
-          { nome: "Calibradores de Sinal" },
-          { nome: "Medidores de Temperatura" },
-          { nome: "Sensor de Temperatura" }
-        ]
-      },
-      {
-        id: "forza",
-        nome: "FORZA International",
-        produtos: [
-          { nome: "Aparelho Manual para teste de Filtrabilidade de Óleo Hidráulico" },
-          { nome: "Aparelho de estabilidade à oxidação Banho Líquido" },
-          { nome: "Teste de Separabilidade da Água" }
-        ]
-      },
-      {
-        id: "crf",
-        nome: "CRF",
-        produtos: [
-          { nome: "Analisador de Número de Cetano - IQT" }
-        ]
-      },
-      {
-        id: "br",
-        nome: "B/R Instrument Corporation",
-        produtos: [
-          { nome: "Destilação Fracionada" },
-          { nome: "Recuperação de Solvente" },
-          { nome: "Destilação à Vácuo D1160" },
-          { nome: "Destilação de Petróleo Bruto" }
-        ]
-      },
-      {
-        id: "zahm",
-        nome: "ZAHM & NAGEL Company Incorporated",
-        produtos: [
-          { nome: "Analisador de Carbonação em Tanques" },
-          { nome: "Dispositivo de Perfuração Computadorizada" },
-          { nome: "Analisador de pureza CO2" },
-          { nome: "Analisador de Volume de Gás em Embalagens Fechadas" }
-        ]
-      },
-      {
-        id: "kem",
-        nome: "KEM Kyoto Electronics Manufacturing Co. Ltd.",
-        produtos: [
-          { nome: "Titulador Potenciométrico" },
-          { nome: "Densímetro Portátil Digital" },
-          { nome: "Densímetro Digital" },
-          { nome: "Refratômetro Digital" },
-          { nome: "Karl Fisher Coulométrico" },
-          { nome: "Karl Fisher Híbrido - Volumétrico e Columétrico" },
-          { nome: "Karl Fisher Volumétrico" },
-          { nome: "Refratômetro Digital" }
-        ]
-      },
-      {
-        id: "cannon",
-        nome: "Cannon Instrument Company",
-        produtos: [
-          { nome: "Viscosímetro" },
-          { nome: "Simulador de Partida a Frio" },
-          { nome: "Viscosímetro Mini Rotativo Semiautomático" },
-          { nome: "Mini Rotary" },
-          { nome: "Viscosímetro Capilar Multicélula" },
-          { nome: "Viscosímetro Cinemático" },
-          { nome: "Viscosímetro de Bancada Automático" },
-          { nome: "Viscosímetro - óleo usado" },
-          { nome: "Viscosímetro Cinemático Automatizado Portátil com Resfriamento Ativo" },
-          { nome: "Viscosímetro Cinemático Automatizado Portátil" },
-          { nome: "Viscosímetro Rotacional" },
-           {
-      "nome": "Padrões de Viscosidade em Alta Temperatura e Alto Cisalhamento",
-         },
-    {
-      "nome": "Padrões de Viscosidade em Baixa Temperatura e SimpleVIS®",
-          },
-    {
-      "nome": "Óleos para Banho CANNON",
-         },
-    {
-      "nome": "Padrões de Viscosidade em Alta Temperatura (HTHS)",
-         },
-    {
-      "nome": "Padrões de Viscosidade de Silicone",
-        },
-    {
-      "nome": "Padrões de Viscosidade Cannon Flow Cup",
-          }
-        ]
-      },
-      {
-        id: "yateks",
-        nome: "YATEKS",
-        produtos: [
-          { nome: "Analizador Multi-Parâmetro de ÔLEO" },
-          { nome: "Contador Portátil de Partículas de Óleo" }
-        ]
-      },
-      {
-        id: "huazheng",
-        nome: "HUAZHENG",
-        produtos: [
-          { nome: "Rigidez Dielétrica" }
-        ]
-      },
-      {
-        id: "tanaka",
-        nome: "Tanaka",
-        produtos: [
-          { nome: "Ponto de Anilina" },
-          { nome: "Colorímetro Automático para Produtos de Petróleo" },
-          { nome: "Ponto de Fulgor Cleveland" },
-          { nome: "Ponto de Fulgor Pensky-Martens" },
-          { nome: "Ponto de Fulgor TAG" },
-          { nome: "Destilador Atmosférico" },
-          { nome: "Analisador de Enxofre SDXRF (12 posições)" },
-          { nome: "Ponto de Entupimento" },
-          { nome: "Ponto de Fluidez e Névoa" }
-        ]
-      },
-      {
-  id: "hanon",
-  nome: "Hanon",
-  produtos: [
-    { nome: "Analisador De Fibras Automático Modelo - F2000" },
-    { nome: "Analisador Automático De Nitrogênio/Proteína Kjeldahl Modelo K1160" },
-    { nome: "Analisador Automático De Nitrogênio/Proteína Kjeldahl Modelo K1100f" },
-    { nome: "Analisador Automático De Nitrogênio/Proteína Kjeldahl Modelo - K9860" },
-    { nome: "Unidade Automática De Destilação Kjeldahl Modelo - K9840" },
-    { nome: "Digestor Kjeldahl Modelo - Sh420f" },
-    { nome: "Digestor Kjeldahl Modelo - Sh220f" },
-    { nome: "Digestor Kjeldahl Automático Modelos - Sh520/sh508" },
-    { nome: "Analisador De Nitrogenio E Proteína (Método Dumas) D50/d200" }
-  ]
-},
-{
-  id: "sineo",
-  nome: "Sineo",
-  produtos: [
-    { nome: "Estação De Trabalho Para Digestão Por Micro-Ondas - Modelo Tank 40" }
-  ]
-}
-
-    ]
-  },
-  {
-    categoria: "Fabricação Própria",
-    marcas: [
-      {
-        id: "icr3",
-        nome: "ICR3",
-        produtos: [{ nome: "ICR BC1" }]
-      }
-    ]
-  }
-];
-
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
+import categorias from '../data/marcas.json';
 
 
 export default function ContactForm() {
@@ -258,9 +73,36 @@ export default function ContactForm() {
 
   return (
     <section className="contact-form-section">
-      <div className="form-container">
-        <h2>Fale Conosco</h2>
-        <p>Preencha o formulário abaixo. Responderemos em breve!</p>
+      <div className="contact-shell">
+        <aside className="contact-intro">
+          <span className="section-kicker">FALE COM A ICR3</span>
+          <h1>Vamos encontrar a solução ideal.</h1>
+          <p>Conte o que você precisa. Nossa equipe técnica está pronta para orientar sua escolha e responder com agilidade.</p>
+
+          <div className="contact-quick-links" aria-label="Canais de atendimento">
+            <a href="https://wa.me/5521998297321" target="_blank" rel="noopener noreferrer">
+              <span><FaWhatsapp /></span>
+              <div><small>WhatsApp</small><strong>(21) 99829-7321</strong></div>
+            </a>
+            <a href="tel:+552131727755">
+              <span><FaPhoneAlt /></span>
+              <div><small>Telefone</small><strong>(21) 3172-7755</strong></div>
+            </a>
+            <a href="mailto:comercial@icr3.com.br">
+              <span><FaEnvelope /></span>
+              <div><small>E-mail</small><strong>comercial@icr3.com.br</strong></div>
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Rua+Flack,+163,+Rio+de+Janeiro+-+RJ,+20960-150" target="_blank" rel="noopener noreferrer">
+              <span><FaMapMarkerAlt /></span>
+              <div><small>Endereço</small><strong>Rua Flack, 163 — Rio de Janeiro</strong></div>
+            </a>
+          </div>
+        </aside>
+
+        <div className="form-container">
+          <span className="section-kicker">ENVIE UMA MENSAGEM</span>
+          <h2>Como podemos ajudar?</h2>
+          <p>Preencha os dados abaixo e retornaremos em breve.</p>
  {/* Popup de Sucesso */}
         {sucessoMensagem && (
           <div className="popup sucesso">
@@ -274,7 +116,7 @@ export default function ContactForm() {
             <p>Houve um erro ao enviar a mensagem. Tente novamente mais tarde.</p>
           </div>
         )}
-        <form onSubmit={handleSubmit} className="modern-form">
+          <form onSubmit={handleSubmit} className="modern-form">
           <div className="input-group">
             <input
               type="text"
@@ -350,8 +192,9 @@ export default function ContactForm() {
             <label htmlFor="comentario">Comentário</label>
           </div>
 
-          <button type="submit" className="btn-modern">Enviar Mensagem</button>
-        </form>
+            <button type="submit" className="btn-modern">Enviar mensagem</button>
+          </form>
+        </div>
       </div>
     </section>
   );

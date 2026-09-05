@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/footer.css';
-import { FaInstagram, FaLinkedin, FaYoutube,FaPhoneAlt, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaPhoneAlt, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import logo from '../assets/Logo-removebg-preview.png';
 
 
@@ -15,7 +16,7 @@ export function Footer() {
     <img src={logo} alt="Logo ICR3 Científica" />
   </div>
   
-  <h4>Sua empresa precisa</h4>
+  <p className="footer-tagline">Tecnologia e precisão a serviço da ciência.</p>
   <p>CNPJ: 68.715.226/0001-02</p>
   
   <p>
@@ -44,18 +45,18 @@ export function Footer() {
           {/* Coluna 2: Informações legais */}
           <div className="footer-section footer-itens">
             <h4>Informações Legais</h4>
-            <a href="/termos">Termos de Uso</a>
-            <a href="/privacidade">Política de Privacidade</a>
+            <Link to="/termos">Termos de Uso</Link>
+            <Link to="/privacidade">Política de Privacidade</Link>
           </div>
 
           {/* Coluna 3: Páginas */}
           <div className="footer-section footer-itens">
             <h4>Páginas</h4>
-            <a href="/">Home</a>
-            <a href="/sobre">Sobre Nós</a>
-            <a href="/serviços">Serviços</a>
-            <a href="/marcas">Marcas</a>
-            <a href="/fale-conosco">Fale Conosco</a>
+            <Link to="/">Home</Link>
+            <Link to="/sobre">Sobre Nós</Link>
+            <Link to="/serviços">Serviços</Link>
+            <Link to="/marcas">Marcas</Link>
+            <Link to="/fale-conosco">Fale Conosco</Link>
           </div>
 
           {/* Coluna 4: Redes sociais */}
@@ -67,10 +68,10 @@ export function Footer() {
     <a href="https://wa.me/5521998297321" target="_blank" rel="noreferrer" aria-label="WhatsApp">
       <FaWhatsapp size={24}  />
       </a>
-    <a href="https://www.instagram.com/icr3cientifica/" target="_blank" rel="noreferrer">
+    <a href="https://www.instagram.com/icr3cientifica/" target="_blank" rel="noreferrer" aria-label="Instagram">
       <FaInstagram size={24} />
     </a>
-    <a href="https://br.linkedin.com/company/icr3-cientifica" target="_blank" rel="noreferrer">
+    <a href="https://br.linkedin.com/company/icr3-cientifica" target="_blank" rel="noreferrer" aria-label="LinkedIn">
       <FaLinkedin size={24} />
     </a>
      

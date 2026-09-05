@@ -1,115 +1,67 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/about.css';
-
-import buildingImage from '../assets/sede.jpeg';
-import teamImage1 from '../assets/equipes (2).jpg';
-import buildingImage1 from '../assets/sede2.jpeg';
-import buildingImage2 from '../assets/sede3.jpeg';
-import imagemHome from '../assets/sede.jpeg';
+import teamImage from '../assets/equipes (2).jpg';
+import headquartersImage from '../assets/sede.jpeg';
 
 export default function AboutPage() {
-
-  const teamImages = [ teamImage1];
-  const buildingImages = [buildingImage, buildingImage1, buildingImage2 ];
-
-  const [teamIndex, setTeamIndex] = useState(0);
-  const [buildingIndex, setBuildingIndex] = useState(0);
-
-  const handleNextTeam = () => {
-    setTeamIndex((prevIndex) => (prevIndex + 1) % teamImages.length);
-  };
-
-  const handlePrevTeam = () => {
-    setTeamIndex((prevIndex) => (prevIndex - 1 + teamImages.length) % teamImages.length);
-  };
-
-  const handleNextBuilding = () => {
-    setBuildingIndex((prevIndex) => (prevIndex + 1) % buildingImages.length);
-  };
-
-  const handlePrevBuilding = () => {
-    setBuildingIndex((prevIndex) => (prevIndex - 1 + buildingImages.length) % buildingImages.length);
-  };
-
   return (
-    <div className="aboutpage">
-
-      {/* Hero Section */}
+    <main className="aboutpage">
       <section className="hero-section-about">
-        <div className="overlay"></div>
         <div className="hero-content-about">
-          <h1>Sobre Nós</h1>
-          <p>Conheça a essência da ICR3 Científica: excelência, qualidade e tradição.</p>
+          <span className="hero-kicker">Conheça a ICR3</span>
+          <h1>Precisão que constrói confiança.</h1>
+          <p>Experiência, conhecimento técnico e compromisso com cada resultado.</p>
         </div>
       </section>
 
-      {/* Nossa História */}
-      <section className="about-section-about proposito">
+      <section className="about-section-about about-intro">
         <div className="about-container-about">
           <div className="about-text-about">
-            <h2>Nosso Propósito</h2>
-            <p>
-              Somos uma empresa comprometida com a excelência, que acredita no poder da confiança, da inovação e do trabalho bem feito. Atuamos com responsabilidade, profissionalismo e atenção aos detalhes em cada projeto que desenvolvemos, sempre com o objetivo de superar expectativas.
-            </p>
-            <p>
-              Mais do que oferecer produtos ou serviços, buscamos construir parcerias duradouras. Investimos continuamente em tecnologia, capacitação e melhoria de processos para entregar resultados de alta qualidade e atender às necessidades específicas de cada cliente.
-            </p>
-            <p>
-              Nosso time é formado por profissionais apaixonados pelo que fazem, movidos por desafios e guiados por valores como ética, transparência e respeito.
-            </p>
-            <p>
-              Estamos prontos para ajudar você a alcançar seus objetivos com soluções personalizadas, eficientes e sustentáveis. Porque, para nós, cada cliente é único e cada história de sucesso, uma conquista compartilhada.
-            </p>
+            <span className="section-kicker">Sobre a ICR3</span>
+            <h2>Ciência e tecnologia com suporte especializado</h2>
+            <p>A ICR3 Científica oferece soluções para laboratórios e indústrias que dependem de análises precisas e processos confiáveis.</p>
+            <p>Unimos equipamentos científicos, serviços metrológicos e materiais de referência certificados a um atendimento próximo, da escolha da solução ao pós-venda.</p>
+            <div className="about-numbers" aria-label="Destaques da ICR3">
+              <div><strong>30+</strong><span>anos de experiência</span></div>
+              <div><strong>Brasil</strong><span>atendimento nacional</span></div>
+              <div><strong>360°</strong><span>venda, suporte e pós-venda</span></div>
+            </div>
           </div>
+          <figure className="about-feature-image">
+            <img src={headquartersImage} alt="Sede da ICR3 Científica" loading="eager" decoding="async" />
+            <figcaption>Estrutura preparada para atender clientes e parceiros.</figcaption>
+          </figure>
         </div>
       </section>
 
-      {/* Nossa Equipe */}
+      <section className="about-values" aria-labelledby="valores-title">
+        <div className="values-heading">
+          <span className="section-kicker">Como trabalhamos</span>
+          <h2 id="valores-title">Valores presentes em cada entrega</h2>
+        </div>
+        <div className="values-grid">
+          <article><span>01</span><h3>Precisão</h3><p>Rigor técnico para apoiar decisões e resultados confiáveis.</p></article>
+          <article><span>02</span><h3>Parceria</h3><p>Atendimento próximo e soluções adequadas a cada necessidade.</p></article>
+          <article><span>03</span><h3>Evolução</h3><p>Capacitação contínua, tecnologia e melhoria de processos.</p></article>
+        </div>
+      </section>
+
       <section className="about-section-about equipe">
-        <div className="about-container-about">
+        <div className="about-container-about reverse">
           <div className="about-text-about">
-            <h2>Nossa Equipe</h2>
-            <p>
-              A ICR3 Científica é composta por uma equipe multidisciplinar altamente qualificada. Nosso corpo técnico inclui metrologistas, engenheiros químicos, químicos, e técnicos em diversas áreas, garantindo excelência nos serviços prestados e um atendimento personalizado a cada cliente.
-            </p>
-            <p>
-              Investimos constantemente na capacitação dos nossos colaboradores, buscando sempre a melhoria contínua em todas as áreas da empresa, para garantir que nossos clientes recebam o melhor suporte técnico durante o processo de venda e pós-venda.
-            </p>
+            <span className="section-kicker">Nossa equipe</span>
+            <h2>Conhecimento técnico que acompanha você</h2>
+            <p>Nossa equipe multidisciplinar reúne metrologistas, engenheiros químicos, químicos e técnicos especializados para oferecer orientação clara e atendimento personalizado.</p>
+            <p>Investimos continuamente na capacitação dos profissionais para garantir suporte de qualidade durante a venda e no pós-venda.</p>
           </div>
-         <div className="image-slider">
-  <img src={teamImages[teamIndex]} alt="Equipe ICR3" />
-</div>
-
-
+          <div className="image-slider"><img src={teamImage} alt="Equipe da ICR3 Científica" loading="lazy" decoding="async" /></div>
         </div>
       </section>
 
-      {/* Apresentação da Sede */}
-     <section className="about-section-about sede">
-  <div className="about-container-about reverse">
-       {/* Substituindo o slider por um vídeo */}
-   <div className="image-slider">
-           <img src={imagemHome} alt="Imagem ilustrativa" style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
-
-          </div>
-    <div className="about-text-about">
-      <h2>Sede da ICR3 Científica</h2>
-      <p>
-        A sede da ICR3 reflete nosso compromisso com a qualidade, a organização e a excelência no atendimento. Localizada em um ponto estratégico, nossa estrutura foi planejada para oferecer um ambiente moderno, funcional e preparado para atender com eficiência as demandas dos nossos clientes e parceiros.
-      </p>
-      <p>
-        Contamos com laboratórios equipados para serviços de calibração, áreas técnicas dedicadas à manutenção de equipamentos, sala de treinamento para a constante capacitação da equipe, além de espaços administrativos que garantem uma operação ágil e integrada.
-      </p>
-      <p>
-        Nossa infraestrutura nos permite prestar suporte técnico especializado com rapidez e segurança, além de manter um alto padrão de qualidade em todos os serviços oferecidos. A sede também é um espaço de acolhimento, onde clientes são sempre bem-vindos e podem contar com uma equipe pronta para oferecer soluções personalizadas e eficazes.
-      </p>
-    </div>
-
- 
-  </div>
-</section>
-
-
-    </div>
+      <section className="about-headquarters">
+        <div><span className="section-kicker">Nossa sede</span><h2>Estrutura para atender com agilidade e segurança</h2></div>
+        <p>Contamos com laboratórios para serviços de calibração, áreas técnicas dedicadas à manutenção de equipamentos, sala de treinamento e espaços administrativos integrados. Uma estrutura pensada para manter a qualidade em todas as etapas do atendimento.</p>
+      </section>
+    </main>
   );
 }

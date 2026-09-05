@@ -40,8 +40,11 @@
 
 @media (max-width: 600px) {
   .terms-container {
-    padding: 20px 15px;
-    font-size: 12px;
+    width: calc(100% - 32px);
+    padding: 28px 20px;
+    margin: 24px auto 48px;
+    font-size: 14px;
+    box-shadow: none;
   }
 
   .terms-container h1 {
@@ -50,5 +53,9 @@
 
   .terms-container h2 {
     font-size: 1.1rem;
+  }
+
+  .terms-container p {
+    font-size: .95rem;
   }
 }
