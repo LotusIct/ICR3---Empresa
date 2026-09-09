@@ -58,8 +58,9 @@ export default function ServicesPage() {
           <div className="service-copy">
             <span className="service-number">02 / Metrologia</span>
             <h2>Calibração com precisão acreditada</h2>
-            <p>Os laboratórios da ICR3 são acreditados pela CGCRE/INMETRO segundo a ABNT NBR ISO/IEC 17025:2017, sob o número 537.</p>
-            <p>Atuamos nas grandezas temperatura, massa, massa específica e viscosidade, com tecnologia avançada e rastreabilidade dos resultados.</p>
+            <p>ICR3 Científica Comércio e Representações Ltda. acreditada pela Cgcre para ABNT NBR ISO/IEC 17025, sob o número CAL 0537.</p>
+            <p>Nossos serviços acreditados contemplam as grandezas Massa, Temperatura e Umidade, Viscosidade e Volume e Massa Específica, conforme escopo de acreditação vigente.</p>
+            <p>Oferecemos serviços de calibração com competência técnica, rastreabilidade metrológica e resultados confiáveis para apoiar a qualidade dos processos dos nossos clientes.</p>
             <button className="btn-primary" onClick={() => navigate('/metrologia')}>Conheça a metrologia</button>
           </div>
           <figure className="service-image"><img src={metrologyImage} alt="Laboratório de metrologia da ICR3" loading="lazy" decoding="async" /></figure>
